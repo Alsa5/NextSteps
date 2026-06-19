@@ -1,0 +1,45 @@
+.interactive-nebula-galaxy {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(123, 92, 245, 0.22);
+  background: radial-gradient(ellipse 80% 70% at 50% 45%, rgba(67, 97, 238, 0.12), rgba(10, 8, 24, 0.95));
+  pointer-events: auto;
+}
+
+.interactive-nebula-galaxy canvas {
+  width: 100% !important;
+  height: 100% !important;
+  cursor: grab;
+}
+
+.interactive-nebula-galaxy canvas:active {
+  cursor: grabbing;
+}
+
+.interactive-nebula-galaxy__vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, transparent 35%, rgba(10, 8, 24, 0.55) 100%);
+}
+
+.interactive-nebula-galaxy__hint {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.45);
+  background: rgba(12, 10, 28, 0.65);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(123, 92, 245, 0.2);
+  pointer-events: none;
+  white-space: nowrap;
+}

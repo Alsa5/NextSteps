@@ -1,0 +1,337 @@
+{
+  "project": "NextSteps",
+  "lastUpdated": "2026-06-16T12:00:00.000Z",
+  "wikiIdentifier": null,
+  "paperclipTrace": {
+    "ALSAA-8": {
+      "title": "NextSteps: Audit legacy codebase + draft architecture sections",
+      "status": "done",
+      "workProduct": "docs/architecture/legacy-audit-and-target-architecture.md"
+    },
+    "ALSAA-9": {
+      "title": "NextSteps: Draft metaverse UI/UX specification (60-30-10, lanyard, dashboards)",
+      "status": "done",
+      "workProduct": "docs/design/metaverse-ui-ux-specification.md"
+    },
+    "ALSAA-7": {
+      "title": "NextSteps: Lead comprehensive system specification (NEXUS Discovery)",
+      "status": "done",
+      "workProduct": "docs/nextsteps-maverick-platform-spec.md",
+      "version": "1.1.0-consolidated"
+    },
+    "ALSAA-11": {
+      "title": "NextSteps: ADO Feature ladder and delivery plan mirror (SM handoff)",
+      "status": "in_review",
+      "workProduct": "docs/plans/nextsteps-ado-feature-ladder-plan.md",
+      "version": "1.0.0-draft",
+      "confirmationKey": "confirmation:2d2ce23f-099b-4ca2-b241-cb4a0d344f51:plan:1.0.0-draft"
+    },
+    "ALSAA-17": {
+      "title": "NextSteps P5: Manager reviews + deployment auth migration",
+      "status": "in_progress",
+      "workProduct": "docs/engineering/p5-manager-auth-migration-plan.md",
+      "children": {
+        "ALSAA-28": "P5.1 Manager API (Backend Architect)",
+        "ALSAA-30": "P5.2 Manager web (Software Architect)",
+        "ALSAA-32": "P5.3 Auth migration (blocked ALSAA-13)",
+        "ALSAA-33": "P5.4 Security gate (blocked ALSAA-32)"
+      }
+    },
+    "ALSAA-51": {
+      "title": "In next steps, revamp whole UI/UX, retain sso and its logic",
+      "status": "done",
+      "workProduct": "nextsteps-app/ — Maverick Nebula metaverse UI + Microsoft SSO",
+      "completedAt": "2026-05-31",
+      "recovery": "2026-05-31 — Cursor agent CLI installed; Paperclip adapter PATH fixed; server http://127.0.0.1:3100 healthy",
+      "verification": "npm run build pass; LoginLanyardTeaser wired with lazy R3F lanyard"
+    },
+    "ALSAA-56": {
+      "title": "Foundation: metaverse welcome experience + theme story",
+      "status": "done",
+      "workProduct": "docs/design/metaverse-welcome-experience-spec.md",
+      "paperclipDocument": "welcome-spec",
+      "completedAt": "2026-05-31"
+    },
+    "ALSAA-14": {
+      "title": "NextSteps P2: Trainer session logger + pulse feedback pipeline",
+      "status": "in_progress",
+      "children": {
+        "ALSAA-25": "P2 prep P0 scaffold verify (Backend Architect, todo)",
+        "ALSAA-26": "P2 backend session+pulse API (blocked ALSAA-25)",
+        "ALSAA-27": "P2 frontend wire-up (blocked ALSAA-26, Software Architect)"
+      },
+      "blocker": "Workspace Vite-only; P0 scaffold not landed despite ALSAA-12 done"
+    },
+    "ALSAA-55": {
+      "title": "ALSAA-54 Strategy: master prompt → phased feature matrix",
+      "status": "done",
+      "workProduct": "docs/nextsteps-alsaa54-phased-feature-matrix.md",
+      "paperclipDocument": "ALSAA-55#document-feature-matrix",
+      "completedAt": "2026-05-31",
+      "ceoApprovedAt": "2026-05-31T08:06:50.691Z",
+      "coverage": "62 modules mapped; 8 gaps G-01–G-08 for ALSAA-57",
+      "downstream": "ALSAA-57 unblocked — VP Engineering build orchestration"
+    },
+    "ALSAA-54": {
+      "title": "Master prompt E2E — metaverse UI, welcome experience, all features",
+      "status": "blocked",
+      "blockedBy": "ALSAA-65",
+      "assignee": "Chief of Staff (program monitor)",
+      "workProduct": "Paperclip plan + NEXUS child delegation",
+      "children": {
+        "ALSAA-55": "Strategy: feature matrix — done (CEO approved)",
+        "ALSAA-56": "Foundation: welcome spec — done (CEO approved)",
+        "ALSAA-57": "Build orchestration — in_progress (VP Engineering)",
+        "ALSAA-58": "Wave 1 welcome UX — done (SignInSplash + WelcomeCoach)",
+        "ALSAA-59": "Wave 1 G-01 feedback engine — done",
+        "ALSAA-61": "Wave 2 G-08 privacy/RBAC (CTO) — done",
+        "ALSAA-62": "Wave 2 P7 analytics G-03–G-07 (Backend Architect) — done",
+        "ALSAA-63": "Epic program monitor (Chief of Staff) — heartbeat 1 rollup posted; parent comment deferred (concurrent ALSAA-54 checkout)",
+        "ALSAA-65": "P2/P4/P5 pod hygiene — VP Eng status refresh (todo)"
+      },
+      "workProducts": {
+        "matrix": "docs/nextsteps-alsaa54-phased-feature-matrix.md",
+        "welcome": "docs/design/metaverse-welcome-experience-spec.md",
+        "g01FeedbackEngine": "docs/engineering/g01-feedback-completion-engine.md",
+        "g08PrivacyRbac": "docs/engineering/g08-privacy-rbac-hardening.md",
+        "p7AnalyticsBundle": "docs/engineering/p7-analytics-bundle-g03-g07.md"
+      }
+    },
+    "ALSAA-61": {
+      "title": "ALSAA-54 Wave 2: G-08 Privacy RBAC hardening (E-10)",
+      "status": "done",
+      "workProduct": "docs/engineering/g08-privacy-rbac-hardening.md",
+      "completedAt": "2026-05-31",
+      "verification": "nextsteps-api npm test 74/74",
+      "scope": "Audit logs on sensitive reads, k-anonymity enforcement, pendingMaverickIds stripped from trainer/L&D dashboards, purge-expired-data retention job stub"
+    },
+    "ALSAA-58": {
+      "title": "ALSAA-54 Wave 1: Welcome experience (SignInSplash + WelcomeCoach)",
+      "status": "done",
+      "workProduct": "nextsteps-app/src/components/SignInSplash.jsx, WelcomeCoach.jsx, theme/maverickNebula.js",
+      "completedAt": "2026-05-31",
+      "verification": "nextsteps-app npm test 7/7; npm run build clean"
+    },
+    "ALSAA-62": {
+      "title": "ALSAA-54 Wave 2: P7 Analytics bundle (G-03 to G-07)",
+      "status": "done",
+      "workProduct": "docs/engineering/p7-analytics-bundle-g03-g07.md",
+      "completedAt": "2026-05-31",
+      "verification": "nextsteps-api npm test 74/74; npm run build clean",
+      "scope": "G-03 curriculum copilot, G-04 cohort comparison, G-05 top performers, G-06 executive report job, G-07 reminder timing"
+    },
+    "ALSAA-59": {
+      "title": "ALSAA-54 Wave 1: G-01 Feedback Completion Engine",
+      "status": "done",
+      "workProduct": "docs/engineering/g01-feedback-completion-engine.md",
+      "completedAt": "2026-05-31",
+      "verification": "nextsteps-api npm test 52/52; npm run build clean",
+      "scope": "3-tier reminder job stubs, batch feedback dashboard API, 90% XP bonus hook, pulse webhook extension"
+    }
+  },
+  "adoDelegation": {
+    "status": "planned",
+    "reason": "ADO mirror plan drafted; awaiting ALSAA-11 CEO approval before wit_create_work_item",
+    "delegatedTo": "Scrum Master",
+    "paperclipIssue": "ALSAA-11",
+    "featureLadder": "0.1.0-0.7.0",
+    "adoProject": "Lab AI Tools",
+    "areaPath": "Lab AI Tools\\NextSteps"
+  },
+  "activeStories": [],
+  "closedStories": [],
+  "changelog": [
+    {
+      "date": "2026-05-29",
+      "action": "SM plan — ADO Feature ladder 0.1.0–0.7.0 + routing matrix (ALSAA-11 v1.0.0-draft)"
+    },
+    {
+      "date": "2026-05-29",
+      "action": "Planning deliverable — metaverse UI/UX spec v1.0.0-draft (ALSAA-9)"
+    },
+    {
+      "date": "2026-05-29",
+      "action": "Planning deliverable — architecture appendix (ALSAA-8); ADO mirror requested via SM"
+    },
+    {
+      "date": "2026-05-29",
+      "action": "ALSAA-17 P5 engineering plan + child delegation ALSAA-28/30/32/33"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "Maverick Nebula metaverse UI — R3F scenes, mentor removed, Manager/L&D Executive roles, immersive login + lanyard"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "Holistic master prompt .txt — merged MavX blueprint + hackathon briefs; Mentor omitted; NextSteps rebrand; Trainer vendor auth"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "Paperclip recovery — Cursor agent CLI + ALSAA-51 adapter path restored (port 3100)"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-51 done — metaverse UI/UX revamp verified; login R3F lanyard wired; SSO retained"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-54 CEO triage — NEXUS delegation ALSAA-55/56/57 (Product, Creative, VP Eng)"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "fix(auth): app-admin role switch — Routes key remount + SSO preserve admin role"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-55 done — phased feature matrix (62 modules, 8 gaps G-01–G-08); welcome AC §6 handoff to ALSAA-56"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-62 done — P7 analytics bundle G-03–G-07: API stubs, job handlers, 74 tests pass"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-58 done — role-aware SignInSplash, WelcomeCoach, getWelcomeCopy; vitest 7/7 + build pass"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-54 CEO handoff — Chief of Staff owns epic monitor; matrix snapshot updated (P7 done, theme done, hardening in_progress)"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-63 heartbeat 1 — program rollup: Wave 1 done, Wave 2 executing (ALSAA-61/62), P2/P4/P5 stalled ~2d (VP Eng hygiene)"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-54 CoS monitor — Wave 2 fully closed (ALSAA-61 done); P2/P4/P5 stale since 2026-05-29 flagged for VP Eng"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-65 created — VP Eng hygiene task for stale P2/P4/P5 pods under ALSAA-54"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-54 blocked by ALSAA-65 — stop adapter-limit monitor churn; CoS wakes on blocker resolution"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-63 heartbeat 2 — Wave 2 closed (61/62 done); parent rollup deferred (409 concurrent checkout); monitor in_progress"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-63 heartbeat 3 — no pod delta; parent rollup current (08:40Z); ALSAA-65 VP Eng hygiene todo; monitor in_progress"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-63 heartbeat 4 — ALSAA-54 blocked by ALSAA-65; parent rollup posted; monitor in_progress until epic done"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-63 heartbeat 5 — no delta; ALSAA-65 still todo blocks epic; VP Eng nudge blocked by ACL; monitor in_progress"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "ALSAA-63 heartbeat 6 — no delta; suppress adapter churn; wake on ALSAA-65 done only"
+    },
+    {
+      "date": "2026-05-31",
+      "action": "fix(auth): role switch race — bootstrap once, no splash replay, shell remount on role"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat: immersive landing UX — ThemeToggle removed, music mute fixed, LoginPage.css created, dark-mode locked"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(skill-grove): full 3D interactive tree replaces SVG roadmap — branches=levels, fruits=achievements, OrbitControls"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(ld): TraineeRoster page — 50 mock trainees, pre/post onboarding filter, side-panel slider, onboarding-mail + employee-ID auto-generation, CSV export"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(hyperspeed): NebulaBadge overlay on SignInSplash — Graph API photo, name, employeeId shown on lanyard badge during hyperspeed"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(notifications): PulseFeedback, DeepFeedback, PerformanceReview all dispatch styled in-app toast notifications to relevant parties"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(reports): ReportGenerator CSV export wired; TraineeRoster CSV export added"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "fix(landing): galaxy iframe pointer-events restored to auto; login-landing set to pointer-events: none with interactive children re-enabled; two-column hero+signin layout; stats bar, footer, music toggle, topbar styles fixed"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(css): metaverse.css extended with sk-*, ai-*, fb-* class blocks — SkillGrove full-page 3D tree, AIBuddy nebula chat UI, FeedbackAnalytics dashboard + side-panel all styled"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(ai): Azure OpenAI env vars added to .env (endpoint, key, deployment gpt-5, api-version 2024-05-01-preview)"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "fix(skill-grove): main-content:has(.sk-full-page) overrides padding:0 so 3D canvas fills full viewport without gutters"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(skill-grove): alien planet ground (pink sphere + glow ring + atmosphere) added; camera moved to [0,4,18] fov62; tree origin from planet surface"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "feat(lanyard): NebulaBadge card integrated into physics lanyard via drei Html — white-circle effects preserved, red-circle card design rendered as HTML overlay on card rigidbody"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "fix(headers): MetaversePageHero canvas (GrowthTree/mini 3D scenes) removed from all page headers — noCanvas is now the default"
+    },
+    {
+      "date": "2026-06-01",
+      "action": "fix(login): sign-in card pinned to fixed 430px right grid column; removed x-slide animation on email form switch so modal no longer shifts left"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "fix(landing): music mute/unmute — disable galaxy-sim embed autoplay; parent audio element + postMessage sync; iframe pointer-events none"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "fix(landing): replace unreachable FMA CDN with Web Audio synth; remove music-fail toast; move login Toaster to bottom-center"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "feat(auth): magic-link + OTP flow with optional SMTP; seed dev personal emails; proxy API to port 3003; restore nebula iframe interactivity"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "feat(ld): Recruitment Queue — view unassigned recruits, assign to batch, create new batch; shared ldTraineeStore"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "fix(ld): Assign to batch — pass React trainee/batch state into store; align eligibility + seat counts"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "fix(ld): Assign to batch UX — auto-select batch, side-panel Assign here, clickable button with toasts"
+    },
+    {
+      "date": "2026-06-07",
+      "action": "feat(ld): onboarding mail draft — role, location, date, reporting time, attachment; SMTP template + API"
+    },
+    {
+      "date": "2026-06-14",
+      "action": "feat(sessions): L&D pre-onboarding Google Meet, email+in-app invites, GPT-5 transcript analysis"
+    },
+    {
+      "date": "2026-06-14",
+      "action": "feat(google): Calendar OAuth wired — personal Gmail creates real Meet links; env configured, API rebuilt on 3003"
+    },
+    {
+      "date": "2026-06-16",
+      "action": "fix(ui): Pre-Onboarding Meets + Feedback Analytics button styling — btn base class, ba-modal pattern, fb-chip/fb-tab-btn CSS"
+    }
+  ]
+}

@@ -1,0 +1,6114 @@
+{
+  "currentUser": {
+    "id": "mav-001",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@gmail.com",
+    "role": "maverick",
+    "avatar": null,
+    "batch": "B-2025-13",
+    "track": "GET",
+    "phase": 1,
+    "xp": 685,
+    "level": 1,
+    "levelTitle": "Foundation Builder",
+    "streak": 12,
+    "readinessScore": 40,
+    "stream": null,
+    "joinDate": "2025-01-15",
+    "badges": [
+      "first-spark",
+      "team-player"
+    ],
+    "skills": {
+      "java": 65,
+      "sql": 45,
+      "html_css": 80,
+      "javascript": 70,
+      "angular": 30,
+      "rest_apis": 55,
+      "aws": 20,
+      "communication": 75,
+      "teamwork": 82
+    },
+    "dailyMissions": [
+      {
+        "id": "dm1",
+        "title": "Complete SQL Quiz Revision",
+        "xp": 60,
+        "completed": false,
+        "type": "quiz"
+      },
+      {
+        "id": "dm2",
+        "title": "Submit Pulse Feedback",
+        "xp": 30,
+        "completed": false,
+        "type": "feedback"
+      }
+    ]
+  },
+  "mavericks": [
+    {
+      "id": "mav-001",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@gmail.com",
+      "batch": "B-2025-13",
+      "track": "GET",
+      "phase": 1,
+      "xp": 685,
+      "level": 1,
+      "readinessScore": 40,
+      "stream": null,
+      "attendance": 70,
+      "feedbackRate": 55,
+      "quizAvg": 50,
+      "sentiment": "frustrated",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-002",
+      "name": "Arjun Reddy",
+      "email": "arjun.reddy@gmail.com",
+      "batch": "B-2025-14",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 770,
+      "level": 1,
+      "readinessScore": 47,
+      "stream": null,
+      "attendance": 71,
+      "feedbackRate": 56,
+      "quizAvg": 51,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-003",
+      "name": "Sneha Gupta",
+      "email": "sneha.gupta@gmail.com",
+      "batch": "B-2025-15",
+      "track": "GET",
+      "phase": 3,
+      "xp": 855,
+      "level": 1,
+      "readinessScore": 54,
+      "stream": "Digital",
+      "attendance": 72,
+      "feedbackRate": 57,
+      "quizAvg": 52,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-004",
+      "name": "Rahul Nair",
+      "email": "rahul.nair@gmail.com",
+      "batch": "B-2025-16",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 940,
+      "level": 1,
+      "readinessScore": 61,
+      "stream": "Product Engineering",
+      "attendance": 73,
+      "feedbackRate": 58,
+      "quizAvg": 53,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-005",
+      "name": "Ananya Joshi",
+      "email": "ananya.joshi@gmail.com",
+      "batch": "B-2025-17",
+      "track": "GET",
+      "phase": 1,
+      "xp": 1025,
+      "level": 1,
+      "readinessScore": 68,
+      "stream": null,
+      "attendance": 74,
+      "feedbackRate": 59,
+      "quizAvg": 54,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-006",
+      "name": "Vikram Iyer",
+      "email": "vikram.iyer@gmail.com",
+      "batch": "B-2025-13",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 1110,
+      "level": 1,
+      "readinessScore": 75,
+      "stream": null,
+      "attendance": 75,
+      "feedbackRate": 60,
+      "quizAvg": 55,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-007",
+      "name": "Kavya Pillai",
+      "email": "kavya.pillai@gmail.com",
+      "batch": "B-2025-14",
+      "track": "GET",
+      "phase": 3,
+      "xp": 1195,
+      "level": 1,
+      "readinessScore": 82,
+      "stream": "Product Engineering",
+      "attendance": 76,
+      "feedbackRate": 61,
+      "quizAvg": 56,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-008",
+      "name": "Deepak Das",
+      "email": "deepak.das@gmail.com",
+      "batch": "B-2025-15",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 1280,
+      "level": 1,
+      "readinessScore": 89,
+      "stream": "Analytics",
+      "attendance": 77,
+      "feedbackRate": 62,
+      "quizAvg": 57,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-009",
+      "name": "Meera Chatterjee",
+      "email": "meera.chatterjee@gmail.com",
+      "batch": "B-2025-16",
+      "track": "GET",
+      "phase": 1,
+      "xp": 1365,
+      "level": 1,
+      "readinessScore": 46,
+      "stream": null,
+      "attendance": 78,
+      "feedbackRate": 63,
+      "quizAvg": 58,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-010",
+      "name": "Rohan Saxena",
+      "email": "rohan.saxena@gmail.com",
+      "batch": "B-2025-17",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 1450,
+      "level": 1,
+      "readinessScore": 53,
+      "stream": null,
+      "attendance": 79,
+      "feedbackRate": 64,
+      "quizAvg": 59,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-011",
+      "name": "Isha Sharma",
+      "email": "isha.sharma@gmail.com",
+      "batch": "B-2025-13",
+      "track": "GET",
+      "phase": 3,
+      "xp": 1535,
+      "level": 1,
+      "readinessScore": 60,
+      "stream": "Analytics",
+      "attendance": 80,
+      "feedbackRate": 65,
+      "quizAvg": 60,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-012",
+      "name": "Karan Reddy",
+      "email": "karan.reddy@gmail.com",
+      "batch": "B-2025-14",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 1620,
+      "level": 2,
+      "readinessScore": 67,
+      "stream": "Digital",
+      "attendance": 81,
+      "feedbackRate": 66,
+      "quizAvg": 61,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-013",
+      "name": "Divya Gupta",
+      "email": "divya.gupta@gmail.com",
+      "batch": "B-2025-15",
+      "track": "GET",
+      "phase": 1,
+      "xp": 1705,
+      "level": 2,
+      "readinessScore": 74,
+      "stream": null,
+      "attendance": 82,
+      "feedbackRate": 67,
+      "quizAvg": 62,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-014",
+      "name": "Nikhil Nair",
+      "email": "nikhil.nair@gmail.com",
+      "batch": "B-2025-16",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 1790,
+      "level": 2,
+      "readinessScore": 81,
+      "stream": null,
+      "attendance": 83,
+      "feedbackRate": 68,
+      "quizAvg": 63,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-015",
+      "name": "Pooja Joshi",
+      "email": "pooja.joshi@gmail.com",
+      "batch": "B-2025-17",
+      "track": "GET",
+      "phase": 3,
+      "xp": 1875,
+      "level": 2,
+      "readinessScore": 88,
+      "stream": "Digital",
+      "attendance": 84,
+      "feedbackRate": 69,
+      "quizAvg": 64,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-016",
+      "name": "Aditya Iyer",
+      "email": "aditya.iyer@gmail.com",
+      "batch": "B-2025-13",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 1960,
+      "level": 2,
+      "readinessScore": 45,
+      "stream": "Product Engineering",
+      "attendance": 85,
+      "feedbackRate": 70,
+      "quizAvg": 65,
+      "sentiment": "neutral",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-017",
+      "name": "Riya Pillai",
+      "email": "riya.pillai@gmail.com",
+      "batch": "B-2025-14",
+      "track": "GET",
+      "phase": 1,
+      "xp": 2045,
+      "level": 2,
+      "readinessScore": 52,
+      "stream": null,
+      "attendance": 86,
+      "feedbackRate": 71,
+      "quizAvg": 66,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-018",
+      "name": "Suresh Das",
+      "email": "suresh.das@gmail.com",
+      "batch": "B-2025-15",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 2130,
+      "level": 2,
+      "readinessScore": 59,
+      "stream": null,
+      "attendance": 87,
+      "feedbackRate": 72,
+      "quizAvg": 67,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-019",
+      "name": "Lakshmi Chatterjee",
+      "email": "lakshmi.chatterjee@gmail.com",
+      "batch": "B-2025-16",
+      "track": "GET",
+      "phase": 3,
+      "xp": 2215,
+      "level": 2,
+      "readinessScore": 66,
+      "stream": "Product Engineering",
+      "attendance": 88,
+      "feedbackRate": 73,
+      "quizAvg": 68,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-020",
+      "name": "Manoj Saxena",
+      "email": "manoj.saxena@gmail.com",
+      "batch": "B-2025-17",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 2300,
+      "level": 2,
+      "readinessScore": 73,
+      "stream": "Analytics",
+      "attendance": 89,
+      "feedbackRate": 74,
+      "quizAvg": 69,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-021",
+      "name": "Neha Sharma",
+      "email": "neha.sharma@gmail.com",
+      "batch": "B-2025-13",
+      "track": "GET",
+      "phase": 1,
+      "xp": 2385,
+      "level": 2,
+      "readinessScore": 80,
+      "stream": null,
+      "attendance": 90,
+      "feedbackRate": 75,
+      "quizAvg": 70,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-022",
+      "name": "Amit Reddy",
+      "email": "amit.reddy@gmail.com",
+      "batch": "B-2025-14",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 2470,
+      "level": 2,
+      "readinessScore": 87,
+      "stream": null,
+      "attendance": 91,
+      "feedbackRate": 76,
+      "quizAvg": 71,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-023",
+      "name": "Tanvi Gupta",
+      "email": "tanvi.gupta@gmail.com",
+      "batch": "B-2025-15",
+      "track": "GET",
+      "phase": 3,
+      "xp": 2555,
+      "level": 2,
+      "readinessScore": 44,
+      "stream": "Analytics",
+      "attendance": 92,
+      "feedbackRate": 77,
+      "quizAvg": 72,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-024",
+      "name": "Ravi Nair",
+      "email": "ravi.nair@gmail.com",
+      "batch": "B-2025-16",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 2640,
+      "level": 3,
+      "readinessScore": 51,
+      "stream": "Digital",
+      "attendance": 93,
+      "feedbackRate": 78,
+      "quizAvg": 73,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-025",
+      "name": "Shreya Joshi",
+      "email": "shreya.joshi@gmail.com",
+      "batch": "B-2025-17",
+      "track": "GET",
+      "phase": 1,
+      "xp": 2725,
+      "level": 3,
+      "readinessScore": 58,
+      "stream": null,
+      "attendance": 94,
+      "feedbackRate": 79,
+      "quizAvg": 74,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-026",
+      "name": "Priya Iyer",
+      "email": "priya.iyer@gmail.com",
+      "batch": "B-2025-13",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 2810,
+      "level": 3,
+      "readinessScore": 65,
+      "stream": null,
+      "attendance": 95,
+      "feedbackRate": 80,
+      "quizAvg": 75,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-027",
+      "name": "Arjun Pillai",
+      "email": "arjun.pillai@gmail.com",
+      "batch": "B-2025-14",
+      "track": "GET",
+      "phase": 3,
+      "xp": 2895,
+      "level": 3,
+      "readinessScore": 72,
+      "stream": "Digital",
+      "attendance": 96,
+      "feedbackRate": 81,
+      "quizAvg": 76,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-028",
+      "name": "Sneha Das",
+      "email": "sneha.das@gmail.com",
+      "batch": "B-2025-15",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 2980,
+      "level": 3,
+      "readinessScore": 79,
+      "stream": "Product Engineering",
+      "attendance": 97,
+      "feedbackRate": 82,
+      "quizAvg": 77,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-029",
+      "name": "Rahul Chatterjee",
+      "email": "rahul.chatterjee@gmail.com",
+      "batch": "B-2025-16",
+      "track": "GET",
+      "phase": 1,
+      "xp": 3065,
+      "level": 3,
+      "readinessScore": 86,
+      "stream": null,
+      "attendance": 70,
+      "feedbackRate": 83,
+      "quizAvg": 78,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-030",
+      "name": "Ananya Saxena",
+      "email": "ananya.saxena@gmail.com",
+      "batch": "B-2025-17",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 3150,
+      "level": 3,
+      "readinessScore": 43,
+      "stream": null,
+      "attendance": 71,
+      "feedbackRate": 84,
+      "quizAvg": 79,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-031",
+      "name": "Vikram Sharma",
+      "email": "vikram.sharma@gmail.com",
+      "batch": "B-2025-13",
+      "track": "GET",
+      "phase": 3,
+      "xp": 3235,
+      "level": 3,
+      "readinessScore": 50,
+      "stream": "Product Engineering",
+      "attendance": 72,
+      "feedbackRate": 85,
+      "quizAvg": 80,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-032",
+      "name": "Kavya Reddy",
+      "email": "kavya.reddy@gmail.com",
+      "batch": "B-2025-14",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 3320,
+      "level": 3,
+      "readinessScore": 57,
+      "stream": "Analytics",
+      "attendance": 73,
+      "feedbackRate": 86,
+      "quizAvg": 81,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-033",
+      "name": "Deepak Gupta",
+      "email": "deepak.gupta@gmail.com",
+      "batch": "B-2025-15",
+      "track": "GET",
+      "phase": 1,
+      "xp": 3405,
+      "level": 3,
+      "readinessScore": 64,
+      "stream": null,
+      "attendance": 74,
+      "feedbackRate": 87,
+      "quizAvg": 82,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-034",
+      "name": "Meera Nair",
+      "email": "meera.nair@gmail.com",
+      "batch": "B-2025-16",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 3490,
+      "level": 3,
+      "readinessScore": 71,
+      "stream": null,
+      "attendance": 75,
+      "feedbackRate": 88,
+      "quizAvg": 83,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-035",
+      "name": "Rohan Joshi",
+      "email": "rohan.joshi@gmail.com",
+      "batch": "B-2025-17",
+      "track": "GET",
+      "phase": 3,
+      "xp": 3575,
+      "level": 3,
+      "readinessScore": 78,
+      "stream": "Analytics",
+      "attendance": 76,
+      "feedbackRate": 89,
+      "quizAvg": 84,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-036",
+      "name": "Isha Iyer",
+      "email": "isha.iyer@gmail.com",
+      "batch": "B-2025-13",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 3660,
+      "level": 4,
+      "readinessScore": 85,
+      "stream": "Digital",
+      "attendance": 77,
+      "feedbackRate": 90,
+      "quizAvg": 85,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-037",
+      "name": "Karan Pillai",
+      "email": "karan.pillai@gmail.com",
+      "batch": "B-2025-14",
+      "track": "GET",
+      "phase": 1,
+      "xp": 3745,
+      "level": 4,
+      "readinessScore": 42,
+      "stream": null,
+      "attendance": 78,
+      "feedbackRate": 91,
+      "quizAvg": 86,
+      "sentiment": "neutral",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-038",
+      "name": "Divya Das",
+      "email": "divya.das@gmail.com",
+      "batch": "B-2025-15",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 3830,
+      "level": 4,
+      "readinessScore": 49,
+      "stream": null,
+      "attendance": 79,
+      "feedbackRate": 92,
+      "quizAvg": 87,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-039",
+      "name": "Nikhil Chatterjee",
+      "email": "nikhil.chatterjee@gmail.com",
+      "batch": "B-2025-16",
+      "track": "GET",
+      "phase": 3,
+      "xp": 3915,
+      "level": 4,
+      "readinessScore": 56,
+      "stream": "Digital",
+      "attendance": 80,
+      "feedbackRate": 93,
+      "quizAvg": 88,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-040",
+      "name": "Pooja Saxena",
+      "email": "pooja.saxena@gmail.com",
+      "batch": "B-2025-17",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 4000,
+      "level": 4,
+      "readinessScore": 63,
+      "stream": "Product Engineering",
+      "attendance": 81,
+      "feedbackRate": 94,
+      "quizAvg": 89,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-041",
+      "name": "Aditya Sharma",
+      "email": "aditya.sharma@gmail.com",
+      "batch": "B-2025-13",
+      "track": "GET",
+      "phase": 1,
+      "xp": 4085,
+      "level": 4,
+      "readinessScore": 70,
+      "stream": null,
+      "attendance": 82,
+      "feedbackRate": 95,
+      "quizAvg": 90,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-042",
+      "name": "Riya Reddy",
+      "email": "riya.reddy@gmail.com",
+      "batch": "B-2025-14",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 4170,
+      "level": 4,
+      "readinessScore": 77,
+      "stream": null,
+      "attendance": 83,
+      "feedbackRate": 96,
+      "quizAvg": 91,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-043",
+      "name": "Suresh Gupta",
+      "email": "suresh.gupta@gmail.com",
+      "batch": "B-2025-15",
+      "track": "GET",
+      "phase": 3,
+      "xp": 4255,
+      "level": 4,
+      "readinessScore": 84,
+      "stream": "Product Engineering",
+      "attendance": 84,
+      "feedbackRate": 97,
+      "quizAvg": 92,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-044",
+      "name": "Lakshmi Nair",
+      "email": "lakshmi.nair@gmail.com",
+      "batch": "B-2025-16",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 4340,
+      "level": 4,
+      "readinessScore": 41,
+      "stream": "Analytics",
+      "attendance": 85,
+      "feedbackRate": 98,
+      "quizAvg": 93,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-045",
+      "name": "Manoj Joshi",
+      "email": "manoj.joshi@gmail.com",
+      "batch": "B-2025-17",
+      "track": "GET",
+      "phase": 1,
+      "xp": 4425,
+      "level": 4,
+      "readinessScore": 48,
+      "stream": null,
+      "attendance": 86,
+      "feedbackRate": 55,
+      "quizAvg": 94,
+      "sentiment": "positive",
+      "riskFlag": true
+    },
+    {
+      "id": "mav-046",
+      "name": "Neha Iyer",
+      "email": "neha.iyer@gmail.com",
+      "batch": "B-2025-13",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 4510,
+      "level": 4,
+      "readinessScore": 55,
+      "stream": null,
+      "attendance": 87,
+      "feedbackRate": 56,
+      "quizAvg": 50,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-047",
+      "name": "Amit Pillai",
+      "email": "amit.pillai@gmail.com",
+      "batch": "B-2025-14",
+      "track": "GET",
+      "phase": 3,
+      "xp": 4595,
+      "level": 4,
+      "readinessScore": 62,
+      "stream": "Analytics",
+      "attendance": 88,
+      "feedbackRate": 57,
+      "quizAvg": 51,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-048",
+      "name": "Tanvi Das",
+      "email": "tanvi.das@gmail.com",
+      "batch": "B-2025-15",
+      "track": "PGET",
+      "phase": 4,
+      "xp": 4680,
+      "level": 5,
+      "readinessScore": 69,
+      "stream": "Digital",
+      "attendance": 89,
+      "feedbackRate": 58,
+      "quizAvg": 52,
+      "sentiment": "positive",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-049",
+      "name": "Ravi Chatterjee",
+      "email": "ravi.chatterjee@gmail.com",
+      "batch": "B-2025-16",
+      "track": "GET",
+      "phase": 1,
+      "xp": 4765,
+      "level": 5,
+      "readinessScore": 76,
+      "stream": null,
+      "attendance": 90,
+      "feedbackRate": 59,
+      "quizAvg": 53,
+      "sentiment": "neutral",
+      "riskFlag": false
+    },
+    {
+      "id": "mav-050",
+      "name": "Shreya Saxena",
+      "email": "shreya.saxena@gmail.com",
+      "batch": "B-2025-17",
+      "track": "PGET",
+      "phase": 2,
+      "xp": 4850,
+      "level": 5,
+      "readinessScore": 83,
+      "stream": null,
+      "attendance": 91,
+      "feedbackRate": 60,
+      "quizAvg": 54,
+      "sentiment": "frustrated",
+      "riskFlag": false
+    }
+  ],
+  "batches": [
+    {
+      "id": "B-2025-13",
+      "name": "Batch 13 - 2025",
+      "phase": 0,
+      "maverickCount": 10,
+      "health": "amber",
+      "feedbackCompletion": 65,
+      "avgReadiness": 55,
+      "trainer": "Rajesh Menon",
+      "startDate": "2025-01-15",
+      "track": "GET"
+    },
+    {
+      "id": "B-2025-14",
+      "name": "Batch 14 - 2025",
+      "phase": 1,
+      "maverickCount": 10,
+      "health": "green",
+      "feedbackCompletion": 70,
+      "avgReadiness": 62,
+      "trainer": "Sunita Iyer",
+      "startDate": "2025-02-15",
+      "track": "PGET"
+    },
+    {
+      "id": "B-2025-15",
+      "name": "Batch 15 - 2025",
+      "phase": 2,
+      "maverickCount": 10,
+      "health": "green",
+      "feedbackCompletion": 75,
+      "avgReadiness": 69,
+      "trainer": "Amit Kulkarni",
+      "startDate": "2025-03-15",
+      "track": "GET"
+    },
+    {
+      "id": "B-2025-16",
+      "name": "Batch 16 - 2025",
+      "phase": 3,
+      "maverickCount": 10,
+      "health": "amber",
+      "feedbackCompletion": 80,
+      "avgReadiness": 76,
+      "trainer": "Priya Nambiar",
+      "startDate": "2025-04-15",
+      "track": "PGET"
+    },
+    {
+      "id": "B-2025-17",
+      "name": "Batch 17 - 2025",
+      "phase": 0,
+      "maverickCount": 10,
+      "health": "green",
+      "feedbackCompletion": 85,
+      "avgReadiness": 83,
+      "trainer": "Karthik Subramanian",
+      "startDate": "2025-01-15",
+      "track": "GET"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ses-001",
+      "title": "Java OOP",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 1,
+      "date": "2025-05-01",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 88,
+      "avgClarity": 3.2,
+      "avgPace": 3.4,
+      "moodDistribution": {
+        "great": 0,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 72
+    },
+    {
+      "id": "ses-002",
+      "title": "SQL Joins",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 2,
+      "date": "2025-05-02",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 76,
+      "avgClarity": 3.1,
+      "avgPace": 3.6,
+      "moodDistribution": {
+        "great": 1,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 61
+    },
+    {
+      "id": "ses-003",
+      "title": "REST APIs",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 3,
+      "date": "2025-05-03",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 77,
+      "avgClarity": 3.2,
+      "avgPace": 3.7,
+      "moodDistribution": {
+        "great": 2,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 62
+    },
+    {
+      "id": "ses-004",
+      "title": "Angular Components",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 1,
+      "date": "2025-05-04",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 78,
+      "avgClarity": 3.3,
+      "avgPace": 3.8,
+      "moodDistribution": {
+        "great": 3,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 63
+    },
+    {
+      "id": "ses-005",
+      "title": "AWS Lab",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 2,
+      "date": "2025-05-05",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 79,
+      "avgClarity": 3.4,
+      "avgPace": 3.9,
+      "moodDistribution": {
+        "great": 0,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 64
+    },
+    {
+      "id": "ses-006",
+      "title": "Soft Skills",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 3,
+      "date": "2025-05-06",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 89,
+      "avgClarity": 3.3,
+      "avgPace": 3.5,
+      "moodDistribution": {
+        "great": 1,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 74
+    },
+    {
+      "id": "ses-007",
+      "title": "Java OOP",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 1,
+      "date": "2025-05-07",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 81,
+      "avgClarity": 3.6,
+      "avgPace": 4.1,
+      "moodDistribution": {
+        "great": 2,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 66
+    },
+    {
+      "id": "ses-008",
+      "title": "SQL Joins",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 2,
+      "date": "2025-05-08",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 82,
+      "avgClarity": 3.7,
+      "avgPace": 4.2,
+      "moodDistribution": {
+        "great": 3,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 67
+    },
+    {
+      "id": "ses-009",
+      "title": "REST APIs",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 3,
+      "date": "2025-05-09",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 83,
+      "avgClarity": 3.8,
+      "avgPace": 4.3,
+      "moodDistribution": {
+        "great": 0,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 68
+    },
+    {
+      "id": "ses-010",
+      "title": "Angular Components",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 1,
+      "date": "2025-05-10",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 84,
+      "avgClarity": 3.9,
+      "avgPace": 4.4,
+      "moodDistribution": {
+        "great": 1,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 69
+    },
+    {
+      "id": "ses-011",
+      "title": "AWS Lab",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 2,
+      "date": "2025-05-11",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 90,
+      "avgClarity": 3.4,
+      "avgPace": 3.6,
+      "moodDistribution": {
+        "great": 2,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 76
+    },
+    {
+      "id": "ses-012",
+      "title": "Soft Skills",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 3,
+      "date": "2025-05-12",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 86,
+      "avgClarity": 4.1,
+      "avgPace": 4.6,
+      "moodDistribution": {
+        "great": 3,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 71
+    },
+    {
+      "id": "ses-013",
+      "title": "Java OOP",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 1,
+      "date": "2025-05-13",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 87,
+      "avgClarity": 4.2,
+      "avgPace": 4.7,
+      "moodDistribution": {
+        "great": 0,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 72
+    },
+    {
+      "id": "ses-014",
+      "title": "SQL Joins",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 2,
+      "date": "2025-05-14",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 88,
+      "avgClarity": 4.3,
+      "avgPace": 4.8,
+      "moodDistribution": {
+        "great": 1,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 73
+    },
+    {
+      "id": "ses-015",
+      "title": "REST APIs",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 3,
+      "date": "2025-05-15",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 89,
+      "avgClarity": 4.4,
+      "avgPace": 4.9,
+      "moodDistribution": {
+        "great": 2,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 74
+    },
+    {
+      "id": "ses-016",
+      "title": "Angular Components",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 1,
+      "date": "2025-05-16",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 91,
+      "avgClarity": 3.5,
+      "avgPace": 3.7,
+      "moodDistribution": {
+        "great": 3,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 78
+    },
+    {
+      "id": "ses-017",
+      "title": "AWS Lab",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 2,
+      "date": "2025-05-17",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 91,
+      "avgClarity": 4.6,
+      "avgPace": 3.6,
+      "moodDistribution": {
+        "great": 0,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 76
+    },
+    {
+      "id": "ses-018",
+      "title": "Soft Skills",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 3,
+      "date": "2025-05-18",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 92,
+      "avgClarity": 4.7,
+      "avgPace": 3.7,
+      "moodDistribution": {
+        "great": 1,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 77
+    },
+    {
+      "id": "ses-019",
+      "title": "Java OOP",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 1,
+      "date": "2025-05-19",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 93,
+      "avgClarity": 4.8,
+      "avgPace": 3.8,
+      "moodDistribution": {
+        "great": 2,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 78
+    },
+    {
+      "id": "ses-020",
+      "title": "SQL Joins",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 2,
+      "date": "2025-05-20",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 94,
+      "avgClarity": 4.9,
+      "avgPace": 3.9,
+      "moodDistribution": {
+        "great": 3,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 79
+    },
+    {
+      "id": "ses-021",
+      "title": "REST APIs",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 3,
+      "date": "2025-05-21",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 92,
+      "avgClarity": 3.6,
+      "avgPace": 3.8,
+      "moodDistribution": {
+        "great": 0,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 80
+    },
+    {
+      "id": "ses-022",
+      "title": "Angular Components",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 1,
+      "date": "2025-05-22",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 96,
+      "avgClarity": 3.1,
+      "avgPace": 4.1,
+      "moodDistribution": {
+        "great": 1,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 81
+    },
+    {
+      "id": "ses-023",
+      "title": "AWS Lab",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 2,
+      "date": "2025-05-23",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 97,
+      "avgClarity": 3.2,
+      "avgPace": 4.2,
+      "moodDistribution": {
+        "great": 2,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 82
+    },
+    {
+      "id": "ses-024",
+      "title": "Soft Skills",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 3,
+      "date": "2025-05-24",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 98,
+      "avgClarity": 3.3,
+      "avgPace": 4.3,
+      "moodDistribution": {
+        "great": 3,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 83
+    },
+    {
+      "id": "ses-025",
+      "title": "Java OOP",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 1,
+      "date": "2025-05-25",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 75,
+      "avgClarity": 3.4,
+      "avgPace": 4.4,
+      "moodDistribution": {
+        "great": 0,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 84
+    },
+    {
+      "id": "ses-026",
+      "title": "SQL Joins",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 2,
+      "date": "2025-05-26",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 93,
+      "avgClarity": 3.5,
+      "avgPace": 3.9,
+      "moodDistribution": {
+        "great": 1,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 82
+    },
+    {
+      "id": "ses-027",
+      "title": "REST APIs",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 3,
+      "date": "2025-05-27",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 77,
+      "avgClarity": 3.6,
+      "avgPace": 4.6,
+      "moodDistribution": {
+        "great": 2,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 86
+    },
+    {
+      "id": "ses-028",
+      "title": "Angular Components",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 1,
+      "date": "2025-05-28",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 78,
+      "avgClarity": 3.7,
+      "avgPace": 4.7,
+      "moodDistribution": {
+        "great": 3,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 87
+    },
+    {
+      "id": "ses-029",
+      "title": "AWS Lab",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 2,
+      "date": "2025-05-01",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 79,
+      "avgClarity": 3.8,
+      "avgPace": 4.8,
+      "moodDistribution": {
+        "great": 0,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 88
+    },
+    {
+      "id": "ses-030",
+      "title": "Soft Skills",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 3,
+      "date": "2025-05-02",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 80,
+      "avgClarity": 3.9,
+      "avgPace": 4.9,
+      "moodDistribution": {
+        "great": 1,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 89
+    },
+    {
+      "id": "ses-031",
+      "title": "Java OOP",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 1,
+      "date": "2025-05-03",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 94,
+      "avgClarity": 3.7,
+      "avgPace": 4,
+      "moodDistribution": {
+        "great": 2,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 84
+    },
+    {
+      "id": "ses-032",
+      "title": "SQL Joins",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 2,
+      "date": "2025-05-04",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 82,
+      "avgClarity": 4.1,
+      "avgPace": 3.6,
+      "moodDistribution": {
+        "great": 3,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 91
+    },
+    {
+      "id": "ses-033",
+      "title": "REST APIs",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 3,
+      "date": "2025-05-05",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 83,
+      "avgClarity": 4.2,
+      "avgPace": 3.7,
+      "moodDistribution": {
+        "great": 0,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 92
+    },
+    {
+      "id": "ses-034",
+      "title": "Angular Components",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 1,
+      "date": "2025-05-06",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 84,
+      "avgClarity": 4.3,
+      "avgPace": 3.8,
+      "moodDistribution": {
+        "great": 1,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 93
+    },
+    {
+      "id": "ses-035",
+      "title": "AWS Lab",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 2,
+      "date": "2025-05-07",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 85,
+      "avgClarity": 4.4,
+      "avgPace": 3.9,
+      "moodDistribution": {
+        "great": 2,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 94
+    },
+    {
+      "id": "ses-036",
+      "title": "Soft Skills",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 3,
+      "date": "2025-05-08",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 95,
+      "avgClarity": 3.8,
+      "avgPace": 4.1,
+      "moodDistribution": {
+        "great": 3,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 86
+    },
+    {
+      "id": "ses-037",
+      "title": "Java OOP",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 1,
+      "date": "2025-05-09",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 87,
+      "avgClarity": 4.6,
+      "avgPace": 4.1,
+      "moodDistribution": {
+        "great": 0,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 96
+    },
+    {
+      "id": "ses-038",
+      "title": "SQL Joins",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 2,
+      "date": "2025-05-10",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 88,
+      "avgClarity": 4.7,
+      "avgPace": 4.2,
+      "moodDistribution": {
+        "great": 1,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 97
+    },
+    {
+      "id": "ses-039",
+      "title": "REST APIs",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 3,
+      "date": "2025-05-11",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 89,
+      "avgClarity": 4.8,
+      "avgPace": 4.3,
+      "moodDistribution": {
+        "great": 2,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 98
+    },
+    {
+      "id": "ses-040",
+      "title": "Angular Components",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 1,
+      "date": "2025-05-12",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 90,
+      "avgClarity": 4.9,
+      "avgPace": 4.4,
+      "moodDistribution": {
+        "great": 3,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 99
+    },
+    {
+      "id": "ses-041",
+      "title": "AWS Lab",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 2,
+      "date": "2025-05-13",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 96,
+      "avgClarity": 3.4,
+      "avgPace": 3.8,
+      "moodDistribution": {
+        "great": 0,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 88
+    },
+    {
+      "id": "ses-042",
+      "title": "Soft Skills",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 3,
+      "date": "2025-05-14",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 92,
+      "avgClarity": 3.1,
+      "avgPace": 4.6,
+      "moodDistribution": {
+        "great": 1,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 61
+    },
+    {
+      "id": "ses-043",
+      "title": "Java OOP",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 1,
+      "date": "2025-05-15",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 93,
+      "avgClarity": 3.2,
+      "avgPace": 4.7,
+      "moodDistribution": {
+        "great": 2,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 62
+    },
+    {
+      "id": "ses-044",
+      "title": "SQL Joins",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 2,
+      "date": "2025-05-16",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 94,
+      "avgClarity": 3.3,
+      "avgPace": 4.8,
+      "moodDistribution": {
+        "great": 3,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 63
+    },
+    {
+      "id": "ses-045",
+      "title": "REST APIs",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 3,
+      "date": "2025-05-17",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 95,
+      "avgClarity": 3.4,
+      "avgPace": 4.9,
+      "moodDistribution": {
+        "great": 0,
+        "good": 2,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 64
+    },
+    {
+      "id": "ses-046",
+      "title": "Angular Components",
+      "trainer": "Rajesh Menon",
+      "trainerId": "tr-001",
+      "batch": "B-2025-13",
+      "phase": 1,
+      "date": "2025-05-18",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 97,
+      "avgClarity": 3.6,
+      "avgPace": 4,
+      "moodDistribution": {
+        "great": 1,
+        "good": 0,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 90
+    },
+    {
+      "id": "ses-047",
+      "title": "AWS Lab",
+      "trainer": "Sunita Iyer",
+      "trainerId": "tr-002",
+      "batch": "B-2025-14",
+      "phase": 2,
+      "date": "2025-05-19",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 97,
+      "avgClarity": 3.6,
+      "avgPace": 3.6,
+      "moodDistribution": {
+        "great": 2,
+        "good": 1,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 66
+    },
+    {
+      "id": "ses-048",
+      "title": "Soft Skills",
+      "trainer": "Amit Kulkarni",
+      "trainerId": "tr-003",
+      "batch": "B-2025-15",
+      "phase": 3,
+      "date": "2025-05-20",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 98,
+      "avgClarity": 3.7,
+      "avgPace": 3.7,
+      "moodDistribution": {
+        "great": 3,
+        "good": 2,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 67
+    },
+    {
+      "id": "ses-049",
+      "title": "Java OOP",
+      "trainer": "Priya Nambiar",
+      "trainerId": "tr-004",
+      "batch": "B-2025-16",
+      "phase": 1,
+      "date": "2025-05-21",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 75,
+      "avgClarity": 3.8,
+      "avgPace": 3.8,
+      "moodDistribution": {
+        "great": 0,
+        "good": 0,
+        "okay": 0,
+        "confused": 0
+      },
+      "feedbackCompletion": 68
+    },
+    {
+      "id": "ses-050",
+      "title": "SQL Joins",
+      "trainer": "Karthik Subramanian",
+      "trainerId": "tr-005",
+      "batch": "B-2025-17",
+      "phase": 2,
+      "date": "2025-05-22",
+      "time": "2:00 PM",
+      "duration": "2 hours",
+      "topic": "Curriculum module",
+      "status": "completed",
+      "attendanceRate": 76,
+      "avgClarity": 3.9,
+      "avgPace": 3.9,
+      "moodDistribution": {
+        "great": 1,
+        "good": 1,
+        "okay": 1,
+        "confused": 1
+      },
+      "feedbackCompletion": 69
+    }
+  ],
+  "trainers": [
+    {
+      "id": "tr-001",
+      "name": "Rajesh Menon",
+      "hexId": "HEX-TR-4000",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 3.5,
+      "avgSessionScore": 3.8,
+      "sessionsDelivered": 10,
+      "topTrainer": true
+    },
+    {
+      "id": "tr-002",
+      "name": "Sunita Iyer",
+      "hexId": "HEX-TR-4001",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 3.6,
+      "avgSessionScore": 3.9,
+      "sessionsDelivered": 11,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-003",
+      "name": "Amit Kulkarni",
+      "hexId": "HEX-TR-4002",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 3.7,
+      "avgSessionScore": 4,
+      "sessionsDelivered": 12,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-004",
+      "name": "Priya Nambiar",
+      "hexId": "HEX-TR-4003",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 3.8,
+      "avgSessionScore": 4.1,
+      "sessionsDelivered": 13,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-005",
+      "name": "Karthik Subramanian",
+      "hexId": "HEX-TR-4004",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 3.9,
+      "avgSessionScore": 4.2,
+      "sessionsDelivered": 14,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-006",
+      "name": "Rajesh Menon 5",
+      "hexId": "HEX-TR-4005",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 4,
+      "avgSessionScore": 4.3,
+      "sessionsDelivered": 15,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-007",
+      "name": "Sunita Iyer 6",
+      "hexId": "HEX-TR-4006",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 4.1,
+      "avgSessionScore": 4.3999999999999995,
+      "sessionsDelivered": 16,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-008",
+      "name": "Amit Kulkarni 7",
+      "hexId": "HEX-TR-4007",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 4.2,
+      "avgSessionScore": 4.5,
+      "sessionsDelivered": 17,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-009",
+      "name": "Priya Nambiar 8",
+      "hexId": "HEX-TR-4008",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 4.3,
+      "avgSessionScore": 4.6,
+      "sessionsDelivered": 18,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-010",
+      "name": "Karthik Subramanian 9",
+      "hexId": "HEX-TR-4009",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 4.4,
+      "avgSessionScore": 4.7,
+      "sessionsDelivered": 19,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-011",
+      "name": "Rajesh Menon 10",
+      "hexId": "HEX-TR-4010",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 4.5,
+      "avgSessionScore": 4.8,
+      "sessionsDelivered": 20,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-012",
+      "name": "Sunita Iyer 11",
+      "hexId": "HEX-TR-4011",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 4.6,
+      "avgSessionScore": 4.9,
+      "sessionsDelivered": 21,
+      "topTrainer": true
+    },
+    {
+      "id": "tr-013",
+      "name": "Amit Kulkarni 12",
+      "hexId": "HEX-TR-4012",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 4.7,
+      "avgSessionScore": 3.8,
+      "sessionsDelivered": 22,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-014",
+      "name": "Priya Nambiar 13",
+      "hexId": "HEX-TR-4013",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 4.8,
+      "avgSessionScore": 3.9,
+      "sessionsDelivered": 23,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-015",
+      "name": "Karthik Subramanian 14",
+      "hexId": "HEX-TR-4014",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 4.9,
+      "avgSessionScore": 4,
+      "sessionsDelivered": 24,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-016",
+      "name": "Rajesh Menon 15",
+      "hexId": "HEX-TR-4015",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 3.5,
+      "avgSessionScore": 4.1,
+      "sessionsDelivered": 25,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-017",
+      "name": "Sunita Iyer 16",
+      "hexId": "HEX-TR-4016",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 3.6,
+      "avgSessionScore": 4.2,
+      "sessionsDelivered": 26,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-018",
+      "name": "Amit Kulkarni 17",
+      "hexId": "HEX-TR-4017",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 3.7,
+      "avgSessionScore": 4.3,
+      "sessionsDelivered": 27,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-019",
+      "name": "Priya Nambiar 18",
+      "hexId": "HEX-TR-4018",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 3.8,
+      "avgSessionScore": 4.3999999999999995,
+      "sessionsDelivered": 28,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-020",
+      "name": "Karthik Subramanian 19",
+      "hexId": "HEX-TR-4019",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 3.9,
+      "avgSessionScore": 4.5,
+      "sessionsDelivered": 29,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-021",
+      "name": "Rajesh Menon 20",
+      "hexId": "HEX-TR-4020",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 4,
+      "avgSessionScore": 4.6,
+      "sessionsDelivered": 30,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-022",
+      "name": "Sunita Iyer 21",
+      "hexId": "HEX-TR-4021",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 4.1,
+      "avgSessionScore": 4.7,
+      "sessionsDelivered": 31,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-023",
+      "name": "Amit Kulkarni 22",
+      "hexId": "HEX-TR-4022",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 4.2,
+      "avgSessionScore": 4.8,
+      "sessionsDelivered": 32,
+      "topTrainer": true
+    },
+    {
+      "id": "tr-024",
+      "name": "Priya Nambiar 23",
+      "hexId": "HEX-TR-4023",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 4.3,
+      "avgSessionScore": 4.9,
+      "sessionsDelivered": 33,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-025",
+      "name": "Karthik Subramanian 24",
+      "hexId": "HEX-TR-4024",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 4.4,
+      "avgSessionScore": 3.8,
+      "sessionsDelivered": 34,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-026",
+      "name": "Rajesh Menon 25",
+      "hexId": "HEX-TR-4025",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 4.5,
+      "avgSessionScore": 3.9,
+      "sessionsDelivered": 35,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-027",
+      "name": "Sunita Iyer 26",
+      "hexId": "HEX-TR-4026",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 4.6,
+      "avgSessionScore": 4,
+      "sessionsDelivered": 36,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-028",
+      "name": "Amit Kulkarni 27",
+      "hexId": "HEX-TR-4027",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 4.7,
+      "avgSessionScore": 4.1,
+      "sessionsDelivered": 37,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-029",
+      "name": "Priya Nambiar 28",
+      "hexId": "HEX-TR-4028",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 4.8,
+      "avgSessionScore": 4.2,
+      "sessionsDelivered": 38,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-030",
+      "name": "Karthik Subramanian 29",
+      "hexId": "HEX-TR-4029",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 4.9,
+      "avgSessionScore": 4.3,
+      "sessionsDelivered": 39,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-031",
+      "name": "Rajesh Menon 30",
+      "hexId": "HEX-TR-4030",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 3.5,
+      "avgSessionScore": 4.3999999999999995,
+      "sessionsDelivered": 40,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-032",
+      "name": "Sunita Iyer 31",
+      "hexId": "HEX-TR-4031",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 3.6,
+      "avgSessionScore": 4.5,
+      "sessionsDelivered": 41,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-033",
+      "name": "Amit Kulkarni 32",
+      "hexId": "HEX-TR-4032",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 3.7,
+      "avgSessionScore": 4.6,
+      "sessionsDelivered": 42,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-034",
+      "name": "Priya Nambiar 33",
+      "hexId": "HEX-TR-4033",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 3.8,
+      "avgSessionScore": 4.7,
+      "sessionsDelivered": 43,
+      "topTrainer": true
+    },
+    {
+      "id": "tr-035",
+      "name": "Karthik Subramanian 34",
+      "hexId": "HEX-TR-4034",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 3.9,
+      "avgSessionScore": 4.8,
+      "sessionsDelivered": 44,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-036",
+      "name": "Rajesh Menon 35",
+      "hexId": "HEX-TR-4035",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 4,
+      "avgSessionScore": 4.9,
+      "sessionsDelivered": 45,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-037",
+      "name": "Sunita Iyer 36",
+      "hexId": "HEX-TR-4036",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 4.1,
+      "avgSessionScore": 3.8,
+      "sessionsDelivered": 46,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-038",
+      "name": "Amit Kulkarni 37",
+      "hexId": "HEX-TR-4037",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 4.2,
+      "avgSessionScore": 3.9,
+      "sessionsDelivered": 47,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-039",
+      "name": "Priya Nambiar 38",
+      "hexId": "HEX-TR-4038",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 4.3,
+      "avgSessionScore": 4,
+      "sessionsDelivered": 48,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-040",
+      "name": "Karthik Subramanian 39",
+      "hexId": "HEX-TR-4039",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 4.4,
+      "avgSessionScore": 4.1,
+      "sessionsDelivered": 49,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-041",
+      "name": "Rajesh Menon 40",
+      "hexId": "HEX-TR-4040",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 4.5,
+      "avgSessionScore": 4.2,
+      "sessionsDelivered": 10,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-042",
+      "name": "Sunita Iyer 41",
+      "hexId": "HEX-TR-4041",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 4.6,
+      "avgSessionScore": 4.3,
+      "sessionsDelivered": 11,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-043",
+      "name": "Amit Kulkarni 42",
+      "hexId": "HEX-TR-4042",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 4.7,
+      "avgSessionScore": 4.3999999999999995,
+      "sessionsDelivered": 12,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-044",
+      "name": "Priya Nambiar 43",
+      "hexId": "HEX-TR-4043",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 4.8,
+      "avgSessionScore": 4.5,
+      "sessionsDelivered": 13,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-045",
+      "name": "Karthik Subramanian 44",
+      "hexId": "HEX-TR-4044",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 4.9,
+      "avgSessionScore": 4.6,
+      "sessionsDelivered": 14,
+      "topTrainer": true
+    },
+    {
+      "id": "tr-046",
+      "name": "Rajesh Menon 45",
+      "hexId": "HEX-TR-4045",
+      "specialization": "Java",
+      "batches": [
+        "B-2025-13"
+      ],
+      "avgClarity": 3.5,
+      "avgSessionScore": 4.7,
+      "sessionsDelivered": 15,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-047",
+      "name": "Sunita Iyer 46",
+      "hexId": "HEX-TR-4046",
+      "specialization": "Angular",
+      "batches": [
+        "B-2025-14"
+      ],
+      "avgClarity": 3.6,
+      "avgSessionScore": 4.8,
+      "sessionsDelivered": 16,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-048",
+      "name": "Amit Kulkarni 47",
+      "hexId": "HEX-TR-4047",
+      "specialization": "Soft Skills",
+      "batches": [
+        "B-2025-15"
+      ],
+      "avgClarity": 3.7,
+      "avgSessionScore": 4.9,
+      "sessionsDelivered": 17,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-049",
+      "name": "Priya Nambiar 48",
+      "hexId": "HEX-TR-4048",
+      "specialization": "AWS",
+      "batches": [
+        "B-2025-16"
+      ],
+      "avgClarity": 3.8,
+      "avgSessionScore": 3.8,
+      "sessionsDelivered": 18,
+      "topTrainer": false
+    },
+    {
+      "id": "tr-050",
+      "name": "Karthik Subramanian 49",
+      "hexId": "HEX-TR-4049",
+      "specialization": "SQL",
+      "batches": [
+        "B-2025-17"
+      ],
+      "avgClarity": 3.9,
+      "avgSessionScore": 3.9,
+      "sessionsDelivered": 19,
+      "topTrainer": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-001",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-1",
+      "relatedSessionId": "ses-001",
+      "read": true,
+      "createdAt": "2025-05-01T09:00:00Z"
+    },
+    {
+      "id": "notif-002",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-2",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-02T09:00:00Z"
+    },
+    {
+      "id": "notif-003",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-3",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-03T09:00:00Z"
+    },
+    {
+      "id": "notif-004",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-4",
+      "relatedSessionId": "ses-004",
+      "read": false,
+      "createdAt": "2025-05-04T09:00:00Z"
+    },
+    {
+      "id": "notif-005",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-5",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-05T09:00:00Z"
+    },
+    {
+      "id": "notif-006",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-6",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-06T09:00:00Z"
+    },
+    {
+      "id": "notif-007",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-7",
+      "relatedSessionId": "ses-007",
+      "read": false,
+      "createdAt": "2025-05-07T09:00:00Z"
+    },
+    {
+      "id": "notif-008",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-8",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-08T09:00:00Z"
+    },
+    {
+      "id": "notif-009",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-9",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-09T09:00:00Z"
+    },
+    {
+      "id": "notif-010",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-10",
+      "relatedSessionId": "ses-010",
+      "read": false,
+      "createdAt": "2025-05-10T09:00:00Z"
+    },
+    {
+      "id": "notif-011",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-1",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-11T09:00:00Z"
+    },
+    {
+      "id": "notif-012",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-2",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-12T09:00:00Z"
+    },
+    {
+      "id": "notif-013",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-3",
+      "relatedSessionId": "ses-013",
+      "read": true,
+      "createdAt": "2025-05-13T09:00:00Z"
+    },
+    {
+      "id": "notif-014",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-4",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-14T09:00:00Z"
+    },
+    {
+      "id": "notif-015",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-5",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-15T09:00:00Z"
+    },
+    {
+      "id": "notif-016",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-6",
+      "relatedSessionId": "ses-016",
+      "read": false,
+      "createdAt": "2025-05-16T09:00:00Z"
+    },
+    {
+      "id": "notif-017",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-7",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-17T09:00:00Z"
+    },
+    {
+      "id": "notif-018",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-8",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-18T09:00:00Z"
+    },
+    {
+      "id": "notif-019",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-9",
+      "relatedSessionId": "ses-019",
+      "read": false,
+      "createdAt": "2025-05-19T09:00:00Z"
+    },
+    {
+      "id": "notif-020",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-10",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-20T09:00:00Z"
+    },
+    {
+      "id": "notif-021",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-1",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-21T09:00:00Z"
+    },
+    {
+      "id": "notif-022",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-2",
+      "relatedSessionId": "ses-022",
+      "read": false,
+      "createdAt": "2025-05-22T09:00:00Z"
+    },
+    {
+      "id": "notif-023",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-3",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-23T09:00:00Z"
+    },
+    {
+      "id": "notif-024",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-4",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-24T09:00:00Z"
+    },
+    {
+      "id": "notif-025",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-5",
+      "relatedSessionId": "ses-025",
+      "read": true,
+      "createdAt": "2025-05-25T09:00:00Z"
+    },
+    {
+      "id": "notif-026",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-6",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-26T09:00:00Z"
+    },
+    {
+      "id": "notif-027",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-7",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-27T09:00:00Z"
+    },
+    {
+      "id": "notif-028",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-8",
+      "relatedSessionId": "ses-028",
+      "read": false,
+      "createdAt": "2025-05-28T09:00:00Z"
+    },
+    {
+      "id": "notif-029",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-9",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-01T09:00:00Z"
+    },
+    {
+      "id": "notif-030",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-10",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-02T09:00:00Z"
+    },
+    {
+      "id": "notif-031",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-1",
+      "relatedSessionId": "ses-031",
+      "read": false,
+      "createdAt": "2025-05-03T09:00:00Z"
+    },
+    {
+      "id": "notif-032",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-2",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-04T09:00:00Z"
+    },
+    {
+      "id": "notif-033",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-3",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-05T09:00:00Z"
+    },
+    {
+      "id": "notif-034",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-4",
+      "relatedSessionId": "ses-034",
+      "read": false,
+      "createdAt": "2025-05-06T09:00:00Z"
+    },
+    {
+      "id": "notif-035",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-5",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-07T09:00:00Z"
+    },
+    {
+      "id": "notif-036",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-6",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-08T09:00:00Z"
+    },
+    {
+      "id": "notif-037",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-7",
+      "relatedSessionId": "ses-037",
+      "read": true,
+      "createdAt": "2025-05-09T09:00:00Z"
+    },
+    {
+      "id": "notif-038",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-8",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-10T09:00:00Z"
+    },
+    {
+      "id": "notif-039",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-9",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-11T09:00:00Z"
+    },
+    {
+      "id": "notif-040",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-10",
+      "relatedSessionId": "ses-040",
+      "read": false,
+      "createdAt": "2025-05-12T09:00:00Z"
+    },
+    {
+      "id": "notif-041",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-1",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-13T09:00:00Z"
+    },
+    {
+      "id": "notif-042",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-2",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-14T09:00:00Z"
+    },
+    {
+      "id": "notif-043",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-3",
+      "relatedSessionId": "ses-043",
+      "read": false,
+      "createdAt": "2025-05-15T09:00:00Z"
+    },
+    {
+      "id": "notif-044",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-4",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-16T09:00:00Z"
+    },
+    {
+      "id": "notif-045",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-5",
+      "relatedSessionId": null,
+      "read": true,
+      "createdAt": "2025-05-17T09:00:00Z"
+    },
+    {
+      "id": "notif-046",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-6",
+      "relatedSessionId": "ses-046",
+      "read": false,
+      "createdAt": "2025-05-18T09:00:00Z"
+    },
+    {
+      "id": "notif-047",
+      "type": "manager_review_due",
+      "title": "Monthly maverick performance review due",
+      "recipientRole": "manager",
+      "recipientId": "user-7",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-19T09:00:00Z"
+    },
+    {
+      "id": "notif-048",
+      "type": "onboarding_mail_sent",
+      "title": "Onboarding mail sent to pre-onboarding trainee",
+      "recipientRole": "ld",
+      "recipientId": "user-8",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-20T09:00:00Z"
+    },
+    {
+      "id": "notif-049",
+      "type": "pulse_feedback_due",
+      "title": "Submit pulse feedback for today's session",
+      "recipientRole": "maverick",
+      "recipientId": "user-9",
+      "relatedSessionId": "ses-049",
+      "read": true,
+      "createdAt": "2025-05-21T09:00:00Z"
+    },
+    {
+      "id": "notif-050",
+      "type": "trainer_rating_request",
+      "title": "Rate your trainer for the latest session",
+      "recipientRole": "trainer",
+      "recipientId": "user-10",
+      "relatedSessionId": null,
+      "read": false,
+      "createdAt": "2025-05-22T09:00:00Z"
+    }
+  ],
+  "feedbackPulse": [
+    {
+      "id": "fp-001",
+      "sessionId": "ses-001",
+      "maverickId": "mav-001",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-01T12:00:00Z"
+    },
+    {
+      "id": "fp-002",
+      "sessionId": "ses-002",
+      "maverickId": "mav-002",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-02T12:00:00Z"
+    },
+    {
+      "id": "fp-003",
+      "sessionId": "ses-003",
+      "maverickId": "mav-003",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-03T12:00:00Z"
+    },
+    {
+      "id": "fp-004",
+      "sessionId": "ses-004",
+      "maverickId": "mav-004",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-04T12:00:00Z"
+    },
+    {
+      "id": "fp-005",
+      "sessionId": "ses-005",
+      "maverickId": "mav-005",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-05T12:00:00Z"
+    },
+    {
+      "id": "fp-006",
+      "sessionId": "ses-006",
+      "maverickId": "mav-006",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-06T12:00:00Z"
+    },
+    {
+      "id": "fp-007",
+      "sessionId": "ses-007",
+      "maverickId": "mav-007",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-07T12:00:00Z"
+    },
+    {
+      "id": "fp-008",
+      "sessionId": "ses-008",
+      "maverickId": "mav-008",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-08T12:00:00Z"
+    },
+    {
+      "id": "fp-009",
+      "sessionId": "ses-009",
+      "maverickId": "mav-009",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-09T12:00:00Z"
+    },
+    {
+      "id": "fp-010",
+      "sessionId": "ses-010",
+      "maverickId": "mav-010",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-10T12:00:00Z"
+    },
+    {
+      "id": "fp-011",
+      "sessionId": "ses-011",
+      "maverickId": "mav-011",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-11T12:00:00Z"
+    },
+    {
+      "id": "fp-012",
+      "sessionId": "ses-012",
+      "maverickId": "mav-012",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-12T12:00:00Z"
+    },
+    {
+      "id": "fp-013",
+      "sessionId": "ses-013",
+      "maverickId": "mav-013",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-13T12:00:00Z"
+    },
+    {
+      "id": "fp-014",
+      "sessionId": "ses-014",
+      "maverickId": "mav-014",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-14T12:00:00Z"
+    },
+    {
+      "id": "fp-015",
+      "sessionId": "ses-015",
+      "maverickId": "mav-015",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-15T12:00:00Z"
+    },
+    {
+      "id": "fp-016",
+      "sessionId": "ses-016",
+      "maverickId": "mav-016",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-16T12:00:00Z"
+    },
+    {
+      "id": "fp-017",
+      "sessionId": "ses-017",
+      "maverickId": "mav-017",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-17T12:00:00Z"
+    },
+    {
+      "id": "fp-018",
+      "sessionId": "ses-018",
+      "maverickId": "mav-018",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-18T12:00:00Z"
+    },
+    {
+      "id": "fp-019",
+      "sessionId": "ses-019",
+      "maverickId": "mav-019",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-19T12:00:00Z"
+    },
+    {
+      "id": "fp-020",
+      "sessionId": "ses-020",
+      "maverickId": "mav-020",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-20T12:00:00Z"
+    },
+    {
+      "id": "fp-021",
+      "sessionId": "ses-021",
+      "maverickId": "mav-021",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-21T12:00:00Z"
+    },
+    {
+      "id": "fp-022",
+      "sessionId": "ses-022",
+      "maverickId": "mav-022",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-22T12:00:00Z"
+    },
+    {
+      "id": "fp-023",
+      "sessionId": "ses-023",
+      "maverickId": "mav-023",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-23T12:00:00Z"
+    },
+    {
+      "id": "fp-024",
+      "sessionId": "ses-024",
+      "maverickId": "mav-024",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-24T12:00:00Z"
+    },
+    {
+      "id": "fp-025",
+      "sessionId": "ses-025",
+      "maverickId": "mav-025",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-25T12:00:00Z"
+    },
+    {
+      "id": "fp-026",
+      "sessionId": "ses-026",
+      "maverickId": "mav-026",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-26T12:00:00Z"
+    },
+    {
+      "id": "fp-027",
+      "sessionId": "ses-027",
+      "maverickId": "mav-027",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-27T12:00:00Z"
+    },
+    {
+      "id": "fp-028",
+      "sessionId": "ses-028",
+      "maverickId": "mav-028",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-28T12:00:00Z"
+    },
+    {
+      "id": "fp-029",
+      "sessionId": "ses-029",
+      "maverickId": "mav-029",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-01T12:00:00Z"
+    },
+    {
+      "id": "fp-030",
+      "sessionId": "ses-030",
+      "maverickId": "mav-030",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-02T12:00:00Z"
+    },
+    {
+      "id": "fp-031",
+      "sessionId": "ses-031",
+      "maverickId": "mav-031",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-03T12:00:00Z"
+    },
+    {
+      "id": "fp-032",
+      "sessionId": "ses-032",
+      "maverickId": "mav-032",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-04T12:00:00Z"
+    },
+    {
+      "id": "fp-033",
+      "sessionId": "ses-033",
+      "maverickId": "mav-033",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-05T12:00:00Z"
+    },
+    {
+      "id": "fp-034",
+      "sessionId": "ses-034",
+      "maverickId": "mav-034",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-06T12:00:00Z"
+    },
+    {
+      "id": "fp-035",
+      "sessionId": "ses-035",
+      "maverickId": "mav-035",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-07T12:00:00Z"
+    },
+    {
+      "id": "fp-036",
+      "sessionId": "ses-036",
+      "maverickId": "mav-036",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-08T12:00:00Z"
+    },
+    {
+      "id": "fp-037",
+      "sessionId": "ses-037",
+      "maverickId": "mav-037",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-09T12:00:00Z"
+    },
+    {
+      "id": "fp-038",
+      "sessionId": "ses-038",
+      "maverickId": "mav-038",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-10T12:00:00Z"
+    },
+    {
+      "id": "fp-039",
+      "sessionId": "ses-039",
+      "maverickId": "mav-039",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-11T12:00:00Z"
+    },
+    {
+      "id": "fp-040",
+      "sessionId": "ses-040",
+      "maverickId": "mav-040",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-12T12:00:00Z"
+    },
+    {
+      "id": "fp-041",
+      "sessionId": "ses-041",
+      "maverickId": "mav-041",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-13T12:00:00Z"
+    },
+    {
+      "id": "fp-042",
+      "sessionId": "ses-042",
+      "maverickId": "mav-042",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-14T12:00:00Z"
+    },
+    {
+      "id": "fp-043",
+      "sessionId": "ses-043",
+      "maverickId": "mav-043",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-15T12:00:00Z"
+    },
+    {
+      "id": "fp-044",
+      "sessionId": "ses-044",
+      "maverickId": "mav-044",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-16T12:00:00Z"
+    },
+    {
+      "id": "fp-045",
+      "sessionId": "ses-045",
+      "maverickId": "mav-045",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-17T12:00:00Z"
+    },
+    {
+      "id": "fp-046",
+      "sessionId": "ses-046",
+      "maverickId": "mav-046",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-18T12:00:00Z"
+    },
+    {
+      "id": "fp-047",
+      "sessionId": "ses-047",
+      "maverickId": "mav-047",
+      "mood": "okay",
+      "clarity": 4,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-19T12:00:00Z"
+    },
+    {
+      "id": "fp-048",
+      "sessionId": "ses-048",
+      "maverickId": "mav-048",
+      "mood": "confused",
+      "clarity": 5,
+      "pace": 5,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-20T12:00:00Z"
+    },
+    {
+      "id": "fp-049",
+      "sessionId": "ses-049",
+      "maverickId": "mav-049",
+      "mood": "great",
+      "clarity": 2,
+      "pace": 3,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-21T12:00:00Z"
+    },
+    {
+      "id": "fp-050",
+      "sessionId": "ses-050",
+      "maverickId": "mav-050",
+      "mood": "good",
+      "clarity": 3,
+      "pace": 4,
+      "openText": "Session feedback note",
+      "timestamp": "2025-05-22T12:00:00Z"
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "maverickId": "mav-050",
+      "name": "Shreya Saxena",
+      "xp": 4850,
+      "level": 5,
+      "streak": 3
+    },
+    {
+      "rank": 2,
+      "maverickId": "mav-049",
+      "name": "Ravi Chatterjee",
+      "xp": 4765,
+      "level": 5,
+      "streak": 4
+    },
+    {
+      "rank": 3,
+      "maverickId": "mav-048",
+      "name": "Tanvi Das",
+      "xp": 4680,
+      "level": 5,
+      "streak": 5
+    },
+    {
+      "rank": 4,
+      "maverickId": "mav-047",
+      "name": "Amit Pillai",
+      "xp": 4595,
+      "level": 4,
+      "streak": 6
+    },
+    {
+      "rank": 5,
+      "maverickId": "mav-046",
+      "name": "Neha Iyer",
+      "xp": 4510,
+      "level": 4,
+      "streak": 7
+    },
+    {
+      "rank": 6,
+      "maverickId": "mav-045",
+      "name": "Manoj Joshi",
+      "xp": 4425,
+      "level": 4,
+      "streak": 8
+    },
+    {
+      "rank": 7,
+      "maverickId": "mav-044",
+      "name": "Lakshmi Nair",
+      "xp": 4340,
+      "level": 4,
+      "streak": 9
+    },
+    {
+      "rank": 8,
+      "maverickId": "mav-043",
+      "name": "Suresh Gupta",
+      "xp": 4255,
+      "level": 4,
+      "streak": 10
+    },
+    {
+      "rank": 9,
+      "maverickId": "mav-042",
+      "name": "Riya Reddy",
+      "xp": 4170,
+      "level": 4,
+      "streak": 11
+    },
+    {
+      "rank": 10,
+      "maverickId": "mav-041",
+      "name": "Aditya Sharma",
+      "xp": 4085,
+      "level": 4,
+      "streak": 12
+    },
+    {
+      "rank": 11,
+      "maverickId": "mav-040",
+      "name": "Pooja Saxena",
+      "xp": 4000,
+      "level": 4,
+      "streak": 13
+    },
+    {
+      "rank": 12,
+      "maverickId": "mav-039",
+      "name": "Nikhil Chatterjee",
+      "xp": 3915,
+      "level": 4,
+      "streak": 14
+    },
+    {
+      "rank": 13,
+      "maverickId": "mav-038",
+      "name": "Divya Das",
+      "xp": 3830,
+      "level": 4,
+      "streak": 15
+    },
+    {
+      "rank": 14,
+      "maverickId": "mav-037",
+      "name": "Karan Pillai",
+      "xp": 3745,
+      "level": 4,
+      "streak": 16
+    },
+    {
+      "rank": 15,
+      "maverickId": "mav-036",
+      "name": "Isha Iyer",
+      "xp": 3660,
+      "level": 4,
+      "streak": 17
+    },
+    {
+      "rank": 16,
+      "maverickId": "mav-035",
+      "name": "Rohan Joshi",
+      "xp": 3575,
+      "level": 3,
+      "streak": 18
+    },
+    {
+      "rank": 17,
+      "maverickId": "mav-034",
+      "name": "Meera Nair",
+      "xp": 3490,
+      "level": 3,
+      "streak": 19
+    },
+    {
+      "rank": 18,
+      "maverickId": "mav-033",
+      "name": "Deepak Gupta",
+      "xp": 3405,
+      "level": 3,
+      "streak": 20
+    },
+    {
+      "rank": 19,
+      "maverickId": "mav-032",
+      "name": "Kavya Reddy",
+      "xp": 3320,
+      "level": 3,
+      "streak": 21
+    },
+    {
+      "rank": 20,
+      "maverickId": "mav-031",
+      "name": "Vikram Sharma",
+      "xp": 3235,
+      "level": 3,
+      "streak": 22
+    },
+    {
+      "rank": 21,
+      "maverickId": "mav-030",
+      "name": "Ananya Saxena",
+      "xp": 3150,
+      "level": 3,
+      "streak": 3
+    },
+    {
+      "rank": 22,
+      "maverickId": "mav-029",
+      "name": "Rahul Chatterjee",
+      "xp": 3065,
+      "level": 3,
+      "streak": 4
+    },
+    {
+      "rank": 23,
+      "maverickId": "mav-028",
+      "name": "Sneha Das",
+      "xp": 2980,
+      "level": 3,
+      "streak": 5
+    },
+    {
+      "rank": 24,
+      "maverickId": "mav-027",
+      "name": "Arjun Pillai",
+      "xp": 2895,
+      "level": 3,
+      "streak": 6
+    },
+    {
+      "rank": 25,
+      "maverickId": "mav-026",
+      "name": "Priya Iyer",
+      "xp": 2810,
+      "level": 3,
+      "streak": 7
+    },
+    {
+      "rank": 26,
+      "maverickId": "mav-025",
+      "name": "Shreya Joshi",
+      "xp": 2725,
+      "level": 3,
+      "streak": 8
+    },
+    {
+      "rank": 27,
+      "maverickId": "mav-024",
+      "name": "Ravi Nair",
+      "xp": 2640,
+      "level": 3,
+      "streak": 9
+    },
+    {
+      "rank": 28,
+      "maverickId": "mav-023",
+      "name": "Tanvi Gupta",
+      "xp": 2555,
+      "level": 2,
+      "streak": 10
+    },
+    {
+      "rank": 29,
+      "maverickId": "mav-022",
+      "name": "Amit Reddy",
+      "xp": 2470,
+      "level": 2,
+      "streak": 11
+    },
+    {
+      "rank": 30,
+      "maverickId": "mav-021",
+      "name": "Neha Sharma",
+      "xp": 2385,
+      "level": 2,
+      "streak": 12
+    },
+    {
+      "rank": 31,
+      "maverickId": "mav-020",
+      "name": "Manoj Saxena",
+      "xp": 2300,
+      "level": 2,
+      "streak": 13
+    },
+    {
+      "rank": 32,
+      "maverickId": "mav-019",
+      "name": "Lakshmi Chatterjee",
+      "xp": 2215,
+      "level": 2,
+      "streak": 14
+    },
+    {
+      "rank": 33,
+      "maverickId": "mav-018",
+      "name": "Suresh Das",
+      "xp": 2130,
+      "level": 2,
+      "streak": 15
+    },
+    {
+      "rank": 34,
+      "maverickId": "mav-017",
+      "name": "Riya Pillai",
+      "xp": 2045,
+      "level": 2,
+      "streak": 16
+    },
+    {
+      "rank": 35,
+      "maverickId": "mav-016",
+      "name": "Aditya Iyer",
+      "xp": 1960,
+      "level": 2,
+      "streak": 17
+    },
+    {
+      "rank": 36,
+      "maverickId": "mav-015",
+      "name": "Pooja Joshi",
+      "xp": 1875,
+      "level": 2,
+      "streak": 18
+    },
+    {
+      "rank": 37,
+      "maverickId": "mav-014",
+      "name": "Nikhil Nair",
+      "xp": 1790,
+      "level": 2,
+      "streak": 19
+    },
+    {
+      "rank": 38,
+      "maverickId": "mav-013",
+      "name": "Divya Gupta",
+      "xp": 1705,
+      "level": 2,
+      "streak": 20
+    },
+    {
+      "rank": 39,
+      "maverickId": "mav-012",
+      "name": "Karan Reddy",
+      "xp": 1620,
+      "level": 2,
+      "streak": 21
+    },
+    {
+      "rank": 40,
+      "maverickId": "mav-011",
+      "name": "Isha Sharma",
+      "xp": 1535,
+      "level": 1,
+      "streak": 22
+    },
+    {
+      "rank": 41,
+      "maverickId": "mav-010",
+      "name": "Rohan Saxena",
+      "xp": 1450,
+      "level": 1,
+      "streak": 3
+    },
+    {
+      "rank": 42,
+      "maverickId": "mav-009",
+      "name": "Meera Chatterjee",
+      "xp": 1365,
+      "level": 1,
+      "streak": 4
+    },
+    {
+      "rank": 43,
+      "maverickId": "mav-008",
+      "name": "Deepak Das",
+      "xp": 1280,
+      "level": 1,
+      "streak": 5
+    },
+    {
+      "rank": 44,
+      "maverickId": "mav-007",
+      "name": "Kavya Pillai",
+      "xp": 1195,
+      "level": 1,
+      "streak": 6
+    },
+    {
+      "rank": 45,
+      "maverickId": "mav-006",
+      "name": "Vikram Iyer",
+      "xp": 1110,
+      "level": 1,
+      "streak": 7
+    },
+    {
+      "rank": 46,
+      "maverickId": "mav-005",
+      "name": "Ananya Joshi",
+      "xp": 1025,
+      "level": 1,
+      "streak": 8
+    },
+    {
+      "rank": 47,
+      "maverickId": "mav-004",
+      "name": "Rahul Nair",
+      "xp": 940,
+      "level": 1,
+      "streak": 9
+    },
+    {
+      "rank": 48,
+      "maverickId": "mav-003",
+      "name": "Sneha Gupta",
+      "xp": 855,
+      "level": 1,
+      "streak": 10
+    },
+    {
+      "rank": 49,
+      "maverickId": "mav-002",
+      "name": "Arjun Reddy",
+      "xp": 770,
+      "level": 1,
+      "streak": 11
+    },
+    {
+      "rank": 50,
+      "maverickId": "mav-001",
+      "name": "Priya Sharma",
+      "xp": 685,
+      "level": 1,
+      "streak": 12
+    }
+  ],
+  "managers": [
+    {
+      "id": "mgr-001",
+      "name": "Priya Verma",
+      "hexId": "HEX-DM-2200",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-001"
+      ]
+    },
+    {
+      "id": "mgr-002",
+      "name": "Arjun Gupta",
+      "hexId": "HEX-DM-2201",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-002"
+      ]
+    },
+    {
+      "id": "mgr-003",
+      "name": "Sneha Singh",
+      "hexId": "HEX-DM-2202",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-003"
+      ]
+    },
+    {
+      "id": "mgr-004",
+      "name": "Rahul Nair",
+      "hexId": "HEX-DM-2203",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-004"
+      ]
+    },
+    {
+      "id": "mgr-005",
+      "name": "Ananya Kumar",
+      "hexId": "HEX-DM-2204",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-005"
+      ]
+    },
+    {
+      "id": "mgr-006",
+      "name": "Vikram Joshi",
+      "hexId": "HEX-DM-2205",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-006"
+      ]
+    },
+    {
+      "id": "mgr-007",
+      "name": "Kavya Desai",
+      "hexId": "HEX-DM-2206",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-007"
+      ]
+    },
+    {
+      "id": "mgr-008",
+      "name": "Deepak Iyer",
+      "hexId": "HEX-DM-2207",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-008"
+      ]
+    },
+    {
+      "id": "mgr-009",
+      "name": "Meera Menon",
+      "hexId": "HEX-DM-2208",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-009"
+      ]
+    },
+    {
+      "id": "mgr-010",
+      "name": "Rohan Pillai",
+      "hexId": "HEX-DM-2209",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-010"
+      ]
+    },
+    {
+      "id": "mgr-011",
+      "name": "Isha Rao",
+      "hexId": "HEX-DM-2210",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-011"
+      ]
+    },
+    {
+      "id": "mgr-012",
+      "name": "Karan Das",
+      "hexId": "HEX-DM-2211",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-012"
+      ]
+    },
+    {
+      "id": "mgr-013",
+      "name": "Divya Banerjee",
+      "hexId": "HEX-DM-2212",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-013"
+      ]
+    },
+    {
+      "id": "mgr-014",
+      "name": "Nikhil Chatterjee",
+      "hexId": "HEX-DM-2213",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-014"
+      ]
+    },
+    {
+      "id": "mgr-015",
+      "name": "Pooja Mishra",
+      "hexId": "HEX-DM-2214",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-015"
+      ]
+    },
+    {
+      "id": "mgr-016",
+      "name": "Aditya Saxena",
+      "hexId": "HEX-DM-2215",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-016"
+      ]
+    },
+    {
+      "id": "mgr-017",
+      "name": "Riya Agarwal",
+      "hexId": "HEX-DM-2216",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-017"
+      ]
+    },
+    {
+      "id": "mgr-018",
+      "name": "Suresh Sharma",
+      "hexId": "HEX-DM-2217",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-018"
+      ]
+    },
+    {
+      "id": "mgr-019",
+      "name": "Lakshmi Patel",
+      "hexId": "HEX-DM-2218",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-019"
+      ]
+    },
+    {
+      "id": "mgr-020",
+      "name": "Manoj Reddy",
+      "hexId": "HEX-DM-2219",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-020"
+      ]
+    },
+    {
+      "id": "mgr-021",
+      "name": "Neha Verma",
+      "hexId": "HEX-DM-2220",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-021"
+      ]
+    },
+    {
+      "id": "mgr-022",
+      "name": "Amit Gupta",
+      "hexId": "HEX-DM-2221",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-022"
+      ]
+    },
+    {
+      "id": "mgr-023",
+      "name": "Tanvi Singh",
+      "hexId": "HEX-DM-2222",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-023"
+      ]
+    },
+    {
+      "id": "mgr-024",
+      "name": "Ravi Nair",
+      "hexId": "HEX-DM-2223",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-024"
+      ]
+    },
+    {
+      "id": "mgr-025",
+      "name": "Shreya Kumar",
+      "hexId": "HEX-DM-2224",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-025"
+      ]
+    },
+    {
+      "id": "mgr-026",
+      "name": "Priya Joshi",
+      "hexId": "HEX-DM-2225",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-026"
+      ]
+    },
+    {
+      "id": "mgr-027",
+      "name": "Arjun Desai",
+      "hexId": "HEX-DM-2226",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-027"
+      ]
+    },
+    {
+      "id": "mgr-028",
+      "name": "Sneha Iyer",
+      "hexId": "HEX-DM-2227",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-028"
+      ]
+    },
+    {
+      "id": "mgr-029",
+      "name": "Rahul Menon",
+      "hexId": "HEX-DM-2228",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-029"
+      ]
+    },
+    {
+      "id": "mgr-030",
+      "name": "Ananya Pillai",
+      "hexId": "HEX-DM-2229",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-030"
+      ]
+    },
+    {
+      "id": "mgr-031",
+      "name": "Vikram Rao",
+      "hexId": "HEX-DM-2230",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-031"
+      ]
+    },
+    {
+      "id": "mgr-032",
+      "name": "Kavya Das",
+      "hexId": "HEX-DM-2231",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-032"
+      ]
+    },
+    {
+      "id": "mgr-033",
+      "name": "Deepak Banerjee",
+      "hexId": "HEX-DM-2232",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-033"
+      ]
+    },
+    {
+      "id": "mgr-034",
+      "name": "Meera Chatterjee",
+      "hexId": "HEX-DM-2233",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-034"
+      ]
+    },
+    {
+      "id": "mgr-035",
+      "name": "Rohan Mishra",
+      "hexId": "HEX-DM-2234",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-035"
+      ]
+    },
+    {
+      "id": "mgr-036",
+      "name": "Isha Saxena",
+      "hexId": "HEX-DM-2235",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-036"
+      ]
+    },
+    {
+      "id": "mgr-037",
+      "name": "Karan Agarwal",
+      "hexId": "HEX-DM-2236",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-037"
+      ]
+    },
+    {
+      "id": "mgr-038",
+      "name": "Divya Sharma",
+      "hexId": "HEX-DM-2237",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-038"
+      ]
+    },
+    {
+      "id": "mgr-039",
+      "name": "Nikhil Patel",
+      "hexId": "HEX-DM-2238",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-039"
+      ]
+    },
+    {
+      "id": "mgr-040",
+      "name": "Pooja Reddy",
+      "hexId": "HEX-DM-2239",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-040"
+      ]
+    },
+    {
+      "id": "mgr-041",
+      "name": "Aditya Verma",
+      "hexId": "HEX-DM-2240",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-041"
+      ]
+    },
+    {
+      "id": "mgr-042",
+      "name": "Riya Gupta",
+      "hexId": "HEX-DM-2241",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-042"
+      ]
+    },
+    {
+      "id": "mgr-043",
+      "name": "Suresh Singh",
+      "hexId": "HEX-DM-2242",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-043"
+      ]
+    },
+    {
+      "id": "mgr-044",
+      "name": "Lakshmi Nair",
+      "hexId": "HEX-DM-2243",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-044"
+      ]
+    },
+    {
+      "id": "mgr-045",
+      "name": "Manoj Kumar",
+      "hexId": "HEX-DM-2244",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-045"
+      ]
+    },
+    {
+      "id": "mgr-046",
+      "name": "Neha Joshi",
+      "hexId": "HEX-DM-2245",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-046"
+      ]
+    },
+    {
+      "id": "mgr-047",
+      "name": "Amit Desai",
+      "hexId": "HEX-DM-2246",
+      "department": "Digital",
+      "assignedMavericks": [
+        "mav-047"
+      ]
+    },
+    {
+      "id": "mgr-048",
+      "name": "Tanvi Iyer",
+      "hexId": "HEX-DM-2247",
+      "department": "Analytics",
+      "assignedMavericks": [
+        "mav-048"
+      ]
+    },
+    {
+      "id": "mgr-049",
+      "name": "Ravi Menon",
+      "hexId": "HEX-DM-2248",
+      "department": "Cloud",
+      "assignedMavericks": [
+        "mav-049"
+      ]
+    },
+    {
+      "id": "mgr-050",
+      "name": "Shreya Pillai",
+      "hexId": "HEX-DM-2249",
+      "department": "Banking",
+      "assignedMavericks": [
+        "mav-050"
+      ]
+    }
+  ],
+  "managerReviews": [
+    {
+      "id": "rev-001",
+      "managerId": "mgr-001",
+      "maverickId": "mav-001",
+      "maverickName": "Priya Sharma",
+      "month": 1,
+      "date": "2025-01-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-002",
+      "managerId": "mgr-002",
+      "maverickId": "mav-002",
+      "maverickName": "Arjun Reddy",
+      "month": 2,
+      "date": "2025-02-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-003",
+      "managerId": "mgr-003",
+      "maverickId": "mav-003",
+      "maverickName": "Sneha Gupta",
+      "month": 3,
+      "date": "2025-03-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-004",
+      "managerId": "mgr-004",
+      "maverickId": "mav-004",
+      "maverickName": "Rahul Nair",
+      "month": 4,
+      "date": "2025-04-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-005",
+      "managerId": "mgr-005",
+      "maverickId": "mav-005",
+      "maverickName": "Ananya Joshi",
+      "month": 5,
+      "date": "2025-05-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-006",
+      "managerId": "mgr-006",
+      "maverickId": "mav-006",
+      "maverickName": "Vikram Iyer",
+      "month": 6,
+      "date": "2025-01-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-007",
+      "managerId": "mgr-007",
+      "maverickId": "mav-007",
+      "maverickName": "Kavya Pillai",
+      "month": 1,
+      "date": "2025-02-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-008",
+      "managerId": "mgr-008",
+      "maverickId": "mav-008",
+      "maverickName": "Deepak Das",
+      "month": 2,
+      "date": "2025-03-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-009",
+      "managerId": "mgr-009",
+      "maverickId": "mav-009",
+      "maverickName": "Meera Chatterjee",
+      "month": 3,
+      "date": "2025-04-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-010",
+      "managerId": "mgr-010",
+      "maverickId": "mav-010",
+      "maverickName": "Rohan Saxena",
+      "month": 4,
+      "date": "2025-05-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-011",
+      "managerId": "mgr-001",
+      "maverickId": "mav-011",
+      "maverickName": "Isha Sharma",
+      "month": 5,
+      "date": "2025-01-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-012",
+      "managerId": "mgr-002",
+      "maverickId": "mav-012",
+      "maverickName": "Karan Reddy",
+      "month": 6,
+      "date": "2025-02-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-013",
+      "managerId": "mgr-003",
+      "maverickId": "mav-013",
+      "maverickName": "Divya Gupta",
+      "month": 1,
+      "date": "2025-03-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-014",
+      "managerId": "mgr-004",
+      "maverickId": "mav-014",
+      "maverickName": "Nikhil Nair",
+      "month": 2,
+      "date": "2025-04-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-015",
+      "managerId": "mgr-005",
+      "maverickId": "mav-015",
+      "maverickName": "Pooja Joshi",
+      "month": 3,
+      "date": "2025-05-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-016",
+      "managerId": "mgr-006",
+      "maverickId": "mav-016",
+      "maverickName": "Aditya Iyer",
+      "month": 4,
+      "date": "2025-01-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-017",
+      "managerId": "mgr-007",
+      "maverickId": "mav-017",
+      "maverickName": "Riya Pillai",
+      "month": 5,
+      "date": "2025-02-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-018",
+      "managerId": "mgr-008",
+      "maverickId": "mav-018",
+      "maverickName": "Suresh Das",
+      "month": 6,
+      "date": "2025-03-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-019",
+      "managerId": "mgr-009",
+      "maverickId": "mav-019",
+      "maverickName": "Lakshmi Chatterjee",
+      "month": 1,
+      "date": "2025-04-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-020",
+      "managerId": "mgr-010",
+      "maverickId": "mav-020",
+      "maverickName": "Manoj Saxena",
+      "month": 2,
+      "date": "2025-05-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-021",
+      "managerId": "mgr-001",
+      "maverickId": "mav-021",
+      "maverickName": "Neha Sharma",
+      "month": 3,
+      "date": "2025-01-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-022",
+      "managerId": "mgr-002",
+      "maverickId": "mav-022",
+      "maverickName": "Amit Reddy",
+      "month": 4,
+      "date": "2025-02-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-023",
+      "managerId": "mgr-003",
+      "maverickId": "mav-023",
+      "maverickName": "Tanvi Gupta",
+      "month": 5,
+      "date": "2025-03-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-024",
+      "managerId": "mgr-004",
+      "maverickId": "mav-024",
+      "maverickName": "Ravi Nair",
+      "month": 6,
+      "date": "2025-04-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-025",
+      "managerId": "mgr-005",
+      "maverickId": "mav-025",
+      "maverickName": "Shreya Joshi",
+      "month": 1,
+      "date": "2025-05-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-026",
+      "managerId": "mgr-006",
+      "maverickId": "mav-026",
+      "maverickName": "Priya Iyer",
+      "month": 2,
+      "date": "2025-01-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-027",
+      "managerId": "mgr-007",
+      "maverickId": "mav-027",
+      "maverickName": "Arjun Pillai",
+      "month": 3,
+      "date": "2025-02-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-028",
+      "managerId": "mgr-008",
+      "maverickId": "mav-028",
+      "maverickName": "Sneha Das",
+      "month": 4,
+      "date": "2025-03-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-029",
+      "managerId": "mgr-009",
+      "maverickId": "mav-029",
+      "maverickName": "Rahul Chatterjee",
+      "month": 5,
+      "date": "2025-04-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-030",
+      "managerId": "mgr-010",
+      "maverickId": "mav-030",
+      "maverickName": "Ananya Saxena",
+      "month": 6,
+      "date": "2025-05-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-031",
+      "managerId": "mgr-001",
+      "maverickId": "mav-031",
+      "maverickName": "Vikram Sharma",
+      "month": 1,
+      "date": "2025-01-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-032",
+      "managerId": "mgr-002",
+      "maverickId": "mav-032",
+      "maverickName": "Kavya Reddy",
+      "month": 2,
+      "date": "2025-02-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-033",
+      "managerId": "mgr-003",
+      "maverickId": "mav-033",
+      "maverickName": "Deepak Gupta",
+      "month": 3,
+      "date": "2025-03-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-034",
+      "managerId": "mgr-004",
+      "maverickId": "mav-034",
+      "maverickName": "Meera Nair",
+      "month": 4,
+      "date": "2025-04-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-035",
+      "managerId": "mgr-005",
+      "maverickId": "mav-035",
+      "maverickName": "Rohan Joshi",
+      "month": 5,
+      "date": "2025-05-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-036",
+      "managerId": "mgr-006",
+      "maverickId": "mav-036",
+      "maverickName": "Isha Iyer",
+      "month": 6,
+      "date": "2025-01-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-037",
+      "managerId": "mgr-007",
+      "maverickId": "mav-037",
+      "maverickName": "Karan Pillai",
+      "month": 1,
+      "date": "2025-02-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-038",
+      "managerId": "mgr-008",
+      "maverickId": "mav-038",
+      "maverickName": "Divya Das",
+      "month": 2,
+      "date": "2025-03-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-039",
+      "managerId": "mgr-009",
+      "maverickId": "mav-039",
+      "maverickName": "Nikhil Chatterjee",
+      "month": 3,
+      "date": "2025-04-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-040",
+      "managerId": "mgr-010",
+      "maverickId": "mav-040",
+      "maverickName": "Pooja Saxena",
+      "month": 4,
+      "date": "2025-05-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-041",
+      "managerId": "mgr-001",
+      "maverickId": "mav-041",
+      "maverickName": "Aditya Sharma",
+      "month": 5,
+      "date": "2025-01-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-042",
+      "managerId": "mgr-002",
+      "maverickId": "mav-042",
+      "maverickName": "Riya Reddy",
+      "month": 6,
+      "date": "2025-02-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-043",
+      "managerId": "mgr-003",
+      "maverickId": "mav-043",
+      "maverickName": "Suresh Gupta",
+      "month": 1,
+      "date": "2025-03-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-044",
+      "managerId": "mgr-004",
+      "maverickId": "mav-044",
+      "maverickName": "Lakshmi Nair",
+      "month": 2,
+      "date": "2025-04-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-045",
+      "managerId": "mgr-005",
+      "maverickId": "mav-045",
+      "maverickName": "Manoj Joshi",
+      "month": 3,
+      "date": "2025-05-15",
+      "technicalSkills": 5,
+      "problemSolving": 3,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-046",
+      "managerId": "mgr-006",
+      "maverickId": "mav-046",
+      "maverickName": "Neha Iyer",
+      "month": 4,
+      "date": "2025-01-15",
+      "technicalSkills": 3,
+      "problemSolving": 4,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-047",
+      "managerId": "mgr-007",
+      "maverickId": "mav-047",
+      "maverickName": "Amit Pillai",
+      "month": 5,
+      "date": "2025-02-15",
+      "technicalSkills": 4,
+      "problemSolving": 3,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-048",
+      "managerId": "mgr-008",
+      "maverickId": "mav-048",
+      "maverickName": "Tanvi Das",
+      "month": 6,
+      "date": "2025-03-15",
+      "technicalSkills": 5,
+      "problemSolving": 4,
+      "communication": 5,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    },
+    {
+      "id": "rev-049",
+      "managerId": "mgr-009",
+      "maverickId": "mav-049",
+      "maverickName": "Ravi Chatterjee",
+      "month": 1,
+      "date": "2025-04-15",
+      "technicalSkills": 3,
+      "problemSolving": 3,
+      "communication": 3,
+      "teamIntegration": 4,
+      "initiative": 3,
+      "comments": "Performance review notes",
+      "overallRating": 3
+    },
+    {
+      "id": "rev-050",
+      "managerId": "mgr-010",
+      "maverickId": "mav-050",
+      "maverickName": "Shreya Saxena",
+      "month": 2,
+      "date": "2025-05-15",
+      "technicalSkills": 4,
+      "problemSolving": 4,
+      "communication": 4,
+      "teamIntegration": 4,
+      "initiative": 4,
+      "comments": "Performance review notes",
+      "overallRating": 4
+    }
+  ],
+  "trainees": [
+    {
+      "id": "trainee-001",
+      "fullName": "Priya Sharma",
+      "email": "priya.sharma@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "priya.sharma@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-002",
+      "fullName": "Arjun Reddy",
+      "email": "arjun.reddy@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "arjun.reddy@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-003",
+      "fullName": "Sneha Gupta",
+      "email": "sneha.gupta@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "sneha.gupta@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-004",
+      "fullName": "Rahul Nair",
+      "email": "rahul.nair@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "rahul.nair@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-005",
+      "fullName": "Ananya Joshi",
+      "email": "ananya.joshi@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "ananya.joshi@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-006",
+      "fullName": "Vikram Iyer",
+      "email": "vikram.iyer@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "vikram.iyer@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-007",
+      "fullName": "Kavya Pillai",
+      "email": "kavya.pillai@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "kavya.pillai@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-008",
+      "fullName": "Deepak Das",
+      "email": "deepak.das@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "deepak.das@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-009",
+      "fullName": "Meera Chatterjee",
+      "email": "meera.chatterjee@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "meera.chatterjee@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-010",
+      "fullName": "Rohan Saxena",
+      "email": "rohan.saxena@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "rohan.saxena@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-011",
+      "fullName": "Isha Sharma",
+      "email": "isha.sharma@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "isha.sharma@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-012",
+      "fullName": "Karan Reddy",
+      "email": "karan.reddy@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "karan.reddy@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-013",
+      "fullName": "Divya Gupta",
+      "email": "divya.gupta@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "divya.gupta@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-014",
+      "fullName": "Nikhil Nair",
+      "email": "nikhil.nair@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "nikhil.nair@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-015",
+      "fullName": "Pooja Joshi",
+      "email": "pooja.joshi@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "pooja.joshi@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-016",
+      "fullName": "Aditya Iyer",
+      "email": "aditya.iyer@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "aditya.iyer@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-017",
+      "fullName": "Riya Pillai",
+      "email": "riya.pillai@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "riya.pillai@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-018",
+      "fullName": "Suresh Das",
+      "email": "suresh.das@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "suresh.das@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-019",
+      "fullName": "Lakshmi Chatterjee",
+      "email": "lakshmi.chatterjee@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "lakshmi.chatterjee@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-020",
+      "fullName": "Manoj Saxena",
+      "email": "manoj.saxena@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "manoj.saxena@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-021",
+      "fullName": "Neha Sharma",
+      "email": "neha.sharma@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "neha.sharma@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-022",
+      "fullName": "Amit Reddy",
+      "email": "amit.reddy@gmail.com",
+      "hexId": null,
+      "onboardingPhase": "pre",
+      "batchId": null,
+      "collegeEmail": "amit.reddy@gmail.com",
+      "hexawareEmail": null,
+      "offerStatus": "accepted",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-023",
+      "fullName": "Tanvi Gupta",
+      "email": "tanvi.gupta@gmail.com",
+      "hexId": "HEX-100022",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-15",
+      "collegeEmail": "tanvi.gupta@gmail.com",
+      "hexawareEmail": "tanvi.gupta@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-024",
+      "fullName": "Ravi Nair",
+      "email": "ravi.nair@gmail.com",
+      "hexId": "HEX-100023",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-16",
+      "collegeEmail": "ravi.nair@gmail.com",
+      "hexawareEmail": "ravi.nair@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-025",
+      "fullName": "Shreya Joshi",
+      "email": "shreya.joshi@gmail.com",
+      "hexId": "HEX-100024",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-17",
+      "collegeEmail": "shreya.joshi@gmail.com",
+      "hexawareEmail": "shreya.joshi@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-026",
+      "fullName": "Priya Iyer",
+      "email": "priya.iyer@gmail.com",
+      "hexId": "HEX-100025",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-13",
+      "collegeEmail": "priya.iyer@gmail.com",
+      "hexawareEmail": "priya.iyer@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-027",
+      "fullName": "Arjun Pillai",
+      "email": "arjun.pillai@gmail.com",
+      "hexId": "HEX-100026",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-14",
+      "collegeEmail": "arjun.pillai@gmail.com",
+      "hexawareEmail": "arjun.pillai@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-028",
+      "fullName": "Sneha Das",
+      "email": "sneha.das@gmail.com",
+      "hexId": "HEX-100027",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-15",
+      "collegeEmail": "sneha.das@gmail.com",
+      "hexawareEmail": "sneha.das@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-029",
+      "fullName": "Rahul Chatterjee",
+      "email": "rahul.chatterjee@gmail.com",
+      "hexId": "HEX-100028",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-16",
+      "collegeEmail": "rahul.chatterjee@gmail.com",
+      "hexawareEmail": "rahul.chatterjee@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-030",
+      "fullName": "Ananya Saxena",
+      "email": "ananya.saxena@gmail.com",
+      "hexId": "HEX-100029",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-17",
+      "collegeEmail": "ananya.saxena@gmail.com",
+      "hexawareEmail": "ananya.saxena@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-031",
+      "fullName": "Vikram Sharma",
+      "email": "vikram.sharma@gmail.com",
+      "hexId": "HEX-100030",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-13",
+      "collegeEmail": "vikram.sharma@gmail.com",
+      "hexawareEmail": "vikram.sharma@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-032",
+      "fullName": "Kavya Reddy",
+      "email": "kavya.reddy@gmail.com",
+      "hexId": "HEX-100031",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-14",
+      "collegeEmail": "kavya.reddy@gmail.com",
+      "hexawareEmail": "kavya.reddy@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-033",
+      "fullName": "Deepak Gupta",
+      "email": "deepak.gupta@gmail.com",
+      "hexId": "HEX-100032",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-15",
+      "collegeEmail": "deepak.gupta@gmail.com",
+      "hexawareEmail": "deepak.gupta@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-034",
+      "fullName": "Meera Nair",
+      "email": "meera.nair@gmail.com",
+      "hexId": "HEX-100033",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-16",
+      "collegeEmail": "meera.nair@gmail.com",
+      "hexawareEmail": "meera.nair@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-035",
+      "fullName": "Rohan Joshi",
+      "email": "rohan.joshi@gmail.com",
+      "hexId": "HEX-100034",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-17",
+      "collegeEmail": "rohan.joshi@gmail.com",
+      "hexawareEmail": "rohan.joshi@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-036",
+      "fullName": "Isha Iyer",
+      "email": "isha.iyer@gmail.com",
+      "hexId": "HEX-100035",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-13",
+      "collegeEmail": "isha.iyer@gmail.com",
+      "hexawareEmail": "isha.iyer@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-037",
+      "fullName": "Karan Pillai",
+      "email": "karan.pillai@gmail.com",
+      "hexId": "HEX-100036",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-14",
+      "collegeEmail": "karan.pillai@gmail.com",
+      "hexawareEmail": "karan.pillai@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-038",
+      "fullName": "Divya Das",
+      "email": "divya.das@gmail.com",
+      "hexId": "HEX-100037",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-15",
+      "collegeEmail": "divya.das@gmail.com",
+      "hexawareEmail": "divya.das@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-039",
+      "fullName": "Nikhil Chatterjee",
+      "email": "nikhil.chatterjee@gmail.com",
+      "hexId": "HEX-100038",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-16",
+      "collegeEmail": "nikhil.chatterjee@gmail.com",
+      "hexawareEmail": "nikhil.chatterjee@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-040",
+      "fullName": "Pooja Saxena",
+      "email": "pooja.saxena@gmail.com",
+      "hexId": "HEX-100039",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-17",
+      "collegeEmail": "pooja.saxena@gmail.com",
+      "hexawareEmail": "pooja.saxena@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-041",
+      "fullName": "Aditya Sharma",
+      "email": "aditya.sharma@gmail.com",
+      "hexId": "HEX-100040",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-13",
+      "collegeEmail": "aditya.sharma@gmail.com",
+      "hexawareEmail": "aditya.sharma@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-042",
+      "fullName": "Riya Reddy",
+      "email": "riya.reddy@gmail.com",
+      "hexId": "HEX-100041",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-14",
+      "collegeEmail": "riya.reddy@gmail.com",
+      "hexawareEmail": "riya.reddy@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-043",
+      "fullName": "Suresh Gupta",
+      "email": "suresh.gupta@gmail.com",
+      "hexId": "HEX-100042",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-15",
+      "collegeEmail": "suresh.gupta@gmail.com",
+      "hexawareEmail": "suresh.gupta@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-044",
+      "fullName": "Lakshmi Nair",
+      "email": "lakshmi.nair@gmail.com",
+      "hexId": "HEX-100043",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-16",
+      "collegeEmail": "lakshmi.nair@gmail.com",
+      "hexawareEmail": "lakshmi.nair@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-045",
+      "fullName": "Manoj Joshi",
+      "email": "manoj.joshi@gmail.com",
+      "hexId": "HEX-100044",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-17",
+      "collegeEmail": "manoj.joshi@gmail.com",
+      "hexawareEmail": "manoj.joshi@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-046",
+      "fullName": "Neha Iyer",
+      "email": "neha.iyer@gmail.com",
+      "hexId": "HEX-100045",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-13",
+      "collegeEmail": "neha.iyer@gmail.com",
+      "hexawareEmail": "neha.iyer@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-047",
+      "fullName": "Amit Pillai",
+      "email": "amit.pillai@gmail.com",
+      "hexId": "HEX-100046",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-14",
+      "collegeEmail": "amit.pillai@gmail.com",
+      "hexawareEmail": "amit.pillai@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-048",
+      "fullName": "Tanvi Das",
+      "email": "tanvi.das@gmail.com",
+      "hexId": "HEX-100047",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-15",
+      "collegeEmail": "tanvi.das@gmail.com",
+      "hexawareEmail": "tanvi.das@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-049",
+      "fullName": "Ravi Chatterjee",
+      "email": "ravi.chatterjee@gmail.com",
+      "hexId": "HEX-100048",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-16",
+      "collegeEmail": "ravi.chatterjee@gmail.com",
+      "hexawareEmail": "ravi.chatterjee@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    },
+    {
+      "id": "trainee-050",
+      "fullName": "Shreya Saxena",
+      "email": "shreya.saxena@gmail.com",
+      "hexId": "HEX-100049",
+      "onboardingPhase": "post",
+      "batchId": "B-2025-17",
+      "collegeEmail": "shreya.saxena@gmail.com",
+      "hexawareEmail": "shreya.saxena@hexaware.com",
+      "offerStatus": "onboarded",
+      "onboardingMailSentAt": null
+    }
+  ],
+  "badges": {
+    "first-spark": {
+      "id": "first-spark",
+      "name": "First Spark",
+      "icon": "🌟",
+      "description": "First feedback",
+      "rarity": "Common"
+    },
+    "team-player": {
+      "id": "team-player",
+      "name": "Team Player",
+      "icon": "👥",
+      "description": "Peer feedback x5",
+      "rarity": "Common"
+    }
+  },
+  "skillTree": {
+    "softSkills": {
+      "name": "Soft Skills",
+      "phase": 1,
+      "nodes": [
+        {
+          "id": "ss-1",
+          "name": "Communication",
+          "status": "completed",
+          "score": 75
+        }
+      ]
+    },
+    "foundation": {
+      "name": "Foundation Tech",
+      "phase": 2,
+      "nodes": [
+        {
+          "id": "ft-1",
+          "name": "Java",
+          "status": "in-progress",
+          "score": 65
+        }
+      ]
+    },
+    "streams": {
+      "name": "Streams",
+      "phase": 3,
+      "nodes": [
+        {
+          "id": "st-1",
+          "name": "Product Engineering",
+          "status": "locked",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "streamRecommendation": {
+    "maverickId": "mav-001",
+    "recommendations": [
+      {
+        "stream": "Product Engineering",
+        "fit": 78,
+        "reason": "Strong Java"
+      }
+    ]
+  },
+  "transcripts": [
+    {
+      "id": "tr-ses-001",
+      "sessionId": "ses-001",
+      "summary": [
+        "Introduced OOP pillars with live Java examples",
+        "Walked through inheritance hierarchies and access modifiers",
+        "Closed with interface vs abstract class comparison"
+      ],
+      "keyTerms": [
+        "Inheritance",
+        "Polymorphism",
+        "Encapsulation",
+        "Abstract class"
+      ],
+      "confusionTimestamps": [
+        {
+          "time": "00:18:42",
+          "topic": "Polymorphism vs method overloading",
+          "clarityDip": 2.1
+        },
+        {
+          "time": "00:47:15",
+          "topic": "Abstract classes and interfaces",
+          "clarityDip": 1.8
+        },
+        {
+          "time": "01:12:03",
+          "topic": "Constructor chaining with super()",
+          "clarityDip": 2.4
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "id": 0,
+      "name": "Pre-Onboarding",
+      "duration": "Pre-joining",
+      "description": "Offer and welcome kit"
+    },
+    {
+      "id": 1,
+      "name": "Spark: Soft Skills",
+      "duration": "3 Weeks",
+      "description": "Communication and teamwork"
+    },
+    {
+      "id": 2,
+      "name": "Foundation Tech",
+      "duration": "6-11 Weeks",
+      "description": "Core engineering stack"
+    },
+    {
+      "id": 3,
+      "name": "Stream Training",
+      "duration": "6 Weeks",
+      "description": "PGET specialization"
+    },
+    {
+      "id": 5,
+      "name": "Deployment",
+      "duration": "Day 0",
+      "description": "Hex ID and manager assignment"
+    }
+  ],
+  "aiLearningBuddyHistory": [],
+  "curriculumInsights": [],
+  "effectivenessData": [],
+  "quizzes": []
+}

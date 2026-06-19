@@ -1,0 +1,122 @@
+.welcome-coach {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  pointer-events: none;
+}
+
+.welcome-coach__spotlight {
+  position: fixed;
+  border-radius: 12px;
+  box-shadow:
+    0 0 0 9999px rgba(10, 8, 24, 0.72),
+    0 0 24px rgba(123, 92, 245, 0.45);
+  pointer-events: none;
+  animation: welcome-coach-pulse 2s ease-in-out 1;
+}
+
+@keyframes welcome-coach-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 9999px rgba(10, 8, 24, 0.72),
+      0 0 16px rgba(123, 92, 245, 0.35);
+  }
+  50% {
+    box-shadow:
+      0 0 0 9999px rgba(10, 8, 24, 0.72),
+      0 0 28px rgba(123, 92, 245, 0.55);
+  }
+}
+
+.welcome-coach__panel {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: min(420px, calc(100vw - 32px));
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: var(--base60Card, rgba(12, 10, 28, 0.92));
+  border: 1px solid rgba(123, 92, 245, 0.35);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  font-family: var(--font-app);
+}
+
+.welcome-coach__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 6px;
+}
+
+.welcome-coach__title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #e8e4ff;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.welcome-coach__body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 16px;
+}
+
+.welcome-coach--reduced .welcome-coach__panel {
+  border-color: rgba(67, 97, 238, 0.4);
+}
+
+/* ── Step progress pips ── */
+.welcome-coach__progress {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.welcome-coach__pip {
+  flex: 1;
+  height: 3px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.3s;
+}
+
+.welcome-coach__pip--done {
+  background: var(--brand-violet, #7b5cf5);
+}
+
+/* ── Actions row ── */
+.welcome-coach__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.welcome-coach__skip-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: color 0.15s;
+}
+
+.welcome-coach__skip-btn:hover {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-coach__spotlight {
+    animation: none;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "request_confirmation",
+  "payload": {
+    "version": 1,
+    "idempotencyKey": "confirmation:2d2ce23f-099b-4ca2-b241-cb4a0d344f51:plan:1.0.0-draft",
+    "continuationPolicy": "wake_assignee",
+    "title": "Approve NextSteps ADO Feature ladder plan (ALSAA-11)",
+    "prompt": "Review docs/plans/nextsteps-ado-feature-ladder-plan.md and docs/ado-routing-matrix.md. Approve to authorize SM ADO execution: 7 Friday Features (0.1.0–0.7.0), User Story mirror for ALSAA-12…18, delivery plan cards on Lab AI Tools.",
+    "summary": "Scrum Master drafted the NextSteps ADO mirror plan: Feature ladder, Paperclip→Story map, Sprint N iterations, delivery plan strategy. No ADO mutations until approved.",
+    "confirmationTarget": {
+      "type": "document",
+      "path": "docs/plans/nextsteps-ado-feature-ladder-plan.md",
+      "revisionId": "1.0.0-draft"
+    }
+  }
+}

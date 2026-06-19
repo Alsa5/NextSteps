@@ -1,0 +1,272 @@
+{
+  "project": "NextSteps",
+  "days": [
+    {
+      "date": "2026-06-16",
+      "title": "Button polish — Pre-Onboarding Meets & Feedback Analytics",
+      "tags": ["fix", "polish"],
+      "narrative": "Pre-Onboarding Meets and Feedback Analytics had broken button styling — gradient blobs without padding or radius because the base btn class was missing and fb-chip/fb-tab-btn CSS was never defined. I restored proper button foundations, refactored the meet scheduler modal to match the batch-assignment modal pattern, and added full filter-chip, tab-toggle, and export-dropdown styles. Scheduling meets and filtering feedback now feels consistent with the rest of the L&D console.",
+      "filesChanged": [
+        "nextsteps-app/src/pages/ld/PreOnboardingSessions.jsx",
+        "nextsteps-app/src/components/ld/PreOnboardingMeetModal.jsx",
+        "nextsteps-app/src/pages/ld/FeedbackAnalytics.jsx",
+        "nextsteps-app/src/index.css",
+        "nextsteps-app/src/components/metaverse/metaverse.css"
+      ],
+      "milestones": [
+        "Pre-Onboarding Meets buttons match app design system",
+        "Feedback Analytics filter chips, tabs, and export dropdown styled"
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "title": "L&D console upgrade — charts, AI helper, unified batch composer",
+      "tags": ["milestone", "progress"],
+      "narrative": "The L&D console finally feels like a command center. Batch Composer merges AI segregation and approve/publish into two tabs. Ops Dashboard gets Three.js visualizations and Recharts fed by live roster data. Recruitment queue seed migration restores 18 recruits when localStorage goes stale. Effectiveness Loop and Feedback Analytics show real data with dark-theme charts and working CSV/Excel/PDF exports. Report Generator PDF and Excel exports work. AI Helper uses an MCP agent for natural-language roster queries with export. Maratype display font on heroes and welcome messages. Skill Grove is replaced by Training Universe — a 3D planet map with five stages; Deployment and Onboarding are one combined final planet, locked until internship completes. Completing a stage zooms the camera out to overview before the rocket flies to the next planet. Chest reward modal layout fixed so skill text no longer overlaps the heading. Maratype bold only on headings; Noto Sans for body text. Pre-onboarding meets now use real Google Calendar OAuth — L&D connects Gmail once, schedules create live Meet links, SMTP invites trainer and batch, and GPT-5 analyzes transcripts after session end. Google Cloud credentials configured; API rebuilt and restarted on port 3003.",
+      "filesChanged": [
+        "nextsteps-app/src/pages/ld/BatchComposer.jsx",
+        "nextsteps-app/src/pages/ld/LDDashboard.jsx",
+        "nextsteps-app/src/pages/ld/LDAIHelper.jsx",
+        "nextsteps-app/src/pages/ld/EffectivenessLoop.jsx",
+        "nextsteps-app/src/pages/ld/FeedbackAnalytics.jsx",
+        "nextsteps-app/src/pages/ld/ReportGenerator.jsx",
+        "nextsteps-app/src/services/ldAnalytics.js",
+        "nextsteps-app/src/services/ldQueryEngine.js",
+        "nextsteps-app/src/utils/exportUtils.js",
+        "nextsteps-app/src/components/ld/LDOpsThreeCharts.jsx",
+        "nextsteps-app/src/data/ldTraineeStore.js",
+        "nextsteps-app/src/components/training-universe/",
+        "nextsteps-app/src/pages/maverick/SkillTree.jsx"
+      ],
+      "milestones": [
+        "Batch Composer two-tab workflow (segregation + approve)",
+        "Ops Dashboard Three.js + live data charts",
+        "AI Helper with MCP agent and exports",
+        "Working PDF/Excel exports across analytics and reports",
+        "Skill Grove replaced with Training Universe — five planets; Deployment & Onboarding combined as final locked stage",
+        "Stage completion zoom-out then rocket flight transition",
+        "Maratype headings only; Noto Sans body in Training Universe",
+        "Google Calendar OAuth for real Meet links + GPT-5 session analysis pipeline"
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Landing music mute actually mutes",
+      "tags": ["fix"],
+      "narrative": "The landing page mute button finally does what it says. Two audio sources were fighting — the galaxy iframe was auto-playing its own ambient track while the top-bar toggle only controlled a separate parent player, so Mute never silenced what you were actually hearing. I disabled autoplay in embed mode, wired the toggle to a single DOM audio element, and synced mute state to the iframe via postMessage so one click stops everything. Then the Stellardrone MP3 on Free Music Archive never loads on our network — DNS can't resolve the CDN — so play() always failed and the retry toast covered the mute button. I swapped in a self-contained Web Audio ambient synth (no external files), removed that toast, and moved login toasts to the bottom of the screen. Magic link sign-in was broken for two reasons: Vite was proxying /api to port 3001 (Sanctuary, not NextSteps), and the API never sent email. I wired magic-link + OTP, pointed the dev proxy at nextsteps-api on 3003, and restored galaxy interactivity. The recruitment queue got add-recruit and assign-to-batch — but the assign button silently failed because the store re-read stale localStorage. I aligned eligibility, synced seat counts, and wired the button to live React state so assignments stick on the first click. Onboarding mail is real now — L&D drafts role, location, date, and attachment; the API sends a branded welcome via SMTP. Sign-in rules match the roster: batch-assigned trainees can magic-link in; queue-only recruits get a clear wait message. Your face follows you through the Nebula: names title-case everywhere, and avatars use Microsoft Graph for SSO or Gmail profile photos for personal email — sidebar, passport, and hyperspeed lanyard all show the real you.",
+      "filesChanged": [
+        "nextsteps-app/src/pages/LoginPage.jsx",
+        "nextsteps-app/src/pages/LoginPage.css",
+        "nextsteps-app/src/components/metaverse/GalaxySimBackground.jsx",
+        "nextsteps-app/src/components/metaverse/GalaxySimBackground.css",
+        "nextsteps-app/public/galaxy-sim/app.js",
+        "nextsteps-app/src/audio/galaxyAmbient.js",
+        "nextsteps-app/src/App.jsx",
+        "nextsteps-app/src/data/ldTraineeStore.js",
+        "nextsteps-app/src/pages/ld/BatchAssignmentQueue.jsx",
+        "nextsteps-app/src/components/ld/AddTraineeModal.jsx",
+        "nextsteps-app/src/utils/userDisplay.js",
+        "nextsteps-app/src/components/PersonAvatar.jsx",
+        "nextsteps-app/src/components/Layout.jsx",
+        "nextsteps-app/src/components/SignInSplash.jsx",
+        "nextsteps-app/src/pages/maverick/MaverickPassport.jsx",
+        "nextsteps-app/src/auth/AzureAuthProvider.jsx"
+      ],
+      "milestones": [
+        "Landing music mute/unmute controls all audible sources",
+        "Landing ambient music works without external CDN",
+        "Magic link + OTP auth with dev fallback",
+        "Recruitment queue assign-to-batch works end-to-end",
+        "Real profile photos in sidebar, passport, and hyperspeed lanyard"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "title": "3D grove, AI buddy, feedback analytics — full nebula stack live",
+      "tags": ["milestone", "progress", "fix", "decision"],
+      "narrative": "Today NextSteps became a place you walk into. The galaxy backdrop is fully interactive — drag, zoom, parallax — while every UI button still works, thanks to a careful pointer-events architecture. Dark mode is locked in, theme toggle is gone, music mutes properly. The Skill Grove is a full-page 3D tree with no chrome: branches glow violet for completed skills, amber for in-progress, fruits bloom on achievements. L&D has two new power tools: a 50-record Trainee Roster with side-panel profiles and one-click onboarding email automation, and a Feedback Analytics dashboard unifying all Maverick-to-trainer and manager-to-Maverick feedback with filterable tables, ranked analytics, and CSV export. The AI Learning Buddy now runs on real Azure OpenAI (gpt-5), as does transcript analysis. Every component got proper nebula-themed CSS: glowing AI chat, skill-label chips, feedback side-panel. The hyperspeed splash shows your Graph API photo, name, and employee ID on a floating lanyard badge.",
+      "filesChanged": [
+        "src/components/Layout.jsx",
+        "src/context/ThemeContext.jsx",
+        "src/pages/LoginPage.jsx",
+        "src/pages/LoginPage.css",
+        "src/components/SignInSplash.jsx",
+        "src/components/SignInSplash.css",
+        "src/pages/maverick/SkillTree.jsx",
+        "src/pages/maverick/AIBuddy.jsx",
+        "src/pages/maverick/SessionTranscript.jsx",
+        "src/pages/maverick/PulseFeedback.jsx",
+        "src/pages/maverick/DeepFeedback.jsx",
+        "src/pages/ld/TraineeRoster.jsx",
+        "src/pages/ld/FeedbackAnalytics.jsx",
+        "src/pages/ld/ReportGenerator.jsx",
+        "src/pages/manager/PerformanceReview.jsx",
+        "src/services/azureOpenAI.js",
+        "src/App.jsx",
+        "src/components/metaverse/metaverse.css",
+        "src/components/WelcomeCoach.jsx",
+        "src/components/WelcomeCoach.css",
+        ".env",
+        "docs/ado-board-state.json",
+        "docs/dev-journal.md"
+      ],
+      "milestones": [
+        "3D Skill Grove full-page canvas — branches=levels, fruits=achievements, zero UI chrome",
+        "FeedbackAnalytics page — unified L&D feedback view with analytics, flags, and CSV export",
+        "AI Learning Buddy and transcript analysis wired to Azure OpenAI gpt-5",
+        "NebulaBadge overlay on hyperspeed splash shows Graph API identity",
+        "TraineeRoster with onboarding email auto-provisioning and side-panel profiles"
+      ],
+      "challenges": [
+        "SkillTree main-content padding was cropping the 3D canvas — fixed with :has() override"
+      ],
+      "lookingAhead": "Connect magic link email send end-to-end with actual SMTP; verify SSO role routing with real Azure AD groups."
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Maverick Nebula — welcome shipped, privacy hardened",
+      "tags": ["milestone", "progress", "decision"],
+      "narrative": "ALSAA-63 heartbeat 2: resumed after adapter-limit failure, cleared missing-disposition gate. Wave 2 now fully done (ALSAA-61 privacy + ALSAA-62 P7 analytics). Critical path is ALSAA-57 close-out + stalled P2/P4/P5 (ALSAA-14/16/17). Posted delta rollup on monitor; parent comment still 409 (concurrent ALSAA-54 checkout). Heartbeat 1 established CoS monitor after CEO handoff. Closed ALSAA-61/62/58/59, rebuilt Maverick Nebula with SSO.",
+      "filesChanged": [
+        "src/theme/maverickNebula.js",
+        "src/components/metaverse/",
+        "src/components/lanyard/LoginLanyardTeaser.jsx",
+        "src/pages/LoginPage.jsx",
+        "src/components/Layout.jsx",
+        "src/App.jsx",
+        "src/pages/manager/",
+        "src/data/mockData.json",
+        "src/index.css",
+        "docs/dev-journal.md",
+        "docs/dev-journal.json",
+        "docs/ado-board-state.json",
+        "docs/nextsteps-master-prompt.txt",
+        "docs/design/metaverse-welcome-experience-spec.md",
+        "docs/nextsteps-alsaa54-phased-feature-matrix.md",
+        "docs/engineering/p7-analytics-bundle-g03-g07.md",
+        "nextsteps-api/src/routes/p7-analytics.ts",
+        "nextsteps-api/src/repositories/in-memory-p7-analytics.ts",
+        "nextsteps-api/tests/routes/p7-analytics.test.ts",
+        "nextsteps-app/src/App.jsx",
+        "nextsteps-app/src/components/RoleSwitcher.jsx",
+        "nextsteps-app/src/auth/AzureAuthProvider.jsx",
+        "nextsteps-api/src/routes/auth.ts",
+        "nextsteps-api/src/routes/feedback-completion.ts",
+        "nextsteps-api/src/worker/jobs/send-feedback-reminder.ts",
+        "nextsteps-api/src/services/privacy.ts",
+        "nextsteps-api/src/services/audit.ts",
+        "nextsteps-api/src/worker/jobs/purge-expired-data.ts",
+        "nextsteps-api/tests/routes/privacy-rbac.test.ts",
+        "docs/engineering/g08-privacy-rbac-hardening.md"
+      ],
+      "milestones": [
+        "Mentor role and dashboard removed",
+        "Four-role model: Maverick, Trainer, L&D Executive, Manager",
+        "WebGL metaverse login and per-role 3D backdrops shipped",
+        "ALSAA-51 closed — UI/UX revamp with SSO retained",
+        "ALSAA-56 closed — Maverick Nebula welcome experience spec",
+        "ALSAA-55 closed — phased feature matrix (62 modules, 8 gaps)",
+        "ALSAA-58 closed — role-aware welcome splash + first-run coach",
+        "ALSAA-59 closed — G-01 feedback completion engine (Wave 1 backend)",
+        "ALSAA-62 closed — P7 analytics bundle G-03–G-07 (Wave 2 backend)",
+        "ALSAA-61 closed — G-08 privacy/RBAC hardening (Wave 2 backend)"
+      ],
+      "challenges": [],
+      "lookingAhead": "CoS ALSAA-63 heartbeat 2: merge rollup onto ALSAA-54 parent when checkout clears; VP Engineering unstick P2/P4/P5 (ALSAA-14/16/17). Epic closes when matrix evidenced + ALSAA-57 done."
+    },
+    {
+      "date": "2026-05-29",
+      "title": "Strategy complete + ADO ladder plan — Build delegation",
+      "tags": ["milestone", "progress", "decision"],
+      "narrative": "Strategy closed with the epic roadmap v1.0.0 (ALSAA-10): ten epics, P0–P6 mapped to ALSAA-12–18. Scrum Master delivered ALSAA-11 planning — seven Friday Features (0.1.0–0.7.0), Paperclip→ADO story mirror, and a starter routing matrix under Lab AI Tools; CEO approval gates the actual board sync. Build is in flight: P4 session intelligence split into specialist tasks, P2 pulse triaged for privacy and scaffold gaps (ALSAA-25→27), P5 manager/auth migration delegated (ALSAA-28/30/32/33). The program now has both an engineering roadmap and a board execution blueprint.",
+      "filesChanged": [
+        "docs/nextsteps-nexus-strategy-epic-roadmap.md",
+        "docs/nextsteps-maverick-platform-spec.md",
+        "docs/plans/nextsteps-ado-feature-ladder-plan.md",
+        "docs/ado-routing-matrix.md",
+        "docs/architecture/legacy-audit-and-target-architecture.md",
+        "docs/design/metaverse-ui-ux-specification.md",
+        "docs/engineering/p5-manager-auth-migration-plan.md",
+        "docs/ado-board-state.json",
+        "docs/dev-journal.md",
+        "docs/dev-journal.json"
+      ],
+      "milestones": [
+        "ALSAA-10 done — Strategy gate complete (epic roadmap v1.0.0)",
+        "ALSAA-11 plan v1.0.0-draft — ADO Feature ladder + routing matrix (SM; CEO approval pending)",
+        "CEO approved Discovery exit (2026-05-29)",
+        "ALSAA-16 P4 delegated to ALSAA-20–24 specialist tasks",
+        "ALSAA-14 P2 delegated to ALSAA-25→26→27 (scaffold verify → API → frontend)",
+        "ALSAA-17 P5 delegated to ALSAA-28/30/32/33 (Manager API, web, auth migration, security gate)"
+      ],
+      "challenges": [
+        "P0 monorepo packages not yet visible in workspace root — ALSAA-25 opened to verify before P2 API work",
+        "P1 (ALSAA-13) blocked on adapter failure — gates P5.3 deployment auth migration"
+      ],
+      "lookingAhead": "CEO approves ALSAA-11 plan → SM executes ADO mirror (Features + Stories + delivery plan). Backend Architect executes ALSAA-28; unblock ALSAA-13 to unlock ALSAA-32 auth migration."
+    },
+    {
+      "date": "2026-05-03",
+      "title": "Brand shell polish + Magic Bento interactions on real cards",
+      "tags": ["milestone", "progress", "decision", "fix", "polish"],
+      "narrative": "The product wears one deliberate visual story (indigo, violet, amber; Hyperspeed; Noto Sans everywhere; DiceBear Personas avatars; horizontal Passport lanyard; dark-friendly HQ cards; sidebar scrollbar and Sign out contrast fixes). I then wired React Bits–style Magic Bento for production: GSAP spotlight and glow across Layout main, AppMagicCard on real card/stat/login/chat surfaces, motion wrappers preserved. A codemod bug matching card inside card-header taught tighter token rules; I dropped a phantom Dashboard bento import for a trainer toolkit strip that builds. Next I'd lazy-load chart-heavy routes if perf feedback says so.",
+      "filesChanged": [
+        "package.json",
+        "package-lock.json",
+        "tsconfig.json",
+        "index.html",
+        "src/main.jsx",
+        "src/App.jsx",
+        "src/vite-env.d.ts",
+        "src/index.css",
+        "src/context/AuthContext.jsx",
+        "src/context/ThemeContext.jsx",
+        "src/theme/brandPalette.js",
+        "src/components/Hyperspeed.tsx",
+        "src/components/Hyperspeed.css",
+        "src/components/SignInSplash.jsx",
+        "src/components/SignInSplash.css",
+        "src/components/ThemeToggle.jsx",
+        "src/components/Layout.jsx",
+        "src/components/PersonAvatar.jsx",
+        "src/components/lanyard/Lanyard.jsx",
+        "src/components/lanyard/Lanyard.css",
+        "src/pages/LoginPage.jsx",
+        "src/pages/maverick/MaverickPassport.jsx",
+        "src/pages/maverick/Leaderboard.jsx",
+        "src/pages/maverick/MaverickDashboard.jsx",
+        "src/pages/maverick/PhaseTimeline.jsx",
+        "src/pages/maverick/StreamRecommender.jsx",
+        "src/pages/maverick/SkillTree.jsx",
+        "src/pages/ld/BatchComparison.jsx",
+        "src/pages/ld/EffectivenessLoop.jsx",
+        "src/pages/ld/LDDashboard.jsx",
+        "src/pages/trainer/BatchPulseBoard.jsx",
+        "src/pages/trainer/SessionLogger.jsx",
+        "src/pages/trainer/SessionAnalytics.jsx",
+        "src/pages/supervisor/SupervisorDashboard.jsx",
+        "src/pages/supervisor/PerformanceReview.jsx",
+        "src/pages/mentor/MentorDashboard.jsx",
+        "src/assets/lanyard/card.glb",
+        "src/assets/lanyard/lanyard.png",
+        "docs/dev-journal.md",
+        "docs/dev-journal.json"
+      ],
+      "milestones": [
+        "Tri-color palette wired through CSS, charts, and hyperspeedEffectColors()",
+        "Global Noto Sans typography (--font-app); removed Inter / Space Grotesk overrides",
+        "DiceBear Personas avatars (seed = Maverick ID) across shell and Passport",
+        "Maverick Passport as full-page horizontal lanyard credential card",
+        "Dark-theme Mission HQ accent cards + theme-aware XP ring",
+        "Sidebar shell polish: solid wordmark + inset nav accent + neutral scrollbar",
+        "Magic Bento (GSAP): global spotlight + AppMagicCard on dashboards, forms, login, AI Buddy"
+      ],
+      "challenges": [
+        "Keeping semantic UI (success vs risk) readable with only three hues",
+        "Sidebar scrollbar / glow reading as a purple seam beside content",
+        "Codemod false positives: word-boundary card matched card-header / passport-*-card class names"
+      ],
+      "lookingAhead": "Optional lazy-loading for chart-heavy pages if perf feedback comes in."
+    }
+  ]
+}

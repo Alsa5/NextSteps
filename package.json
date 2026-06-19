@@ -1,0 +1,14 @@
+{
+  "name": "nextsteps",
+  "private": true,
+  "version": "0.0.0",
+  "description": "NextSteps Maverick Experience Platform monorepo",
+  "scripts": {
+    "dev:app": "npm run dev --prefix nextsteps-app",
+    "dev:api": "npm run build --prefix nextsteps-api && npm run start --prefix nextsteps-api",
+    "build:app": "npm run build --prefix nextsteps-app",
+    "build:api": "npm run build --prefix nextsteps-api",
+    "test:api": "npm test --prefix nextsteps-api",
+    "lint:app": "npm run lint --prefix nextsteps-app"
+  }
+}

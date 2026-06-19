@@ -1,0 +1,906 @@
+================================================================================
+MASTER PROMPT: NextSteps — Maverick Experience Platform
+================================================================================
+
+Your Role
+---------
+You are a senior product architect and full-stack engineer. Design and specify
+NextSteps, a unified Training Management, Feedback, and Talent Insights platform
+for Hexaware's college-recruited trainees (Mavericks). Produce architecture,
+user flows, data models, API contracts, UI wireframes, and implementation plans.
+Follow every constraint below exactly.
+
+Sources consolidated into this prompt:
+  - Maverick Execution Platform (hackathon problem statement)
+  - Maverick Feedback 360 (hackathon problem statement)
+  - NextSteps Maverick Experience Platform specification
+  - MavX Complete Design Blueprint (Hexaware Designathon 2025) — rebranded to
+    NextSteps; Mentor role and all Mentor features omitted; L&D Manager renamed
+    to L&D Executive; Project Supervisor renamed to Manager
+
+
+================================================================================
+1. BUSINESS CONTEXT & PROBLEM STATEMENT
+================================================================================
+
+What Hexaware Is Solving
+------------------------
+Hexaware recruits college students through campus placements and interviews.
+These recruits are NOT immediately onboarded as employees. They enter a structured
+Maverick training program first.
+
+  GET  — Graduate Engineer Trainee (4 LPA band)
+  PGET — Premier Graduate Engineer Trainee (6 LPA band)
+
+Both are commonly called Mavericks.
+
+Training Outcomes
+-----------------
+During training, Mavericks may experience:
+
+  Outcome            | Meaning
+  -------------------|--------------------------------------------------------
+  Batch segregation  | AI/manual grouping into training streams by skills,
+                     | resume, certificates
+  Batch separation   | Splitting or reassigning cohorts mid-program
+  Conversion         | Successfully completing training → formal onboarding
+  Let-down           | Failing training → removal from program; Letter of
+                     | Intent (LOI) may be revoked
+
+Upon conversion/onboarding, the Maverick receives a Hexaware corporate email
+(@hexaware.com) and transitions from pre-deployment to post-deployment identity.
+
+Hackathon Sources (Merged Into One Product)
+-------------------------------------------
+A. Maverick Execution Platform
+   End-to-end training operations: batch lifecycle, candidate data, attendance,
+   assessments, trainer coordination, reminders, notifications, reporting,
+   real-time dashboards, and performance insights. Replaces spreadsheets and
+   manual coordination.
+
+B. Maverick Feedback 360
+   Automated feedback collection: post-session training feedback, post-project
+   performance insights (~3 months after deployment), AI analytics, automated
+   reminders, dashboards targeting 75–80% feedback completion, training
+   effectiveness tracking, and performance alerts for L&D.
+
+NextSteps combines both: training execution + feedback + deployment continuity +
+talent insights.
+
+Platform Narrative
+------------------
+We started with Maverick Feedback 360 — a feedback system.
+Then we realised: feedback without context is just data.
+Context comes from knowing who the Maverick is → Resume Intelligence.
+Context comes from knowing how the session went → Transcript Intelligence.
+Context comes from knowing how they're placed → Batch Segregation AI.
+And feedback is worthless if nobody submits it → Gamification fixes that.
+
+So Feedback 360 pulled in Execution and Talent — not because we went out of
+scope, but because feedback demanded them. NextSteps is what happens when you
+follow the problem all the way to its roots.
+
+The result:
+  - L&D makes data-driven decisions in minutes, not weeks
+  - Trainers see their real impact — not just attendance numbers
+  - Mavericks feel they are on a journey — not just surviving training
+  - Hexaware deploys better, more prepared engineers. Every batch.
+
+
+================================================================================
+2. THE MAVERICK TRAINING JOURNEY (PHASE MAP)
+================================================================================
+
+NextSteps maps precisely to the real Hexaware Mavericks lifecycle. Every feature
+is anchored to a phase. The platform handles two distinct tracks: GET and PGET.
+
+  Ph | Phase Name              | Duration        | Content                              | Who       | NextSteps Role
+  ---|-------------------------|-----------------|--------------------------------------|-----------|------------------
+  0  | Pre-Onboarding          | Pre-joining     | Offer → Doc upload → Resume/Skill    | GET+PGET  | AI Skill Scan,
+     |                         |                 | Parse → Welcome Kit                  |           | Onboarding Wizard
+  1  | Spark: Soft Skills      | 3 Weeks         | Communication, corporate etiquette,  | GET+PGET  | Pulse Feedback
+     |                         |                 | teamwork, ESSP                       |           |
+  2  | Spark: Foundation Tech  | 6W (PGET)       | Java, SQL, HTML/CSS/JS, Angular,     | GET+PGET  | Deep Feedback
+     |                         | 11W (GET)       | REST APIs, AWS Basics                |           | + Quiz/Assessment
+  3  | Stream Training         | 6 Weeks         | Product Engg / Automation /        | PGET Only | Stream Tracking
+     |                         |                 | Analytics / Digital / Innovation /   |           |
+     |                         |                 | HI / Banking / Data Assurance        |           |
+  4  | Project Internship      | 2 Weeks         | Live mini-project, assessed with     | PGET Only | Capstone Score
+     |                         |                 | rubric                               |           |
+  5  | Deployment              | Day 0           | Hex ID issued, project allocated,    | All       | SSO Transition,
+     |                         |                 | Manager assigned                     |           | Auth Migration
+  6  | Post-Deploy Review      | M1, M3, M6      | Manager rates project performance    | All       | Effectiveness
+     |                         |                 | vs training readiness                |           | Loop
+
+Stream Options (Phase 3 — PGET Only)
+------------------------------------
+  - Product Engineering
+  - Automation
+  - Analytics
+  - Digital
+  - Innovation
+  - HI (Hybrid Intelligence)
+  - Banking
+  - Data Assurance
+
+
+================================================================================
+3. PRODUCT VISION
+================================================================================
+
+NextSteps is a unified, cloud-native, metaverse-inspired platform that manages
+the entire Maverick journey:
+
+  Recruitment acceptance → Welcome & orientation → Training (Phases 0–4) →
+  Assessments → Feedback → Conversion OR Let-down → Onboarding → Deployment →
+  Post-project performance review (M1, M3, M6)
+
+Experience Principles
+---------------------
+  - Whimsical, story-driven UI — training feels like a mission/world, not a
+    corporate form library
+  - 60-30-10 color rule — dominant base (60%), secondary structure (30%),
+    accent highlights (10%)
+  - Immersive interactions — parallax scrolling, React Three Fiber (WebGL/3D),
+    physics engines (e.g., Rapier/Cannon.js)
+  - Identity through lanyard — React Bits lanyard component on login and in
+    identity surfaces
+  - Gamification — XP, badges, streaks, batch leaderboards, daily missions,
+    level progression, skill tree
+  - Privacy-first analytics — aggregate batch insights only; no individual
+    surveillance
+  - Dark-mode HUD for Mavericks; clean command center for L&D and Trainers
+
+Strategic Outcomes
+------------------
+  Outcome                  | Success Signal
+  -------------------------|--------------------------------------------------
+  Higher engagement        | ↑ attendance, feedback completion, daily missions
+  Faster trainer response  | Confusion alerts within one session cycle
+  Smarter batch design     | AI segregation cuts manual grouping time ≥50%
+  Seamless deployment      | Personal-email auth → Hexaware SSO, zero data loss
+  Manager confidence       | Training passport + early performance flags
+  Feedback completion      | 75–80% across pulse and deep feedback cycles
+  Data-driven L&D          | Curriculum decisions in minutes, not weeks
+
+
+================================================================================
+4. TECHNOLOGY STACK (MANDATORY)
+================================================================================
+
+Layer          | Stack
+---------------|----------------------------------------------------------------
+Frontend       | React.js, Tailwind CSS, React Three Fiber, parallax libraries,
+               | Framer Motion, React Bits lanyard, shadcn/ui component library
+Backend        | Node.js, Express.js, JWT auth, async jobs (BullMQ + Redis)
+Database       | MongoDB (primary document store for all domain data)
+Storage        | Cloud object storage (encrypted resumes, certificates, PDFs)
+AI/ML          | Cloud AI services (resume parsing, skill extraction, sentiment/
+               | confusion analysis, curriculum copilot, learning buddy, readiness
+               | score, anomaly detection, stream recommender, report narrative)
+Integrations   | Google Meet / Microsoft Teams transcript APIs, CodePen embeds
+               | for live code assessments, Azure Communication Services or
+               | equivalent for email/SMS reminders
+Auth           | Dual/triple auth model (see Section 5)
+
+NOTE: The original MavX blueprint referenced FastAPI/PostgreSQL/Azure. For
+NextSteps production, use MERN (MongoDB, Express, React, Node.js) as specified.
+Map all Azure AI Foundry capabilities to equivalent cloud AI services. Preserve
+every feature and workflow from the blueprint; adapt infrastructure to MERN.
+
+Do not propose alternate stacks unless explicitly asked.
+
+
+================================================================================
+5. AUTHENTICATION MODEL (CRITICAL)
+================================================================================
+
+AUTH REALITY
+------------
+  - Mavericks in Phases 0–4 have NO Hexaware ID. They join with personal Gmail.
+  - Trainers are external vendors — they do NOT have Hexaware mail IDs.
+  - L&D Executives and Managers are Hexaware employees with corporate email.
+
+NextSteps uses a Dual/Triple Auth System:
+  - Magic Link OTP for Mavericks (pre-deployment) and Trainers (vendor email)
+  - Hexaware SSO (Azure AD) for L&D Executives, Managers, and deployed Mavericks
+
+At Phase 5 deployment: Maverick links personal Gmail account to new Hexaware
+email — seamless history transfer on same canonical userId.
+
+5.1 Maverick (GET/PGET) — Dual-State Auth
+-----------------------------------------
+  Phase              | Auth Method              | Email Used
+  -------------------|--------------------------|-----------------------------
+  Pre-deployment     | Gmail Magic Link OTP     | Personal email (college/Gmail)
+  (Phases 0–4)       | + optional 6-digit PIN   |
+  Post-deployment    | Hexaware SSO (Azure AD)  | New @hexaware.com email
+  (Phase 5+)         |                          |
+
+Requirements:
+  - Single canonical userId across both auth modes
+  - Preserve XP, badges, feedback, skills, batch history, readiness score
+  - Force one-time re-login at SSO cutover with explanatory banner
+  - Lanyard re-renders with "Deployed" badge (visual only)
+  - Track lifecycle states: invited → active_training → converted → deployed
+    OR let_down
+  - Internal NextSteps Profile ID ties all data (not Gmail, not Hex ID)
+  - Tokens expire in 90 days; PIN reset via Gmail OTP only
+  - All Maverick data encrypted at rest
+
+Onboarding Token Flow (Maverick):
+  1. L&D bulk-uploads Maverick Gmail list via CSV into Batch Composer
+  2. NextSteps generates unique Onboarding Token per Maverick; sends Magic Link
+     to Gmail
+  3. Maverick clicks link → Onboarding Wizard → sets 6-digit PIN → activated
+  4. All XP, badges, feedback, quiz scores tied to internal Profile ID
+  5. Deployment: L&D clicks "Activate Hex ID" → verification link to new
+     Hexaware email
+  6. Maverick clicks link → accounts merged → SSO login from this point forward
+
+5.2 Trainer — External Vendor Auth
+----------------------------------
+Trainers are external vendors/SMEs, NOT Hexaware employees.
+
+  Auth Method          | Email Used
+  ---------------------|-----------------------------
+  Magic Link OTP       | Vendor-provided personal email
+
+  - Invited by L&D Executive per batch assignment
+  - Access limited to assigned batches only
+  - No Hexaware SSO for Trainers
+
+5.3 L&D Executive & Manager — Hexaware SSO
+------------------------------------------
+Both are Hexaware employees with corporate email.
+
+  Role            | Auth
+  ----------------|-----------------------------
+  L&D Executive   | Hexaware SSO (Azure AD)
+  Manager         | Hexaware SSO (Azure AD)
+
+Role resolution: Azure AD profile (job title/designation) with email-based
+fallback registry.
+
+5.4 Login Page Behavior
+-----------------------
+  - Story-driven welcome for first-time Mavericks
+    ("Welcome to Hexaware — your training journey starts here")
+  - Role-aware lanyard preview on login
+  - Split auth paths:
+      "I'm a Maverick (training)"     → personal email magic link
+      "I'm a Trainer (vendor)"        → vendor email magic link
+      "Hexaware employee"             → Microsoft SSO button
+  - Post-login routing to role-specific dashboard
+  - NextSteps never stores passwords; auth fully delegated
+
+
+================================================================================
+6. USER ROLES (EXACTLY FOUR — NO EXCEPTIONS)
+================================================================================
+
+Use ONLY these role names everywhere (UI copy, APIs, DB, emails, docs):
+
+  Role            | Who                              | Auth
+  ----------------|----------------------------------|----------------------------
+  Maverick        | GET/PGET trainee                 | Magic Link → SSO at deploy
+  Trainer         | External vendor/SME              | Magic Link (vendor email)
+  L&D Executive   | Curriculum owner, batch manager  | Hexaware SSO
+  Manager         | On-project manager (post-deploy) | Hexaware SSO
+
+STRICTLY OMIT (from original MavX blueprint):
+  - Mentor — no routes, APIs, UI, emails, analytics, gamification, or references
+  - Supervisor — renamed to Manager
+  - L&D Manager — renamed to L&D Executive
+  - Any MENTOR App integration references
+  - Mentor session journal, mentee dashboard, AI mentee weekly brief,
+    smart nudge scheduler, mentor gamification badges
+  - Mentor escalation paths in trainer alerts (escalate to L&D only)
+  - Mentor access in transcript visibility matrix
+
+
+================================================================================
+7. USER PERSONAS
+================================================================================
+
+7.1 Maverick (GET / PGET Trainee)
+---------------------------------
+  Who They Are:  Fresh graduate from engineering or non-engineering background.
+                 Goes through Phases 0–4. Assigned to batches. NO Hex ID during
+                 training.
+  Core Goal:     Stay motivated, track phase progress, see batch standing,
+                 understand stream fit, submit feedback without it feeling like
+                 a chore.
+  Pain Points:   Feedback forms feel pointless. No visibility on performance.
+                 Stream selection is stressful. No sense of progress during long
+                 training weeks.
+  Login:         Gmail OTP Magic Link. PIN-protected. Transitions to SSO at
+                 deployment.
+  Gamification:  XP for every action. Levels, badges, daily missions, batch
+                 leaderboard, skill tree, streaks.
+
+7.2 Trainer / SME (External Vendor)
+-----------------------------------
+  Who They Are:  External contracted subject-matter expert. Delivers sessions
+                 in Phases 1–3. May handle multiple batches.
+  Core Goal:     Know how batch is absorbing material. Spot struggling Mavericks
+                 early. Spend less time on admin. See session scores vs peers.
+  Pain Points:   Feedback collected manually or not at all. No real-time signal
+                 after sessions. Can't distinguish confused vs engaged Mavericks
+                 individually (aggregate only).
+  Login:         Magic Link OTP via vendor email (NO Hex ID).
+  Gamification:  Session quality score (trainer leaderboard among peers).
+                 "Top Trainer" badge if batch scores above threshold for 3
+                 consecutive sessions.
+
+7.3 L&D Executive (HexaVarsity / HR)
+------------------------------------
+  Who They Are:  Owns entire Mavericks program. Designs curriculum, manages
+                 batches, measures training effectiveness. Primary beneficiary of
+                 all AI features.
+  Core Goal:     100% data-driven curriculum decisions. Batch segregation by AI.
+                 75–80% feedback completion guaranteed. Zero manual chasing.
+  Pain Points:   Feedback scattered. Batch assignment manual and time-consuming.
+                 No visibility on which training produces good project performers.
+  Login:         Hexaware SSO (Azure AD).
+  Gamification:  L&D Leaderboard: Curriculum Health Score per module.
+                 "Data Champion" badge at 80%+ feedback completion.
+                 AI recommendations actioned = points.
+
+7.4 Manager (On-Project Delivery Manager)
+-----------------------------------------
+  Who They Are:  On-project team lead who receives a deployed Maverick.
+                 Responsible for first 1–6 months of live project work.
+  Core Goal:     Quickly understand Maverick training and readiness score. Give
+                 structured performance feedback. Flag gaps back to L&D.
+  Pain Points:   No standard evaluation method. No insight on training coverage.
+                 Feedback loop to L&D completely broken.
+  Login:         Hexaware SSO (Azure AD).
+  Gamification:  Minimal by design — senior staff. "Feedback Submitted"
+                 confirmation. Maverick Passport reveal unlock on review
+                 completion.
+
+
+================================================================================
+8. ROLE-BASED FEATURES — DETAILED
+================================================================================
+
+8.1 MAVERICK — The Gamified Journey
+-----------------------------------
+The Maverick experience is a game. Dark-mode HUD interface. Every session, quiz,
+and feedback submission earns XP and progresses their visual journey.
+
+  Feature                  | What It Does                                    | AI
+  -------------------------|-------------------------------------------------|-----
+  Mission HQ Dashboard     | Central hub: phase ring, XP bar, daily missions,| Personalized daily
+                           | streaks, upcoming session, leaderboard snapshot,| mission generation
+                           | Readiness Score gauge                           | from weak areas
+  Maverick Passport        | Digital career card: batch, phase, skills, XP,  | Readiness Score
+                           | stream, readiness score. PDF export. Visible to | composite model
+                           | Manager post-deployment. R3F lanyard display.   |
+  Pulse Feedback (30 sec)  | 3-question snap: Mood emoji, Clarity 1–5, Pace  | Sentiment analysis
+                           | 1–5, optional open text. Earns 30 XP.           | on open text → theme
+                           | Auto-closes 2 hours post-session.               | cloud for Trainer
+  Deep Feedback (24hr)     | 8-question form: content quality, trainer       | —
+                           | effectiveness, resources, pacing, confusion,    |
+                           | improvements, rating, suggestions. Earns 80 XP. |
+  Skill Tree               | Visual branching map: Soft Skills → Foundation  | Next Skill
+                           | → Stream branches. Locked/unlocked nodes.       | Suggestion engine
+  AI Stream Recommender    | After Phase 2: personalized stream fit scores   | Custom ML model on
+                           | for all 8 stream domains.                       | quiz + interest profiles
+  AI Learning Buddy        | Phase-scoped chat: "Explain REST APIs simply",  | GPT-4o with phase
+                           | revision help, session summaries.               | context. 30 queries/day
+  Leaderboard & Badges     | Batch XP leaderboard (opt-in privacy). Badge    | —
+                           | wall on profile. See Badge System (Section 10). |
+  Phase Path / Timeline    | Gantt-style timeline: all phases, current       | —
+                           | position, milestones, estimated deployment date.|
+  Session Transcript       | Own session transcript. Searchable. AI 5-bullet | Speech → summary
+  (Self-Study)             | summary + 3 key terms. Personal study aid.      |
+  Welcome Journey          | First-login wizard: welcome, profile bootstrap, | —
+                           | resume upload, lanyard reveal, roadmap, batch   |
+                           | assignment, first daily mission.                |
+  QR Attendance            | Scan QR at session start for verified attendance| —
+                           | (earns 50 XP).                                  |
+  Peer Feedback            | Submit peer feedback after group activities     | —
+                           | (earns 40 XP).                                  |
+  Status Visibility        | View own status: active / at-risk / converted / | —
+                           | let-down.                                       |
+
+8.2 TRAINER — The Delivery Command View
+---------------------------------------
+Clean, fast interface. Session logging under 2 minutes. Real-time batch feedback
+after sessions.
+
+  Feature                  | What It Does                                    | AI
+  -------------------------|-------------------------------------------------|-----
+  Live Batch Pulse Board   | Real-time aggregate after session: mood heatmap,| Real-time sentiment
+                           | avg clarity, avg pace, sentiment theme cloud.   | + theme extraction
+  Session Transcript +     | Post-session: confusion spike timestamps        | Speech transcription
+  Insights                 | correlated with low clarity scores. Batch-level | → confusion detection
+                           | only — NOT for HR/discipline.                   |
+  Struggling Maverick      | Flag when Maverick drops below threshold in     | Anomaly Detector:
+  Alerts                   | quiz, attendance, or feedback engagement.       | 2-week early warning
+                           | Trainer adds note; escalate to L&D (NOT Mentor).|
+  My Session Analytics     | Per-trainer: avg clarity per session, topic     | Trend analysis on
+                           | confusion trends, feedback completion %, batch  | low-clarity topics
+                           | comparison, trainer effectiveness score.      |
+  Assessment Publisher     | Create quizzes (MCQ, code snippet via CodePen     | —
+                           | embed, short answer). Auto-graded. Results feed |
+                           | Readiness Score within minutes.                 |
+  Attendance & Completion  | Live table: attendance + feedback status per      | —
+  Tracker                  | session. One-click "Send Reminder" to non-      |
+                           | responders. Tracks 75–80% target.               |
+  Session Logger             | Create session: topic, duration, materials,     | —
+                           | phase, batch. QR for attendance. Timer auto-    |
+                           | starts.                                         |
+
+8.3 L&D EXECUTIVE — The Intelligence Command Centre
+---------------------------------------------------
+Every AI feature surfaces here. Primary value proposition for HexaVarsity team.
+
+  Feature                  | What It Does                                    | AI
+  -------------------------|-------------------------------------------------|-----
+  Unified Ops Dashboard    | All active batches, phases, trainers, sessions, | —
+                           | feedback completion rates. RAG health per batch.|
+  AI Batch Segregation     | Crown feature. Resume + cert upload → AI parses,| Document Intelligence
+  Engine                   | scores proficiency, recommends batch composition| + ML skill-to-stream
+                           | and stream grouping. L&D approves in one click. | mapping + rationale
+  Resume & Certificate     | PDF resume + certs parsed at onboarding. Skills,| Document Intelligence
+  Parser                   | experience, preferred domains extracted.        | + NER
+  Curriculum Copilot       | Cross-batch feedback trends → curriculum change | GPT-4o synthesis +
+                           | recommendations with confidence %.            | confusion spikes
+  Training Effectiveness   | Links post-deployment Manager ratings BACK to   | ML regression:
+  Loop                     | training data. Trace which trainer/module drove | training signals →
+                           | project success gaps.                           | project success
+  Batch Cohort Comparison  | Side-by-side: feedback, quiz, readiness, stream | Auto insight
+                           | distribution, deployment outcomes.              | generation
+  Top Performer Identifier | Auto-ranks top 10% by composite score. Nominate | Composite scoring
+                           | for SONIC early access, STRIDE fast-track, cert |
+                           | sponsorship.                                    |
+  Feedback Completion      | 3-tier reminders: Day 0 nudge, Day 1 follow-up,| Smart send-time
+  Engine                   | Day 2 escalation to Trainer. Live % dashboard.  | optimization
+                           | Batch gamification: 90% → bonus XP for all.     |
+  Session Transcript       | Cross-session: confusion timestamps, most-asked   | Speech → confusion
+  Intelligence             | topics, trainer quality signal, coverage gaps.  | detection + topic map
+  Executive Report         | One-click PDF/Excel: batch summary, curriculum  | Auto narrative
+  Generator                | health, effectiveness correlation, top performers| paragraphs
+                           | risk flags, AI summary.                         |
+  Batch Lifecycle Manager  | Create batches, assign Mavericks (CSV or AI     | —
+                           | groupings), assign trainers, set phase timelines,|
+                           | track transitions, trigger deployment and Hex   |
+                           | ID activation, process let-downs.               |
+  Batch Composer           | AI-assisted batch creation screen with approve/  | —
+                           | adjust workflow.                                |
+  Session Logger           | Create sessions with QR attendance generation.  | —
+
+8.4 MANAGER — Post-Deployment Review
+------------------------------------
+Deliberately minimal interface. Only interacts post-deployment. Frictionless:
+receive Maverick → review Passport → submit structured feedback.
+
+  Feature                  | What It Does                                    | AI
+  -------------------------|-------------------------------------------------|-----
+  My Mavericks View        | All supervised Mavericks: name, batch, stream,  | —
+                           | deployment date, readiness score, review due    |
+                           | dates (M1, M3, M6).                             |
+  Maverick Passport View   | Read-only training card: stream, skills,        | —
+                           | readiness score, top strengths. Faster onboarding.|
+  Structured Performance   | Month 1, 3, 6 review: Technical Skills, Problem | Sentiment on open
+  Review                   | Solving, Communication, Team Integration,       | comments → training
+                           | Initiative — rated 1–5 with open comments.      | gap signals for L&D
+  Early Performance Alert  | Flag underperforming Maverick. Auto L&D         | Recommends Evolve/
+                           | notification + Evolve/Jumpstart program rec.    | Jumpstart module
+
+
+================================================================================
+9. SESSION TRANSCRIPT INTELLIGENCE
+================================================================================
+
+Design Philosophy
+-----------------
+All Maverick training sessions are online (Google Meet / Microsoft Teams).
+Transcripts are captured but NOT used to monitor individual Mavericks. They
+improve training content, clarity, and curriculum.
+
+  Who          | What They See                          | Purpose
+  -------------|----------------------------------------|-----------------------------
+  Maverick     | Own session transcript. Searchable.    | Personal study aid
+               | AI 5-bullet summary + 3 key terms.     |
+  Trainer      | Aggregate confusion signals: timestamps| Improve delivery — WHEN
+               | where clarity dipped + transcript      | and WHERE batch confused
+               | context. NOT individual attributions.  |
+  L&D Executive| Cross-session topic coverage analysis. | Curriculum improvement
+               | Rushed topics, gaps, repetition.       |
+  Manager      | NO access — internal to training phase |
+
+Why This Is NOT Micromanagement
+-------------------------------
+  - Individual Maverick contributions NEVER surfaced to L&D or Trainers
+  - Confusion signals are batch-level aggregates
+  - Maverick transcript is self-study tool only
+  - Transcription opt-in per session at L&D level — not always-on
+  - Goal: curriculum intelligence, not individual performance policing
+
+DESIGN PRINCIPLE: Transcripts make the TRAINING smarter, not the oversight heavier.
+
+
+================================================================================
+10. AI-POWERED BATCH SEGREGATION & RESUME INTELLIGENCE
+================================================================================
+
+The Problem It Solves
+---------------------
+  BEFORE: L&D manually reviews hundreds of resumes → guesses skill levels →
+          assigns batches → discovers mismatches in Week 3.
+  AFTER:  Maverick uploads resume + certs → AI parses in seconds → skill profile
+          → batch grouping recommended → L&D approves in one click.
+
+The Flow — Step by Step
+-----------------------
+  01. Maverick receives NextSteps Onboarding Token (Magic Link to Gmail)
+  02. Onboarding Wizard Step 1: Upload Resume (PDF)
+      Step 2: Upload certificates (AWS, Coursera, NPTEL, GitHub link, etc.)
+  03. AI parses resume → programming languages, frameworks, projects,
+      internships, academic scores, certifications
+  04. NER identifies tech entities. ML scores proficiency per domain
+  05. AI generates Maverick Skill Profile: skill tags, proficiency levels,
+      domain affinities, stream fit scores
+  06. L&D opens Batch Composer. AI recommends groupings with rationale
+  07. L&D reviews/approves/adjusts in one screen → batches created, Mavericks
+      notified, trainers assigned
+  08. Skill Profile becomes baseline for all subsequent quiz/feedback measurement
+
+What AI Extracts
+----------------
+  Source              | Data Extracted                    | Used For
+  --------------------|-----------------------------------|---------------------------
+  Resume PDF          | Languages, frameworks, projects,    | Base skill profile,
+                      | internships, CGPA, achievements   | stream affinity
+  Certificates        | Cert name, issuer, date, score      | Domain credibility,
+                      |                                   | fast-track eligibility
+  GitHub link         | Repo languages, commits, complexity | Practical proficiency
+  Academic transcripts| Subject scores (math vs coding)     | Analytics stream fit
+
+Privacy: Resumes encrypted at rest. Only L&D Executives see full parsed profile.
+Trainers see skill summary tags. Mavericks view/edit own profile.
+
+
+================================================================================
+11. GAMIFICATION DESIGN — THE NEXTSTEPS GAME LAYER
+================================================================================
+
+Gamification is structural, not cosmetic. Every meaningful training action has
+an XP value. Without feedback, Mavericks cannot progress. The game layer IS the
+feedback completion engine.
+
+XP System — How Mavericks Earn
+------------------------------
+  Action                              | XP           | Rationale
+  ------------------------------------|--------------|----------------------------
+  Attend session on time (QR verified)| 50           | Presence must be earned
+  Submit Pulse Feedback (30 sec)      | 30           | Lowest friction, highest freq
+  Submit Deep Feedback (24hr, 8 Qs)   | 80           | Higher effort = higher reward
+  Quiz score 70–79%                   | 60           | Encourages attempting
+  Quiz score 80–89%                   | 100          | Strong performance
+  Quiz score 90–100%                  | 150 (+50)    | Excellence on leaderboard
+  Submit peer feedback                | 40           | Honest peer reflection
+  7-day feedback streak               | 200 bonus    | Duolingo-inspired consistency
+  AI Learning Buddy question          | 10 (max 30/d)| Prevents gaming
+  Upload resume + certificates        | 100 one-time | Activates AI Skill Profile
+  Complete phase milestone            | 500          | Major achievement (Ph 1–4)
+  Batch hits 90% feedback this week   | 200 (batch)  | Collective peer accountability
+
+Level Progression — Maverick Ranks
+----------------------------------
+  Lv | Title              | XP Needed | Unlocks
+  ---|--------------------|-----------|----------------------------------
+  01 | Spark Initiate     | 0         | Dashboard, Pulse, attendance
+  02 | Spark Explorer     | 500       | Deep Feedback, Skill Tree
+  03 | Foundation Builder | 1,500     | Peer Feedback, AI Buddy (15/day)
+  04 | Stream Seeker      | 3,000     | Stream Recommender, full Leaderboard
+  05 | Tech Maverick      | 5,500     | Full Passport, Batch Rank Badge, 30 AI/day
+  06 | Domain Ace         | 8,000     | SONIC Early Access nomination
+  07 | Hexawarian         | 12,000    | Deployment Ready badge, PDF export, alumni
+
+Badge System
+------------
+  Badge              | How to Earn                              | Rarity
+  -------------------|------------------------------------------|-------------
+  First Spark        | Submit first feedback                    | Common
+  Streak Breaker     | 30-day continuous feedback streak        | Rare (~8%)
+  Sharpshooter       | 90%+ in 3 consecutive quizzes            | Uncommon
+  Team Player        | Peer feedback 5 times                    | Common
+  Deployment Ready   | Readiness Score ≥ 85 at Phase 4 end      | Uncommon (~25%)
+  Batch Champion     | Top 3 XP in batch at phase completion    | Rare (3/batch)
+  Domain Expert      | Stream training with 90%+ avg score      | Rare
+  Voice of the Batch | Feedback cited by L&D for curriculum     | Very Rare
+  Certified First    | Upload relevant cert before Day 5        | Common
+  Top Trainer        | Batch scores above threshold 3 sessions  | Trainer badge
+
+KEY INSIGHT: Feedback IS the game. No feedback = no XP, broken streak, dropped
+rank, stalled badges. Batch mechanic: "4 submissions away from 90% — everyone
+gets 200 XP."
+
+
+================================================================================
+12. AI FEATURE MAP (CLOUD AI SERVICES)
+================================================================================
+
+Every AI capability maps to cloud AI services. Adapt Azure Foundry references
+to your cloud provider while preserving feature behavior.
+
+  Feature                    | Service Type           | Input              | Output
+  ---------------------------|------------------------|--------------------|------------------
+  Resume + Cert Parsing        | Document Intelligence  | PDF files          | Skill profile → L&D
+  Sentiment Analysis (Pulse) | Text Analytics         | Open-text entries  | Sentiment + theme cloud
+  Transcript Processing      | Speech → LLM           | Session audio      | Transcript + summary
+  Confusion Spike Detection  | LLM                    | Transcript + pulse | Timestamps → Trainer
+  Stream Recommender         | Custom ML              | Skill + quiz data  | Stream fit % → Maverick
+  AI Readiness Score         | Composite ML           | Attendance + quiz  | 0–100 on Passport
+                             |                        | + feedback + peer  |
+  Early Warning System       | Anomaly Detection      | Score trajectory   | Risk flag → Trainer, L&D
+  AI Batch Segregation         | ML + NLP               | Cohort profiles    | Grouping → L&D
+  Curriculum Copilot           | LLM                    | Cross-batch data   | Ranked recs → L&D
+  Training Effectiveness Loop  | Regression ML          | Training + Manager | Correlation insights
+                             |                        | ratings            |
+  AI Learning Buddy            | LLM (GPT-4o class)     | Query + phase ctx  | Phase-aware answer
+  Mission Generator            | LLM                    | Weak areas         | 3 daily missions
+  Executive Report Narrative   | LLM                    | Batch metrics      | Plain-English summary
+  Smart Reminder Timing        | ML + Communication     | Engagement history | Optimal send-time
+
+
+================================================================================
+13. MAVERICK LIFECYCLE & BATCH MANAGEMENT
+================================================================================
+
+Full State Machine
+------------------
+  Invited → Pre-training onboarding (Phase 0) → Active training (Phases 1–4) →
+  [Converted → Deployed (Phase 5)] OR [Let-down → LOI revoked]
+
+Within Training:
+  - Batch creation → AI segregation proposal → L&D approval → publish assignments
+  - Mid-program batch separation/reassignment
+  - Conversion triggers: Hexaware email provisioning, SSO account linking,
+    auth mode flip, deployment badge on lanyard
+  - Let-down triggers: access revocation, LOI status update, exit workflow
+
+Feedback Types
+--------------
+  Type        | When                    | Submitter | Viewer
+  ------------|-------------------------|-----------|----------------------------
+  Pulse       | After each session      | Maverick  | Trainer (batch), L&D (cross)
+  Deep        | After each phase        | Maverick  | Trainer (themes), L&D (effectiveness)
+  Performance | M1, M3, M6 post-deploy  | Manager   | Manager, L&D (linkage read)
+
+
+================================================================================
+14. HIGH-LEVEL ARCHITECTURE
+================================================================================
+
+  ┌─────────────────────────────────────────────────────────┐
+  │  React SPA (Tailwind + R3F + parallax + lanyard)        │
+  │  Role-routed dashboards per Section 8                   │
+  └──────────────────────┬──────────────────────────────────┘
+                         │ REST /api/v1 + WebSocket (live pulse)
+  ┌──────────────────────▼──────────────────────────────────┐
+  │  Express.js API                                         │
+  │  JWT auth + RBAC middleware                             │
+  │  Routes: /auth, /maverick, /trainer, /ld, /manager,     │
+  │          /sessions, /feedback, /ai, /gamification,      │
+  │          /reports                                       │
+  └──────┬──────────┬──────────┬──────────┬─────────────────┘
+         │          │          │          │
+     MongoDB    BullMQ     Encrypted    External:
+     (primary)  + Redis    object       Gmail OTP, Azure AD SSO,
+                (jobs)     storage      Google Meet/Teams APIs,
+                                      Cloud AI, CodePen CDN,
+                                      Email/SMS notifications
+
+MongoDB Collections
+-------------------
+  users, maverick_profiles, batches, batch_assignments, sessions,
+  feedback_pulse, feedback_deep, assessments, transcripts, documents,
+  manager_reviews, xp_ledger, badges, curriculum_insights, lifecycle_events,
+  readiness_scores, audit_logs
+
+Background Jobs
+---------------
+  Job                        | Trigger              | Output
+  ---------------------------|----------------------|----------------------------
+  parse-resume               | Document upload      | Skill vector on profile
+  segregate-batch            | L&D batch creation   | AI batch proposals
+  ingest-meet-transcript     | Post-session         | Transcript + summary
+  analyze-session-sentiment  | Transcript ready     | Batch-aggregated mood
+  send-feedback-reminder     | Cron / session end   | Email nudges (3-tier)
+  compute-leaderboard        | XP event             | Leaderboard cache
+  auth-provider-migrate      | Conversion event     | Gmail → SSO link
+  provision-hexaware-email   | Conversion approved  | HRIS/email webhook
+  process-let-down           | Let-down decision    | Access revoke + LOI update
+  generate-readiness-score   | Quiz/feedback/attend | 0–100 composite score
+  generate-executive-report  | L&D request          | PDF/Excel + AI narrative
+  compute-trainer-score      | Session feedback     | Trainer effectiveness
+
+API Surface (/api/v1)
+---------------------
+  Prefix          | Consumers
+  ----------------|--------------------------------------------------
+  /auth           | All — magic link, SSO, link-sso, role resolve
+  /maverick/*     | Maverick — dashboard, passport, feedback, buddy
+  /trainer/*      | Trainer — sessions, pulse, assessments, attendance
+  /ld/*           | L&D Executive — batches, segregation, copilot, lifecycle
+  /manager/*      | Manager — roster, passport, reviews, flags
+  /sessions/*     | Trainer, L&D — session CRUD, QR, transcripts
+  /feedback/*     | Maverick, Trainer, L&D — pulse, deep, reminders
+  /ai/*           | All roles — scoped AI endpoints with rate limits
+  /gamification/* | Maverick, Trainer — XP, badges, leaderboards
+  /reports/*      | L&D — executive reports, cohort comparison
+
+WebSockets: Live batch pulse board updates to Trainer in real-time after session.
+
+
+================================================================================
+15. DESIGN & UI/UX REQUIREMENTS
+================================================================================
+
+Visual System
+-------------
+  - 60-30-10 color rule on every screen
+  - Canonical palette: Blue #4361EE, Violet #7B5CF5, Amber #F7C948
+  - Font: Noto Sans
+  - Avatars: DiceBear Personas (seeded by Maverick ID)
+  - Light + dark theme support
+  - Maverick interface: dark-mode HUD
+  - L&D/Trainer/Manager: clean command center aesthetic
+
+3D & Motion
+-----------
+  - R3F lanyard — login identity preview, Maverick Passport
+  - Parallax / Hyperspeed — hero backgrounds, mission transitions
+  - Physics — Rapier/Cannon.js for interactive elements
+  - Framer Motion — page transitions, micro-interactions
+  - Magic Bento (GSAP) — card hover spotlight on dashboards
+  - Reduced-motion media query disables non-essential physics/particles
+  - CodePen embeds for live code assessments and learning modules
+
+Navigation
+----------
+  - Left sidebar per role, grouped by workflow
+  - Role-specific dashboard as home
+  - No Mentor nav group
+
+Key Screens Per Role
+--------------------
+  Role          | Home                | Notable Routes
+  --------------|---------------------|------------------------------------------
+  Maverick      | Mission HQ          | passport, skill-tree, phase-path, pulse/
+                |                     | deep feedback, stream-recommender,
+                |                     | ai-buddy, leaderboard, welcome-journey
+  Trainer       | Trainer Home        | session-logger, batch-pulse, session-
+                |                     | analytics, assessments, attendance
+  L&D Executive | Ops Command Centre  | batch-lifecycle, batch-segregation,
+                |                     | batch-composer, curriculum-copilot,
+                |                     | effectiveness, batch-comparison, reports
+  Manager       | My Mavericks        | performance-review/:id, early-flags,
+                |                     | passport/:id
+
+
+================================================================================
+16. PRIVACY & DATA HANDLING
+================================================================================
+
+  Rule              | Detail
+  ------------------|--------------------------------------------------------
+  Encryption        | AES-256 at rest for resumes, certs, transcripts, PII
+  Access control    | L&D: full profiles; Trainer: summary only; Maverick: own;
+                    | Manager: passport read-only
+  Anonymization     | Batch-level analytics; k-anonymity threshold (default k=5)
+  No surveillance   | No keystroke logging, no live per-person monitoring,
+                    | no named confusion views below cohort n≥5
+  Transcript access | Maverick: own only. Trainer: batch aggregate. L&D: cross-
+                    | session analysis. Manager: no access.
+  Transcript retain | Raw purge at 90 days; summary retained per policy
+  Audit logging     | All access to documents, full profiles, raw transcripts
+  Resume privacy    | Encrypted blob storage. Signed URLs ≤15 min TTL.
+
+
+================================================================================
+17. CONSTRAINTS & EXPECTATIONS
+================================================================================
+
+  1. MERN stack only for production (MongoDB, Express, React, Node.js)
+  2. Four roles only: Maverick, Trainer, L&D Executive, Manager
+  3. Mentor strictly omitted — zero references anywhere
+  4. Dual auth for Mavericks — personal email pre-deployment, Hexaware SSO
+     post-deployment, same userId
+  5. Trainer auth via magic link — external vendors, no Hexaware SSO
+  6. L&D Executive + Manager via Hexaware SSO
+  7. Track full lifecycle: segregation, separation, conversion, let-down, LOI
+  8. Feedback 360 target: 75–80% completion with 3-tier automated reminders
+  9. Immersive UI: lanyard, R3F, parallax, physics, CodePen embeds, 60-30-10
+  10. App name is NextSteps everywhere (NOT MavX)
+  11. All Supervisor references → Manager; all L&D Manager → L&D Executive
+  12. Output must be consumable by downstream AI — explicit IDs, tables,
+      workflows, API contracts, data models
+  13. Transcripts improve training, not surveillance
+  14. Readiness Score is composite: attendance + quiz + feedback + peer signals
+  15. QR-verified attendance for session XP
+  16. WebSocket for live Trainer pulse board
+
+
+================================================================================
+18. IMPLEMENTATION PHASING
+================================================================================
+
+  Phase | Scope
+  ------|----------------------------------------------------------------
+  P0    | Monorepo scaffold: web + api + worker, MongoDB, JWT auth shell,
+        | magic link + SSO stubs, role routing
+  P1    | Maverick pre-deploy auth + welcome journey + Mission HQ + passport
+  P2    | Trainer session logger + pulse feedback + live pulse board
+  P3    | L&D batch composer + document upload + AI parse + segregation
+  P4    | Meet/Teams transcript + sentiment + confusion jobs
+  P5    | Manager reviews + deployment auth migration + effectiveness loop
+  P6    | Gamification leaderboard + badge rules + level progression
+  P7    | Executive reports + curriculum copilot + top performer identifier
+
+
+================================================================================
+19. DELIVERABLES EXPECTED FROM YOU
+================================================================================
+
+When responding to this prompt, produce:
+
+  1. System architecture diagram (components, auth flows, integrations)
+  2. Maverick lifecycle state machine (including conversion and let-down)
+  3. Auth flow diagrams (Maverick dual-auth, Trainer magic link, Employee SSO)
+  4. Phase-to-feature mapping table (Phases 0–6)
+  5. MongoDB schema (collections, key fields, indexes)
+  6. REST API contract (endpoints, request/response shapes, RBAC matrix)
+  7. WebSocket events for live pulse board
+  8. Role-based UI sitemap (routes per role)
+  9. Key user workflows:
+       - Welcome journey and onboarding wizard
+       - Batch segregation and composer approval
+       - Pulse and deep feedback submission
+       - QR attendance verification
+       - Conversion and let-down processing
+       - Deployment SSO cutover
+       - M1/M3/M6 Manager performance review
+       - 3-tier feedback reminder engine
+  10. XP/level/badge rules engine specification
+  11. Readiness Score composite formula
+  12. Privacy/access control matrix
+  13. Wireframe descriptions for login (split auth), Mission HQ, Batch Composer,
+      Manager Passport
+  14. AI service integration map with rate limits and guardrails
+
+
+================================================================================
+20. GLOSSARY
+================================================================================
+
+  Term              | Definition
+  ------------------|--------------------------------------------------------
+  NextSteps         | The platform (formerly referred to as MavX in design docs)
+  Maverick          | Hexaware GET or PGET trainee
+  GET               | Graduate Engineer Trainee (4 LPA)
+  PGET              | Premier Graduate Engineer Trainee (6 LPA)
+  Batch             | Cohort of Mavericks in a training wave
+  Segregation       | Grouping Mavericks into batches/streams by skill
+  Separation        | Mid-program batch split or reassignment
+  Conversion        | Successful training completion → onboarding
+  Let-down          | Training failure → program exit, possible LOI revocation
+  LOI               | Letter of Intent (recruitment offer, revocable)
+  Pulse Feedback    | Short 3-question post-session survey (30 sec)
+  Deep Feedback     | Structured 8-question post-phase reflection (24hr)
+  Passport          | Digital career card (Maverick editable, Manager read-only)
+  Readiness Score   | 0–100 composite of attendance + quiz + feedback + peer
+  Deployment        | Phase 5 transition; triggers SSO auth flip
+  RAG Health        | Red/Amber/Green batch health indicator on L&D dashboard
+  Batch Composer    | L&D screen for AI-assisted batch creation and approval
+  Effectiveness Loop| Links training data to post-deployment Manager ratings
+
+================================================================================
+END OF MASTER PROMPT
+================================================================================
