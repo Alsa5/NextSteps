@@ -183,6 +183,7 @@ function AppRoutes() {
   const { theme } = useTheme()
 
   const handleAuthenticated = useCallback((nextUser) => {
+    console.log('SSO RESPONSE nextUser:', nextUser) // Debug log
     if (!nextUser) {
       setUser(null)
       return
@@ -198,6 +199,7 @@ function AppRoutes() {
       employeeId: nextUser.employeeId || null,
       graphPhotoUrl: nextUser.graphPhotoUrl || null,
     })
+    console.log('Set user state with isAppAdmin:', nextUser.isAppAdmin) // Debug log
     cacheProfilePhoto(
       resolveProfilePhotoUrl({
         graphPhotoUrl: nextUser.graphPhotoUrl,

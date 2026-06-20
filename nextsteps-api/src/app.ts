@@ -9,6 +9,7 @@ import {
   type SendFeedbackReminderPayload,
 } from './models/queue-names.js';
 import { createAiRouter } from './routes/ai.js';
+import { createAiQuizGeneratorRouter } from './routes/ai-quiz-generator.js';
 import { createAnalyticsRouter } from './routes/analytics.js';
 import { createAuthRouter } from './routes/auth.js';
 import { createFeedbackCompletionRouter } from './routes/feedback-completion.js';
@@ -96,6 +97,9 @@ export const createApp = (deps: AppDeps): Express => {
 
   // AI proxy — no auth required (JWT would be needed for production)
   app.use('/api/v1/ai', createAiRouter());
+  
+  // AI Quiz Generator for trainers
+  app.use('/api/v1/ai-quiz', createAiQuizGeneratorRouter({ jwtSecret: deps.jwtSecret }));
 
   app.post('/api/v1/webhooks/meet/session-ended', async (req, res) => {
     const sessionId = typeof req.body?.sessionId === 'string' ? req.body.sessionId.trim() : '';
