@@ -14,14 +14,81 @@ export default function MaverickAssessments() {
   const [activeQuiz, setActiveQuiz] = useState(null)
   const [answers, setAnswers] = useState({})
 
-  const handleSubmitQuiz = () => {
+  const handleSubmitQuiz = async () => {
     if (!activeQuiz) return
+    
+    console.log('=== QUIZ SUBMISSION DEBUG ===')
+    console.log('Active Quiz:', activeQuiz)
+    console.log('Current Answers:', answers)
+    
     const total = activeQuiz.questions.length
-    const correct = activeQuiz.questions.filter((q, i) => answers[q.id ?? i] === q.correct).length
+    const answersArray = activeQuiz.questions.map((q, i) => ({
+      questionId: q.id ?? i,
+      questionText: q.question || 'Untitled question',
+      selectedOption: answers[q.id ?? i] ?? 0,
+      correctOption: q.correct ?? 0,
+      isCorrect: (answers[q.id ?? i] ?? 0) === (q.correct ?? 0),
+      // Add actual option text for proper display in results
+      selectedOptionText: q.options?.[answers[q.id ?? i] ?? 0] || `Option ${String.fromCharCode(65 + (answers[q.id ?? i] ?? 0))}`,
+      correctOptionText: q.options?.[q.correct ?? 0] || `Option ${String.fromCharCode(65 + (q.correct ?? 0))}`,
+      allOptions: q.options || [] // Include all options for reference
+    }));
+    
+    console.log('Processed Answers:', answersArray)
+    
+    const correct = answersArray.filter(a => a.isCorrect).length
     const score = Math.round((correct / total) * 100)
+    
+    console.log(`Score: ${correct}/${total} = ${score}%`)
+    
+    // Save to localStorage (existing functionality)
     completeAssessment(activeQuiz.id, score)
     awardXp(Math.round(score / 5), `Assessment: ${activeQuiz.title}`)
-    toast.success(`Quiz submitted — ${score}% · +${Math.round(score / 5)} XP`)
+    
+    // Also save to backend for reporting
+    try {
+      // Validate trainer email is present - should always exist for properly published quizzes
+      if (!activeQuiz.trainerEmail) {
+        console.warn('WARNING: Quiz missing trainerEmail - this indicates a data integrity issue with quiz:', activeQuiz.id)
+      }
+
+      const submissionPayload = {
+        quizId: activeQuiz.id,
+        weekNumber: activeQuiz.weekNumber, // May be undefined for manual quizzes
+        batch: activeQuiz.batch,
+        trainerEmail: activeQuiz.trainerEmail, // No fallback - should always be present
+        answers: answersArray,
+        quizTitle: activeQuiz.title
+      }
+      
+      console.log('Sending to backend:', submissionPayload)
+      console.log('Token:', sessionStorage.getItem('nextsteps_token') ? 'Present' : 'Missing')
+      
+      const response = await fetch('/api/v1/quiz-results/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionStorage.getItem('nextsteps_token')}`
+        },
+        body: JSON.stringify(submissionPayload)
+      })
+      
+      console.log('Backend response status:', response.status)
+      
+      if (!response.ok) {
+        const errorText = await response.text()
+        console.error('Backend submission failed:', errorText)
+        toast.error('Quiz saved locally, but reporting may be affected')
+      } else {
+        const result = await response.json()
+        console.log('Backend submission success:', result)
+        toast.success(`Quiz submitted — ${score}% · +${Math.round(score / 5)} XP · Results saved`)
+      }
+    } catch (error) {
+      console.error('Backend submission error:', error)
+      toast.error('Quiz saved locally, but could not sync to reporting system')
+    }
+    
     setQuizzes(getAssessmentsForBatch(batchId))
     setActiveQuiz(null)
     setAnswers({})
