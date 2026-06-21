@@ -1,12 +1,16 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import toast from 'react-hot-toast'
-import { Plus, Trash2, Send, Wand2, Edit3, Loader2, RotateCcw, Check, X } from 'lucide-react'
-import mockData from '../../data/mockData.json'
+import { Plus, Trash2, Send, Wand2, Edit3, Loader2, RotateCcw, Check, X, Eye } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 import AppMagicCard from '../../components/AppMagicCard'
 import { publishAssessment } from '../../data/assessmentStore'
+import { AuthContext } from '../../context/AuthContext'
 
 export default function AssessmentPublisher() {
+  const navigate = useNavigate()
+  const { user: currentUser } = useContext(AuthContext) // Get real logged-in trainer
+  
   // Component styles for enhanced UI
   const buttonStyles = {
     btnXs: {
@@ -24,6 +28,12 @@ export default function AssessmentPublisher() {
       color: 'white',
       border: '1px solid var(--accent-coral)'
     }
+  }
+
+  // CSS color fallbacks
+  const cssVars = {
+    '--base-hover': 'rgba(255, 255, 255, 0.05)',
+    '--accent-emerald-muted': 'rgba(16, 185, 129, 0.1)'
   }
 
   // Reset content source data when switching
@@ -73,6 +83,9 @@ export default function AssessmentPublisher() {
   // Edit states
   const [editingQuestion, setEditingQuestion] = useState(null) // { weekNumber, questionIndex }
   const [regenerateKeywords, setRegenerateKeywords] = useState({}) // { weekNumber: 'keywords' }
+  
+  // Recently published quizzes (for the session) - REMOVED
+  // const [recentlyPublished, setRecentlyPublished] = useState([])
 
   const addQuestion = (type) => {
     setQuestions(prev => [...prev, {
@@ -106,12 +119,24 @@ export default function AssessmentPublisher() {
       toast.error('Fill in all question prompts')
       return
     }
-    publishAssessment({
+    const publishedQuiz = publishAssessment({
       title,
       batch,
       questions: questions.map((q, i) => ({ ...q, id: q.id ?? `q-${i}` })),
-      trainerName: mockData.trainers[0]?.name || 'Trainer',
+      trainerName: currentUser?.name || currentUser?.fullName || 'Unknown Trainer',
+      trainerEmail: currentUser?.email,
     })
+    
+    // Track this quiz in recently published - REMOVED since sidebar was removed
+    // setRecentlyPublished(prev => [{
+    //   id: publishedQuiz.id,
+    //   title: publishedQuiz.title,
+    //   batch: publishedQuiz.batch,
+    //   weekNumber: null, // Manual quizzes don't have week numbers
+    //   publishedAt: publishedQuiz.publishedAt,
+    //   questionsCount: publishedQuiz.questions.length
+    // }, ...prev.slice(0, 4)]) // Keep last 5
+    
     toast.success('Quiz published — Mavericks notified on their dashboard!')
     setTitle('')
     setQuestions([{ id: 1, type: 'mcq', question: '', options: ['', '', '', ''], correct: 0 }])
@@ -280,12 +305,25 @@ export default function AssessmentPublisher() {
       return
     }
 
-    publishAssessment({
+    const publishedQuiz = publishAssessment({
       title: `${quiz.weekTitle} - Week ${weekNumber}`,
       batch,
       questions: quiz.questions.map((q, i) => ({ ...q, id: q.id ?? `q-${i}` })),
-      trainerName: mockData.trainers[0]?.name || 'Trainer',
+      trainerName: currentUser?.name || currentUser?.fullName || 'Unknown Trainer',
+      trainerEmail: currentUser?.email,
+      weekNumber: weekNumber,
     })
+    
+    // Track this quiz in recently published - REMOVED since sidebar was removed
+    // setRecentlyPublished(prev => [{
+    //   id: publishedQuiz.id,
+    //   title: publishedQuiz.title,
+    //   batch: publishedQuiz.batch,
+    //   weekNumber: weekNumber,
+    //   publishedAt: publishedQuiz.publishedAt,
+    //   questionsCount: publishedQuiz.questions.length
+    // }, ...prev.slice(0, 4)]) // Keep last 5
+    
     toast.success(`Week ${weekNumber} quiz published!`)
   }
 
@@ -507,6 +545,8 @@ export default function AssessmentPublisher() {
     }
   }
 
+  // viewQuizResults function REMOVED - was only used in removed sidebar
+
   const regenerateEntireQuiz = async (weekNumber) => {
     const week = weeks.find(w => w.weekNumber === weekNumber)
     if (!week) {
@@ -521,7 +561,9 @@ export default function AssessmentPublisher() {
   }
 
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+    <>
+      <style>{Object.entries(cssVars).map(([key, value]) => `${key}: ${value};`).join(' ')}</style>
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
       <div className="page-header">
         <h1>🤖 AI Assessment Publisher</h1>
         <p>Upload syllabus Excel → AI generates quizzes → Edit & publish</p>
@@ -548,7 +590,8 @@ export default function AssessmentPublisher() {
         </div>
       </AppMagicCard>
 
-      <div className="grid-2">
+      {/* Main Content - Full Width (Published Quizzes sidebar removed) */}
+      <div>
         <div>
           {mode === 'ai' && (
             <>
@@ -1037,32 +1080,8 @@ export default function AssessmentPublisher() {
             </>
           )}
         </div>
-
-        {/* Past Quizzes Sidebar */}
-        <div>
-          <AppMagicCard className="card">
-            <div className="card-header">
-              <div className="card-title">📋 Published Quizzes</div>
-            </div>
-            {mockData.quizzes.map(quiz => (
-              <div key={quiz.id} style={{ padding: '16px', borderRadius: 'var(--radius-md)', background: 'var(--base-surface)', marginBottom: 12 }}>
-                <div className="flex items-center justify-between mb-8">
-                  <span style={{ fontWeight: 700 }}>{quiz.title}</span>
-                  <span className="tag tag-green">{quiz.submissions} submissions</span>
-                </div>
-                <div className="flex gap-12">
-                  <span className="text-sm text-secondary">{quiz.questions} questions</span>
-                  <span className="text-sm text-secondary">Avg: {quiz.avgScore}%</span>
-                  <span className="text-sm text-secondary">Top: {quiz.topScore}%</span>
-                </div>
-                <div className="progress-bar mt-8" style={{ height: 6 }}>
-                  <div className={`progress-fill ${quiz.avgScore >= 70 ? 'emerald' : 'coral'}`} style={{ width: `${quiz.avgScore}%` }} />
-                </div>
-              </div>
-            ))}
-          </AppMagicCard>
-        </div>
       </div>
     </motion.div>
+    </>
   )
 }

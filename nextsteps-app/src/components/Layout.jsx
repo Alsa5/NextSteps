@@ -67,6 +67,7 @@ const navConfig = {
         links: [
           { to: '/session-analytics', icon: BarChart3, label: 'Session Analytics' },
           { to: '/assessments', icon: BookCheck, label: 'Assessments' },
+          { to: '/assessment-results', icon: FileBarChart, label: 'Results' },
           { to: '/attendance', icon: Users, label: 'Attendance Tracker' },
         ],
       },
@@ -95,6 +96,7 @@ const navConfig = {
           { to: '/effectiveness', icon: TrendingUp, label: 'Effectiveness Loop' },
           { to: '/batch-comparison', icon: GitCompare, label: 'Batch Comparison' },
           { to: '/reports', icon: FileBarChart, label: 'Report Generator' },
+          { to: '/assessment-results', icon: BarChart3, label: 'Assessment Results' },
         ],
       },
     ],
