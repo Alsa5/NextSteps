@@ -267,6 +267,17 @@
         "Codemod false positives: word-boundary card matched card-header / passport-*-card class names"
       ],
       "lookingAhead": "Optional lazy-loading for chart-heavy pages if perf feedback comes in."
+    },
+    {
+      "date": "2026-06-21",
+      "tags": ["planning", "deploy"],
+      "narrative": "NextSteps is ready to leave localhost. I mapped the Azure App Service path for Node 22 LTS without containers: one Web App can host the Express API and built Vite SPA on the same origin so Microsoft SSO and /api calls stay simple. Wired Express static serving with React Router fallback, production env templates, and a one-command deploy prep script that bundles the SPA into the API zip.",
+      "milestones": [
+        "Azure App Service Node 22 deployment runbook — portal ZIP deploy from local code",
+        "Single-origin architecture: API + SPA on one App Service (same-domain /api, SSO redirect)",
+        "Express serves public/ with SPA fallback; prepare:azure-deploy script"
+      ],
+      "lookingAhead": "First ZIP deploy smoke test against Azure App Service."
     }
   ]
 }

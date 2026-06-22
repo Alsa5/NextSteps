@@ -33,6 +33,7 @@ import { createAuditService } from './services/audit.js';
 import { DEFAULT_K_ANONYMITY_THRESHOLD } from './services/privacy.js';
 import { syncTraineeRegistryPayload } from './services/trainee-registry-sync.js';
 import { env } from './config/env.js';
+import { registerSpaStatic } from './middleware/spa-static.js';
 
 export interface MeetWebhookDeps {
   enqueueIngestMeetTranscript(
@@ -231,6 +232,8 @@ export const createApp = (deps: AppDeps): Express => {
       enqueueGenerateExecutiveReport: deps.enqueueGenerateExecutiveReport,
     }),
   );
+
+  registerSpaStatic(app);
 
   return app;
 };

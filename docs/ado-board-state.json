@@ -1,6 +1,6 @@
 {
   "project": "NextSteps",
-  "lastUpdated": "2026-06-16T12:00:00.000Z",
+  "lastUpdated": "2026-06-21T12:00:00.000Z",
   "wikiIdentifier": null,
   "paperclipTrace": {
     "ALSAA-8": {
@@ -331,7 +331,15 @@
     },
     {
       "date": "2026-06-16",
-      "action": "fix(ui): Pre-Onboarding Meets + Feedback Analytics button styling — btn base class, ba-modal pattern, fb-chip/fb-tab-btn CSS"
+      "action": "chore: initial monorepo push to personal GitHub Alsa5/NextSteps (main)"
+    },
+    {
+      "date": "2026-06-21",
+      "action": "docs: Azure App Service Node 22 LTS deployment guide — portal ZIP deploy, env vars, SSO redirect URIs, MongoDB/Redis dependencies"
+    },
+    {
+      "date": "2026-06-21",
+      "action": "feat(api): Cosmos Key Vault reference (Option B) — MONGODB_URI @Microsoft.KeyVault, Cosmos client options, production env template"
     }
   ]
 }

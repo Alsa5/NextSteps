@@ -8,6 +8,7 @@
     "dev:api": "npm run build --prefix nextsteps-api && npm run start --prefix nextsteps-api",
     "build:app": "npm run build --prefix nextsteps-app",
     "build:api": "npm run build --prefix nextsteps-api",
+    "prepare:azure-deploy": "node scripts/prepare-azure-deploy.mjs",
     "test:api": "npm test --prefix nextsteps-api",
     "lint:app": "npm run lint --prefix nextsteps-app"
   }

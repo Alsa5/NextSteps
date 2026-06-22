@@ -4,11 +4,21 @@
 
 ---
 
+## Sunday, June 21, 2026
+
+*planning*
+
+NextSteps is ready to leave localhost — mapped the full Azure App Service path for Node 22 LTS (no containers): one Web App can host the Express API plus the built Vite SPA on the same origin so SSO and `/api` calls stay simple. Documented portal ZIP deploy, env vars, Azure AD redirect URIs, and the external dependencies (MongoDB, Redis) the platform needs to actually run in prod. Clarified the env split: **App Service settings = API secrets only**; `VITE_*` vars are build-time on your machine, not portal settings. Wired Express to serve `public/` with React Router fallback, added `.env.production.example` templates, and a `npm run prepare:azure-deploy` script. Chose Sanctuary **Option B** for Cosmos: App Service Key Vault reference on `MONGODB_URI` (no SDK), database `nextsteps` on the shared cluster.
+
+---
+
 ## Tuesday, June 16, 2026
 
 *fix, polish*
 
 The L&D surfaces were lying with their eyes — buttons that looked clickable but rendered as raw gradient blobs with no padding, no radius, no affordance. Pre-Onboarding Meets and Feedback Analytics both had the same root cause: missing base button styles and CSS classes that were referenced in JSX but never defined. I wired the `btn` foundation back in, aligned the meet scheduler modal with the polished batch-assignment pattern, and added the full filter-chip, tab-toggle, and export-dropdown styling Feedback Analytics was waiting on. Small CSS surgery, big trust win: scheduling a meet and slicing feedback data now feels like the same product as the rest of the console.
+
+Also got the whole codebase onto my personal GitHub — [Alsa5/NextSteps](https://github.com/Alsa5/NextSteps) on `main`, 387 files, secrets left out via `.gitignore`. Windows kept trying to push through company SSO instead of my personal token; bypassed that with a direct HTTPS push using the PAT and no credential helper.
 
 ---
 
