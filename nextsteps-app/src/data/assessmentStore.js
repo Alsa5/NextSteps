@@ -10,7 +10,15 @@ export const loadAssessments = () => {
   }
 }
 
-export const publishAssessment = ({ title, batch, questions, trainerName = 'Trainer' }) => {
+export const publishAssessment = ({ title, batch, questions, trainerName, trainerEmail, weekNumber }) => {
+  // Validate required trainer information is provided
+  if (!trainerName) {
+    throw new Error('trainerName is required for publishing assessments')
+  }
+  if (!trainerEmail) {
+    throw new Error('trainerEmail is required for publishing assessments')
+  }
+
   const quiz = {
     id: `quiz-${Date.now()}`,
     title: title.trim(),
@@ -18,6 +26,8 @@ export const publishAssessment = ({ title, batch, questions, trainerName = 'Trai
     questions,
     publishedAt: new Date().toISOString(),
     trainerName,
+    trainerEmail,
+    weekNumber, // Add week number for AI-generated quizzes
     status: 'published',
   }
   const all = [quiz, ...loadAssessments()]

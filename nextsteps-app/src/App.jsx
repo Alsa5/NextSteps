@@ -19,6 +19,7 @@ import TrainerDashboard from './pages/trainer/TrainerDashboard'
 import BatchPulseBoard from './pages/trainer/BatchPulseBoard'
 import SessionAnalytics from './pages/trainer/SessionAnalytics'
 import AssessmentPublisher from './pages/trainer/AssessmentPublisher'
+import AssessmentResults from './pages/trainer/AssessmentResults'
 import AttendanceTracker from './pages/trainer/AttendanceTracker'
 import LDDashboard from './pages/ld/LDDashboard'
 import CurriculumCopilot from './pages/ld/CurriculumCopilot'
@@ -140,6 +141,7 @@ function AuthenticatedShell({ user, setUser, theme }) {
                         <Route path="/batch-pulse" element={<BatchPulseBoard />} />
                         <Route path="/session-analytics" element={<SessionAnalytics />} />
                         <Route path="/assessments" element={<AssessmentPublisher />} />
+                        <Route path="/assessment-results" element={<AssessmentResults />} />
                         <Route path="/attendance" element={<AttendanceTracker />} />
                       </>
                     )}
@@ -153,6 +155,7 @@ function AuthenticatedShell({ user, setUser, theme }) {
                         <Route path="/effectiveness" element={<EffectivenessLoop />} />
                         <Route path="/batch-comparison" element={<BatchComparison />} />
                         <Route path="/reports" element={<ReportGenerator />} />
+                        <Route path="/assessment-results" element={<AssessmentResults />} />
                         <Route path="/batch-composer" element={<BatchComposer />} />
                         <Route path="/batch-lifecycle" element={<BatchLifecycleManager />} />
                         <Route path="/trainee-roster" element={<TraineeRoster />} />
@@ -168,6 +171,7 @@ function AuthenticatedShell({ user, setUser, theme }) {
                         <Route path="/review/:maverickId" element={<PerformanceReview />} />
                         <Route path="/early-flags" element={<EarlyPerformanceAlert />} />
                         <Route path="/passport/:maverickId" element={<MaverickPassportView />} />
+                        <Route path="/assessment-results" element={<AssessmentResults />} />
                       </>
                     )}
 
@@ -183,6 +187,7 @@ function AppRoutes() {
   const { theme } = useTheme()
 
   const handleAuthenticated = useCallback((nextUser) => {
+    console.log('SSO RESPONSE nextUser:', nextUser) // Debug log
     if (!nextUser) {
       setUser(null)
       return
@@ -198,6 +203,7 @@ function AppRoutes() {
       employeeId: nextUser.employeeId || null,
       graphPhotoUrl: nextUser.graphPhotoUrl || null,
     })
+    console.log('Set user state with isAppAdmin:', nextUser.isAppAdmin) // Debug log
     cacheProfilePhoto(
       resolveProfilePhotoUrl({
         graphPhotoUrl: nextUser.graphPhotoUrl,

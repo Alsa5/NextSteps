@@ -3,6 +3,8 @@ import { env } from '../config/env.js';
 const DEFAULT_APP_ADMIN_EMAILS = [
   'sakthia2@hexaware.com',
   '2000147951@hexaware.com',
+  'madhavv@hexaware.com',
+  '2000147583@hexaware.com'
 ];
 
 const parseAdminEmails = (): string[] => {
