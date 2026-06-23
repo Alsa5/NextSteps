@@ -11,12 +11,16 @@
  * Usage: npm run init-db
  */
 
+import 'dotenv/config';
 import { randomUUID } from 'crypto';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { MongoClient, type Db } from 'mongodb';
-import { buildMongoClientOptions } from '../src/db/mongo-connect.js';
+import { buildMongoClientOptions, isCosmosMongoUri } from '../src/db/mongo-connect.js';
 import { NEXTSTEPS_COLLECTIONS } from '../src/db/mongo.js';
 import type { RoleMapping } from '../src/db/schemas.js';
 import { DEFAULT_DESIGNATION_MAPPINGS } from '../src/repositories/role-mapping-repository.js';
+import { seedDemoData } from '../src/services/seed-demo-data.js';
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017';
 const MONGODB_DATABASE = process.env.MONGODB_DATABASE || 'nextsteps';
@@ -188,44 +192,65 @@ export const initializeDatabase = async (): Promise<void> => {
     }
     console.log();
 
-    console.log('Creating collections and indexes...');
+    const cosmos = isCosmosMongoUri(MONGODB_URI);
     const existingCollections = await db.listCollections().toArray();
-    const existingNames = existingCollections.map((c) => c.name);
+    const existingNames = new Set(existingCollections.map((c) => c.name));
 
-    for (const config of REQUIRED_COLLECTIONS) {
-      if (!existingNames.includes(config.name)) {
-        try {
-          await db.createCollection(config.name);
-          console.log(`Created collection: ${config.name}`);
-        } catch (error: unknown) {
-          const message = error instanceof Error ? error.message : String(error);
-          console.warn(`Skipped createCollection(${config.name}): ${message}`);
+    if (cosmos) {
+      console.log(
+        'Cosmos DB detected — collections and indexes are Portal-managed; skipping createCollection/createIndex.',
+      );
+      console.log();
+
+      const missing = REQUIRED_COLLECTIONS.filter((c) => !existingNames.has(c.name));
+      if (missing.length > 0) {
+        console.warn('Missing collections (create in Azure Portal):');
+        for (const config of missing) {
+          console.warn(`  - ${config.name}`);
         }
+        console.log();
       } else {
-        console.log(`Collection exists: ${config.name}`);
+        console.log(`All ${REQUIRED_COLLECTIONS.length} collections present.`);
+        console.log();
       }
+    } else {
+      console.log('Creating collections and indexes...');
 
-      if (config.requiredIndexes) {
-        const collection = db.collection(config.name);
-        for (const indexConfig of config.requiredIndexes) {
+      for (const config of REQUIRED_COLLECTIONS) {
+        if (!existingNames.has(config.name)) {
           try {
-            await collection.createIndex(indexConfig.fields, indexConfig.options || {});
-            const indexName = Object.keys(indexConfig.fields).join('_');
-            console.log(`  Index: ${config.name}.${indexName}`);
+            await db.createCollection(config.name);
+            console.log(`Created collection: ${config.name}`);
           } catch (error: unknown) {
-            const err = error as { code?: number };
-            if (err.code === 85) {
+            const message = error instanceof Error ? error.message : String(error);
+            console.warn(`Skipped createCollection(${config.name}): ${message}`);
+          }
+        } else {
+          console.log(`Collection exists: ${config.name}`);
+        }
+
+        if (config.requiredIndexes) {
+          const collection = db.collection(config.name);
+          for (const indexConfig of config.requiredIndexes) {
+            try {
+              await collection.createIndex(indexConfig.fields, indexConfig.options || {});
               const indexName = Object.keys(indexConfig.fields).join('_');
-              console.log(`  Index exists: ${config.name}.${indexName}`);
-            } else {
-              throw error;
+              console.log(`  Index: ${config.name}.${indexName}`);
+            } catch (error: unknown) {
+              const err = error as { code?: number };
+              const indexName = Object.keys(indexConfig.fields).join('_');
+              if (err.code === 85) {
+                console.log(`  Index exists: ${config.name}.${indexName}`);
+              } else {
+                throw error;
+              }
             }
           }
         }
       }
-    }
 
-    console.log();
+      console.log();
+    }
     console.log('Seeding role mappings...');
 
     let seedCount = 0;
@@ -255,6 +280,10 @@ export const initializeDatabase = async (): Promise<void> => {
     }
 
     console.log();
+    console.log('Seeding demo data...');
+    await seedDemoData(db);
+
+    console.log();
     console.log('Database statistics:');
     for (const config of REQUIRED_COLLECTIONS) {
       const count = await db.collection(config.name).countDocuments();
@@ -263,7 +292,6 @@ export const initializeDatabase = async (): Promise<void> => {
 
     console.log();
     console.log('Database initialization completed.');
-    console.log('Dev demo data: start API locally (non-production) or run seed via app bootstrap.');
   } catch (error) {
     console.error('Database initialization failed:', error);
     process.exit(1);
@@ -274,7 +302,11 @@ export const initializeDatabase = async (): Promise<void> => {
   }
 };
 
-if (import.meta.url === `file://${process.argv[1]?.replace(/\\/g, '/')}`) {
+const isDirectRun =
+  process.argv[1] !== undefined &&
+  resolve(fileURLToPath(import.meta.url)) === resolve(process.argv[1]);
+
+if (isDirectRun) {
   initializeDatabase()
     .then(() => process.exit(0))
     .catch(() => process.exit(1));

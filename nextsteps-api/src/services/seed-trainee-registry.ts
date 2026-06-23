@@ -44,10 +44,8 @@ const buildRosterTrainees = () =>
   });
 
 /** Mirrors frontend ldTraineeStore defaults — queue blocked, roster allowed. */
-export const seedTraineeRegistry = async (
-  registry: TraineeRegistryRepository,
-): Promise<void> => {
-  const entries = [...buildQueueRecruits(), ...buildRosterTrainees()].map((t) => ({
+export const buildTraineeSeedEntries = () =>
+  [...buildQueueRecruits(), ...buildRosterTrainees()].map((t) => ({
     email: t.email,
     fullName: t.fullName,
     batch: t.batch,
@@ -55,5 +53,8 @@ export const seedTraineeRegistry = async (
     externalId: t.externalId,
   }));
 
-  await registry.upsertMany(entries);
+export const seedTraineeRegistry = async (
+  registry: TraineeRegistryRepository,
+): Promise<void> => {
+  await registry.upsertMany(buildTraineeSeedEntries());
 };
