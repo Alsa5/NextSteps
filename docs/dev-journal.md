@@ -12,6 +12,8 @@ NextSteps is ready to leave localhost — mapped the full Azure App Service path
 
 Migrated every in-memory store (sessions, notifications, feedback, audit, P7 analytics) to MongoDB repositories with a full Cosmos collection map and dev seed script — production data now survives restarts and Azure deploys.
 
+Hit one last deploy gotcha: the homepage returned 401 while `/api/v1/health` worked. The API was still running old middleware that required a JWT on every path — including `/` and `/favicon.ico`. The fix (scope auth to `/api/v1` only, serve the SPA first) is in the repo locally but hasn’t been redeployed yet.
+
 ---
 
 ## Tuesday, June 16, 2026

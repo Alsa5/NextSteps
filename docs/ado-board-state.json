@@ -1,6 +1,6 @@
 {
   "project": "NextSteps",
-  "lastUpdated": "2026-06-22T21:10:00.000Z",
+  "lastUpdated": "2026-06-21T23:00:00.000Z",
   "wikiIdentifier": null,
   "paperclipTrace": {
     "ALSAA-8": {
@@ -344,6 +344,10 @@
     {
       "date": "2026-06-21",
       "action": "fix(deploy): Oryx no-op build in deploy package.json — pre-built dist, skip tsc on Linux npm install"
+    },
+    {
+      "date": "2026-06-21",
+      "action": "fix(auth): scope JWT middleware to /api/v1 only; serve SPA before auth — fixes 401 on / (local, pending redeploy)"
     }
   ]
 }

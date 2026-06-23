@@ -272,22 +272,25 @@
       "date": "2026-06-21",
       "title": "Azure deploy — Oryx install without tsc rebuild",
       "tags": ["planning", "deploy", "fix"],
-      "narrative": "NextSteps is ready to leave localhost. I mapped Azure App Service on Node 22: one Web App hosts API + built SPA on the same origin for SSO. Fixed Linux zip paths (tar not Compress-Archive), dropped Windows node_modules from the artifact so Oryx installs on Linux, then hit Oryx running npm run build after production npm install — tsc is a devDependency and was missing. Deploy package.json now uses a no-op build that only verifies pre-built dist/index.js. Rebuild zip and redeploy with server-side build enabled.",
+      "narrative": "NextSteps is ready to leave localhost. I mapped Azure App Service on Node 22: one Web App hosts API + built SPA on the same origin for SSO. Fixed Linux zip paths (tar not Compress-Archive), dropped Windows node_modules from the artifact so Oryx installs on Linux, then hit Oryx running npm run build after production npm install — tsc is a devDependency and was missing. Deploy package.json now uses a no-op build that only verifies pre-built dist/index.js. Migrated in-memory stores to MongoDB/Cosmos with seed scripts. Last blocker: homepage 401 while health works — deployed code still runs global JWT auth before static files. Scoped auth to /api/v1 and serve SPA first locally; needs commit + redeploy.",
       "filesChanged": [
         "scripts/prepare-azure-deploy.mjs",
-        ".gitignore"
+        ".gitignore",
+        "nextsteps-api/src/app.ts"
       ],
       "milestones": [
         "Azure App Service Node 22 deployment runbook",
         "Linux-safe zip without node_modules — Oryx npm install on deploy",
-        "Oryx-safe deploy package.json — skip tsc, use pre-built dist"
+        "Oryx-safe deploy package.json — skip tsc, use pre-built dist",
+        "Root cause confirmed for 401 on / — undeployed auth scoping fix"
       ],
       "challenges": [
         "Windows backslash zip paths broke dist/index.js on Linux",
         "Windows node_modules broke bullmq/debug on Linux",
-        "Oryx npm run build failed: tsc not found (devDeps not installed in production)"
+        "Oryx npm run build failed: tsc not found (devDeps not installed in production)",
+        "Global requireAuth blocked SPA at / — fix local only until redeploy"
       ],
-      "lookingAhead": "Rebuild nextsteps-api-deploy.zip, redeploy, verify /api/v1/health and SPA at /."
+      "lookingAhead": "Commit auth scoping fix, rebuild nextsteps-api-deploy.zip, redeploy, verify SPA at / loads without 401."
     }
   ]
 }

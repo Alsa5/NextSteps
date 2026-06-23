@@ -287,7 +287,11 @@ export const createApp = (deps: AppDeps): Express => {
     }),
   );
 
-  app.use(requireAuth);
+  // Serve SPA before JWT middleware so `/`, `/favicon.ico`, and assets are never gated.
+  registerSpaStatic(app);
+
+  // JWT gate for protected API routes only.
+  app.use('/api/v1', requireAuth);
 
   app.use('/api/v1', createLdTraineesRouter({ traineeRegistry: deps.traineeRegistry }));
   app.use(
@@ -347,8 +351,6 @@ export const createApp = (deps: AppDeps): Express => {
       enqueueGenerateExecutiveReport: deps.enqueueGenerateExecutiveReport,
     }),
   );
-
-  registerSpaStatic(app);
 
   return app;
 };
