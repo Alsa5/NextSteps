@@ -12,7 +12,7 @@ describe('loadGoogleMeetOAuthConfig', () => {
     expect(config.stubMode).toBe(true);
     expect(config.clientId).toBe('');
     expect(config.clientSecret).toBe('');
-    expect(config.redirectUri).toBe('http://localhost:3001/api/v1/integrations/google-meet/oauth/callback');
+    expect(config.redirectUri).toBe('http://localhost:3003/api/v1/integrations/google/oauth/callback');
     expect(config.workspaceDomain).toBeUndefined();
     expect(config.scopes).toEqual(DEFAULT_GOOGLE_MEET_SCOPES);
   });

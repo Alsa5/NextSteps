@@ -1,7 +1,10 @@
+import { createServer, type RequestListener } from 'node:http';
+import express from 'express';
 import { Queue } from 'bullmq';
 import { createApp } from './app.js';
 import { env } from './config/env.js';
 import { connectMongo } from './db/mongo.js';
+import { registerSpaStatic } from './middleware/spa-static.js';
 import { isRedisAvailable } from './lib/redis.js';
 import {
   createRoleMappingRepository,
@@ -9,12 +12,12 @@ import {
 } from './repositories/role-mapping-repository.js';
 import { createTraineeRegistryRepository } from './repositories/trainee-registry-repository.js';
 import { createUserRepository } from './repositories/user-repository.js';
-import { createInMemoryFeedbackCompletionRepository } from './repositories/in-memory-feedback-completion.js';
+import { createMongoFeedbackCompletionRepository } from './repositories/mongo-feedback-completion-repository.js';
 import { createGoogleOAuthTokenRepository } from './repositories/google-oauth-token-repository.js';
-import { createSessionStore } from './repositories/session-store.js';
-import { createNotificationRepository } from './repositories/notification-repository.js';
-import { createInMemoryAuditLogRepository } from './repositories/in-memory-audit-log.js';
-import { createInMemoryP7AnalyticsRepository } from './repositories/in-memory-p7-analytics.js';
+import { createMongoSessionStore } from './repositories/mongo-session-store.js';
+import { createMongoNotificationRepository } from './repositories/mongo-notification-repository.js';
+import { createMongoAuditLogRepository } from './repositories/mongo-audit-log-repository.js';
+import { createMongoP7AnalyticsRepository } from './repositories/mongo-p7-analytics-repository.js';
 import { runSessionTranscriptPipeline } from './services/session-pipeline.js';
 import {
   JOB_COMPUTE_REMINDER_TIMING,
@@ -30,11 +33,30 @@ import {
 } from './models/queue-names.js';
 import { seedDevPersonalUsers } from './services/seed-dev-users.js';
 import { seedTraineeRegistry } from './services/seed-trainee-registry.js';
+import { seedDevMongoData } from './services/seed-dev-mongo.js';
 import { startWorkers } from './worker/start-workers.js';
 
 const port = Number(env.Port);
 
 const bootstrap = async (): Promise<void> => {
+  const warmup = express();
+  warmup.get('/api/v1/health', (_req, res) => {
+    res.status(200).json({ status: 'starting', service: 'nextsteps-api' });
+  });
+  registerSpaStatic(warmup);
+
+  let requestListener: RequestListener = warmup;
+  const server = createServer((req, res) => {
+    requestListener(req, res);
+  });
+
+  await new Promise<void>((resolve) => {
+    server.listen(port, () => {
+      console.log(`nextsteps-api warmup listening on http://localhost:${port}`);
+      resolve();
+    });
+  });
+
   await connectMongo();
 
   const users = createUserRepository();
@@ -44,12 +66,13 @@ const bootstrap = async (): Promise<void> => {
   if (env.NodeEnv !== 'production') {
     await seedDevPersonalUsers(users);
     await seedTraineeRegistry(traineeRegistry);
+    await seedDevMongoData();
     console.log('Seeded dev personal-email accounts for magic-link sign-in');
     console.log('Seeded trainee registry (roster sign-in enabled, queue blocked)');
   }
-  const feedbackCompletion = createInMemoryFeedbackCompletionRepository();
-  const sessions = createSessionStore();
-  const notifications = createNotificationRepository();
+  const feedbackCompletion = createMongoFeedbackCompletionRepository();
+  const sessions = createMongoSessionStore();
+  const notifications = createMongoNotificationRepository();
   const googleTokens = createGoogleOAuthTokenRepository();
 
   let redisReady = env.RedisEnabled;
@@ -147,8 +170,8 @@ const bootstrap = async (): Promise<void> => {
     notifications,
     googleTokens,
     feedbackCompletion,
-    p7Analytics: createInMemoryP7AnalyticsRepository(),
-    auditLog: createInMemoryAuditLogRepository(),
+    p7Analytics: createMongoP7AnalyticsRepository(),
+    auditLog: createMongoAuditLogRepository(),
     users,
     roleMappings,
     traineeRegistry,
@@ -156,10 +179,9 @@ const bootstrap = async (): Promise<void> => {
     corsOrigin: env.CorsOrigin,
   });
 
-  app.listen(port, () => {
-    console.log(`nextsteps-api listening on http://localhost:${port}`);
-    console.log(`MongoDB database: ${env.MongoDbDatabase}`);
-  });
+  requestListener = app;
+  console.log(`nextsteps-api ready on http://localhost:${port}`);
+  console.log(`MongoDB database: ${env.MongoDbDatabase}`);
 
   if (redisReady) {
     await startWorkers(connection, sessions);

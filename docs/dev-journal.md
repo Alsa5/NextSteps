@@ -6,9 +6,11 @@
 
 ## Sunday, June 21, 2026
 
-*planning*
+*planning, deploy, fix*
 
 NextSteps is ready to leave localhost — mapped the full Azure App Service path for Node 22 LTS (no containers): one Web App can host the Express API plus the built Vite SPA on the same origin so SSO and `/api` calls stay simple. Documented portal ZIP deploy, env vars, Azure AD redirect URIs, and the external dependencies (MongoDB, Redis) the platform needs to actually run in prod. Clarified the env split: **App Service settings = API secrets only**; `VITE_*` vars are build-time on your machine, not portal settings. Wired Express to serve `public/` with React Router fallback, added `.env.production.example` templates, and a `npm run prepare:azure-deploy` script. Chose Sanctuary **Option B** for Cosmos: App Service Key Vault reference on `MONGODB_URI` (no SDK), database `nextsteps` on the shared cluster.
+
+Migrated every in-memory store (sessions, notifications, feedback, audit, P7 analytics) to MongoDB repositories with a full Cosmos collection map and dev seed script — production data now survives restarts and Azure deploys.
 
 ---
 

@@ -1,5 +1,5 @@
-import type { Collection, Db } from 'mongodb';
-import { getDb } from '../db/mongo.js';
+import type { Collection } from 'mongodb';
+import { getDb, NEXTSTEPS_COLLECTIONS } from '../db/mongo.js';
 
 export interface GoogleOAuthTokenRecord {
   userId: string;
@@ -15,7 +15,7 @@ export interface GoogleOAuthTokenRepository {
   deleteByUserId(userId: string): Promise<void>;
 }
 
-const COLLECTION = 'google_oauth_tokens';
+const COLLECTION = NEXTSTEPS_COLLECTIONS.GOOGLE_OAUTH_TOKENS;
 
 export const createGoogleOAuthTokenRepository = (): GoogleOAuthTokenRepository => {
   const collection = (): Collection<GoogleOAuthTokenRecord> =>

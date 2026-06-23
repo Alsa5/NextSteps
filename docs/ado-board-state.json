@@ -1,6 +1,6 @@
 {
   "project": "NextSteps",
-  "lastUpdated": "2026-06-21T12:00:00.000Z",
+  "lastUpdated": "2026-06-21T20:05:00.000Z",
   "wikiIdentifier": null,
   "paperclipTrace": {
     "ALSAA-8": {
@@ -335,11 +335,15 @@
     },
     {
       "date": "2026-06-21",
+      "action": "fix(deploy): prepare-azure-deploy uses tar zip with forward-slash paths; excludes .env from artifact"
+    },
+    {
+      "date": "2026-06-21",
       "action": "docs: Azure App Service Node 22 LTS deployment guide — portal ZIP deploy, env vars, SSO redirect URIs, MongoDB/Redis dependencies"
     },
     {
       "date": "2026-06-21",
-      "action": "feat(api): Cosmos Key Vault reference (Option B) — MONGODB_URI @Microsoft.KeyVault, Cosmos client options, production env template"
+      "action": "fix(deploy): Oryx no-op build in deploy package.json — pre-built dist, skip tsc on Linux npm install"
     }
   ]
 }

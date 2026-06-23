@@ -82,10 +82,13 @@ const seedTranscripts: TranscriptRecord[] = [
       'Covered core OOP concepts: classes, objects, inheritance, and polymorphism',
       'Live coding demo showed real-world inheritance hierarchy',
       'Batch engaged well during Q&A on abstract classes',
+      'Reviewed access modifiers and encapsulation patterns',
+      'Closed with a short quiz on class design principles',
     ],
     keyTerms: ['Inheritance', 'Polymorphism', 'Abstract Classes'],
     confusionTimestamps: [
       { time: '34:00', topic: 'Interface vs Abstract Class', clarityDip: 2.8 },
+      { time: '52:00', topic: 'Method overriding rules', clarityDip: 3.1 },
     ],
     rawText:
       'Trainer: Welcome to Java OOP. Today we cover inheritance and polymorphism.\nTrainer: A class is a blueprint; an object is an instance.\nTrainee: Could you clarify interface vs abstract class?',

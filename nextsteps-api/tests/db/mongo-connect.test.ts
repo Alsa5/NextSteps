@@ -27,9 +27,25 @@ describe('mongo-connect', () => {
     expect(buildMongoClientOptions('mongodb://127.0.0.1:27017')).toEqual({});
   });
 
-  it('rejects unresolved Key Vault references', () => {
+  it('rejects unresolved Key Vault references locally', () => {
     expect(() =>
       validateMongoUri('@Microsoft.KeyVault(SecretUri=https://vault/secrets/MongoDbUri/)'),
-    ).toThrow(/Key Vault reference/);
+    ).toThrow(/local dev/);
+  });
+
+  it('rejects unresolved Key Vault references on Azure App Service', () => {
+    const siteName = process.env.WEBSITE_SITE_NAME;
+    process.env.WEBSITE_SITE_NAME = 'nextstepsnebula';
+    try {
+      expect(() =>
+        validateMongoUri('@Microsoft.KeyVault(SecretUri=https://vault/secrets/MongoDbUri/)'),
+      ).toThrow(/unresolved Key Vault reference/);
+    } finally {
+      if (siteName === undefined) {
+        delete process.env.WEBSITE_SITE_NAME;
+      } else {
+        process.env.WEBSITE_SITE_NAME = siteName;
+      }
+    }
   });
 });

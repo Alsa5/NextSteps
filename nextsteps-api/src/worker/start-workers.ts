@@ -1,6 +1,6 @@
 import type { ConnectionOptions, Worker } from 'bullmq';
 import { getDb } from '../db/mongo.js';
-import { createInMemoryFeedbackCompletionRepository } from '../repositories/in-memory-feedback-completion.js';
+import { createMongoFeedbackCompletionRepository } from '../repositories/mongo-feedback-completion-repository.js';
 import { StubGoogleMeetClient } from './clients/google-meet-client.js';
 import { createSessionRepository, createTranscriptRepository } from './db/repositories.js';
 import { buildEvaluateBatchXpBonusDepsFromRepository } from './jobs/evaluate-batch-xp-bonus.js';
@@ -23,7 +23,7 @@ export const startWorkers = async (
   try {
     const db = getDb();
     const analyzeQueue = createAnalyzeSessionSentimentQueue({ connection });
-    const feedbackCompletion = createInMemoryFeedbackCompletionRepository();
+    const feedbackCompletion = createMongoFeedbackCompletionRepository();
 
     const workers: Worker[] = [
       registerIngestMeetTranscriptWorker(
