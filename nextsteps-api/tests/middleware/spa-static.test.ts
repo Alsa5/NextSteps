@@ -5,6 +5,7 @@ import express from 'express';
 import request from 'supertest';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { registerSpaStatic } from '../../src/middleware/spa-static.js';
+import { createAuthMiddleware } from '../../src/middleware/auth.js';
 
 describe('registerSpaStatic', () => {
   let tempDir = '';
@@ -45,5 +46,15 @@ describe('registerSpaStatic', () => {
 
     await request(app).get('/api/v1/health').expect(200, { status: 'ok' });
     await request(app).get('/api/v1/missing').expect(404);
+  });
+
+  it('serves / without JWT when auth is scoped to /api/v1 only', async () => {
+    const app = express();
+    const requireAuth = createAuthMiddleware('test-secret');
+    registerSpaStatic(app, tempDir);
+    app.use('/api/v1', requireAuth);
+
+    await request(app).get('/').expect(200, '<html><body>spa</body></html>');
+    await request(app).get('/favicon.ico').expect(404);
   });
 });

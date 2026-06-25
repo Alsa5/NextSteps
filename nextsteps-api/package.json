@@ -6,7 +6,7 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "tsc -p tsconfig.json",
+    "build": "node --input-type=module -e \"import{rmSync,writeFileSync}from'node:fs';rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.json && node --input-type=module -e \"import{writeFileSync}from'node:fs';writeFileSync('dist/index.js','import \\\"./src/index.js\\\";\\n')\"",
     "start": "node dist/index.js",
     "init-db": "npm run build && node dist/scripts/init-db.js",
     "seed-db": "npm run build && node dist/scripts/seed-db.js"

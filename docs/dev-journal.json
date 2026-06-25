@@ -290,7 +290,7 @@
         "Oryx npm run build failed: tsc not found (devDeps not installed in production)",
         "Global requireAuth blocked SPA at / — fix local only until redeploy"
       ],
-      "lookingAhead": "Commit auth scoping fix, rebuild nextsteps-api-deploy.zip, redeploy, verify SPA at / loads without 401."
+      "lookingAhead": "Deploy refreshed nextsteps-api-deploy.zip; verify / loads the login page."
     }
   ]
 }

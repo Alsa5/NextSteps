@@ -347,7 +347,7 @@
     },
     {
       "date": "2026-06-21",
-      "action": "fix(auth): scope JWT middleware to /api/v1 only; serve SPA before auth — fixes 401 on / (local, pending redeploy)"
+      "action": "fix(build): clean dist before tsc — stale dist/app.js caused 401 on / after deploy; fresh zip built"
     }
   ]
 }

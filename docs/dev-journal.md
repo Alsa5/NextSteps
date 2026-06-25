@@ -12,7 +12,7 @@ NextSteps is ready to leave localhost — mapped the full Azure App Service path
 
 Migrated every in-memory store (sessions, notifications, feedback, audit, P7 analytics) to MongoDB repositories with a full Cosmos collection map and dev seed script — production data now survives restarts and Azure deploys.
 
-Hit one last deploy gotcha: the homepage returned 401 while `/api/v1/health` worked. The API was still running old middleware that required a JWT on every path — including `/` and `/favicon.ico`. The fix (scope auth to `/api/v1` only, serve the SPA first) is in the repo locally but hasn’t been redeployed yet.
+Hit one last deploy gotcha: the homepage returned 401 while `/api/v1/health` worked. Root cause wasn't Azure — it was a **stale `dist/app.js`** left over from an old TypeScript layout. Azure ran `node dist/index.js`, which loaded the old file with global JWT auth, even though the source fix was already committed. Fixed the build to wipe `dist/` before compile, shim `dist/index.js` → `dist/src/index.js`, and point SPA static at `process.cwd()/public`. Fresh zip is ready to deploy.
 
 ---
 

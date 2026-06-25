@@ -73,7 +73,7 @@ const deployPkg = {
     start: sourcePkg.scripts?.start ?? 'node dist/index.js',
     // Oryx runs `npm run build` after production `npm install` (no devDeps / no tsc).
     build:
-      "node --input-type=module -e \"import{existsSync}from'fs';if(!existsSync('dist/index.js')){console.error('Missing dist/index.js');process.exit(1)}console.log('Using pre-built dist')\"",
+      "node --input-type=module -e \"import{existsSync}from'fs';if(!existsSync('dist/src/index.js')){console.error('Missing dist/src/index.js');process.exit(1)}console.log('Using pre-built dist')\"",
   },
 };
 writeFileSync(join(stagingDir, 'package.json'), `${JSON.stringify(deployPkg, null, 2)}\n`);
