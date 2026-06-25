@@ -8,6 +8,7 @@ export const NEXTSTEPS_COLLECTIONS = {
   USERS: 'users',
   ROLE_MAPPINGS: 'role_mappings',
   TRAINEE_REGISTRY: 'trainee_registry',
+  SESSION_FEEDBACK: 'session_feedback',
 } as const;
 
 export const connectMongo = async (): Promise<Db> => {

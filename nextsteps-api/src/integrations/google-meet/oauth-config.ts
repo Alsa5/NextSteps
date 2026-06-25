@@ -11,8 +11,12 @@ export const DEFAULT_GOOGLE_MEET_SCOPES = [
   'https://www.googleapis.com/auth/meetings.space.readonly',
 ] as const;
 
-const DEFAULT_REDIRECT_URI =
-  'http://localhost:3003/api/v1/integrations/google/oauth/callback';
+const getDefaultRedirectUri = (): string => {
+  const port = process.env.Port || process.env.PORT || '3001';
+  return `http://localhost:${port}/api/v1/integrations/google/oauth/callback`;
+};
+
+const DEFAULT_REDIRECT_URI = getDefaultRedirectUri();
 
 const parseBoolean = (value: string | undefined, fallback: boolean): boolean => {
   if (value === undefined || value.trim() === '') {
@@ -22,8 +26,8 @@ const parseBoolean = (value: string | undefined, fallback: boolean): boolean => 
   return value.toLowerCase() === 'true' || value === '1';
 };
 
-const parseScopes = (value: string): string[] => {
-  if (value.trim() === '') {
+const parseScopes = (value: string | undefined): string[] => {
+  if (!value || value.trim() === '') {
     return [];
   }
 

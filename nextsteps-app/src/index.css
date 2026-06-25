@@ -997,6 +997,7 @@ html[data-theme='dark'] .card.card-accent-session {
 .slider {
   flex: 1;
   -webkit-appearance: none;
+  appearance: none;
   height: 6px;
   border-radius: var(--radius-full);
   background: var(--base-surface);

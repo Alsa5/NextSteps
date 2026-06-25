@@ -37,6 +37,7 @@ import BatchAssignmentQueue from './pages/ld/BatchAssignmentQueue'
 import FeedbackAnalytics from './pages/ld/FeedbackAnalytics'
 import PreOnboardingSessions from './pages/ld/PreOnboardingSessions'
 import LDAIHelper from './pages/ld/LDAIHelper'
+import TrainerLeaderboard from './pages/ld/TrainerLeaderboard'
 import ManagerDashboard from './pages/manager/ManagerDashboard'
 import PerformanceReview from './pages/manager/PerformanceReview'
 import EarlyPerformanceAlert from './pages/manager/EarlyPerformanceAlert'
@@ -162,6 +163,7 @@ function AuthenticatedShell({ user, setUser, theme }) {
                         <Route path="/pre-onboarding-sessions" element={<PreOnboardingSessions />} />
                         <Route path="/recruitment-queue" element={<BatchAssignmentQueue />} />
                         <Route path="/feedback-analytics" element={<FeedbackAnalytics />} />
+                        <Route path="/trainer-leaderboard" element={<TrainerLeaderboard />} />
                       </>
                     )}
 

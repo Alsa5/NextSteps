@@ -1041,6 +1041,10 @@ class App {
   }
 
   initPasses() {
+    if (!this.composer || this.disposed) {
+      return;
+    }
+    
     this.renderPass = new RenderPass(this.scene, this.camera);
     this.bloomPass = new EffectPass(
       this.camera,
@@ -1182,6 +1186,9 @@ class App {
   }
 
   render(delta: number) {
+    if (!this.composer || this.disposed) {
+      return;
+    }
     this.composer.render(delta);
   }
 
@@ -1231,6 +1238,9 @@ class App {
   }
 
   setSize(width: number, height: number, updateStyles: boolean) {
+    if (!this.composer || this.disposed) {
+      return;
+    }
     this.composer.setSize(width, height, updateStyles);
   }
 
@@ -1244,7 +1254,9 @@ class App {
         this.renderer.setSize(w, h, false);
         this.camera.aspect = w / h;
         this.camera.updateProjectionMatrix();
-        this.composer.setSize(w, h);
+        if (this.composer) {
+          this.composer.setSize(w, h);
+        }
         this.hasValidSize = true;
       } else {
         requestAnimationFrame(this.tick);

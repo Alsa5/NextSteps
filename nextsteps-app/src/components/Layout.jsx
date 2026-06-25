@@ -5,7 +5,7 @@ import {
   Home, CreditCard, Zap, FileText, GitBranch, Compass, Bot, Trophy, Clock,
   ClipboardList, Radio, BarChart3, BookCheck, Users, LayoutDashboard, Video,
   Brain, TrendingUp, GitCompare, FileBarChart, LogOut, QrCode, UserCheck,
-  Layers, ScrollText, AlertTriangle, Sparkles, MessageSquareHeart,
+  Layers, ScrollText, AlertTriangle, Sparkles, MessageSquareHeart, Globe,
 } from 'lucide-react'
 import PersonAvatar from './PersonAvatar'
 import { formatDisplayName } from '../utils/userDisplay'
@@ -14,7 +14,6 @@ import { MagicSpotlight, useMagicMobile } from './magic-bento/MagicBento'
 import { getRoleLabel } from '../theme/maverickNebula'
 import RoleSwitcher from './RoleSwitcher'
 import LdTraineeRegistrySync from './ld/LdTraineeRegistrySync'
-import NotificationBell from './NotificationBell'
 import '../components/metaverse/metaverse.css'
 
 const navConfig = {
@@ -85,6 +84,7 @@ const navConfig = {
           { to: '/trainee-roster', icon: Users, label: 'Trainee Roster' },
           { to: '/pre-onboarding-sessions', icon: Video, label: 'Pre-Onboarding Meets' },
           { to: '/feedback-analytics', icon: MessageSquareHeart, label: 'Feedback Analytics' },
+          { to: '/trainer-leaderboard', icon: Globe, label: 'Trainer Leaderboard' },
           { to: '/batch-composer', icon: Sparkles, label: 'Batch Composer' },
           { to: '/ai-helper', icon: Bot, label: 'AI Helper' },
         ],
@@ -178,9 +178,6 @@ export default function Layout({ children }) {
       </aside>
 
       <main ref={mainRef} className="main-content main-content-nebula magic-bento-zone bento-section">
-        <div className="main-content-topbar">
-          <NotificationBell />
-        </div>
         <MagicSpotlight gridRef={mainRef} disableAnimations={isMobile} enabled={!isTrainingUniverse} />
         {user.role === 'ld' && <LdTraineeRegistrySync />}
         {children}

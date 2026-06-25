@@ -5,6 +5,7 @@ import { Users, BarChart3, AlertTriangle, CheckCircle } from 'lucide-react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
 import mockData from '../../data/mockData.json'
 import AppMagicCard from '../../components/AppMagicCard'
+import TrainerRankCard from '../../components/trainer/TrainerRankCard'
 import MetaversePageHero from '../../components/metaverse/MetaversePageHero'
 import LiveChartContainer from '../../components/charts/LiveChartContainer'
 import ChartEmptyState from '../../components/charts/ChartEmptyState'
@@ -61,6 +62,10 @@ export default function TrainerDashboard() {
             <p className="text-sm text-secondary" style={{ margin: '8px 0 0' }}>Trends, spikes, and transcripts.</p>
           </AppMagicCard>
         </Link>
+      </motion.div>
+
+      <motion.div variants={item} style={{ marginBottom: 24 }}>
+        <TrainerRankCard />
       </motion.div>
 
       <motion.div variants={item} className="grid-4" style={{ marginBottom: 24 }}>

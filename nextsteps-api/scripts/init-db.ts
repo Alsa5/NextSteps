@@ -10,7 +10,9 @@
  */
 
 import { MongoClient, Db } from 'mongodb';
-import { createRoleMappingRepository, DEFAULT_DESIGNATION_MAPPINGS } from '../src/repositories/role-mapping-repository.js';
+import { randomUUID } from 'crypto';
+import { DEFAULT_DESIGNATION_MAPPINGS } from '../src/repositories/role-mapping-repository.js';
+import type { RoleMapping } from '../src/db/schemas.js';
 
 // Environment configuration
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017';
@@ -72,6 +74,28 @@ const REQUIRED_COLLECTIONS: CollectionConfig[] = [
       { fields: { batch: 1 } },
       { fields: { trainerEmail: 1 } }
     ]
+  },
+  {
+    name: 'session_feedback',
+    description: 'Maverick feedback on training sessions (privacy-enhanced)',
+    requiredIndexes: [
+      { fields: { sessionId: 1 } },
+      { fields: { batchId: 1 } },
+      { fields: { trainerEmail: 1 } },
+      { fields: { maverickId: 1 } },
+      { fields: { submittedAt: -1 } }
+    ]
+  },
+  {
+    name: 'trainer_scores',
+    description: 'Trainer performance scores and gamification data',
+    requiredIndexes: [
+      { fields: { trainerEmail: 1 }, options: { unique: true } },
+      { fields: { scorePercentage: -1 } },
+      { fields: { tier: 1 } },
+      { fields: { awePoints: -1 } },
+      { fields: { updatedAt: -1 } }
+    ]
   }
 ];
 
@@ -132,15 +156,23 @@ async function initializeDatabase(): Promise<void> {
 
     // Seed role mappings (essential configuration)
     console.log('🔐 Seeding role mappings...');
-    const roleMappings = createRoleMappingRepository();
+    const roleMappingsCollection = db.collection<RoleMapping>('role_mappings');
     
     let seedCount = 0;
     for (const mapping of DEFAULT_DESIGNATION_MAPPINGS) {
-      const existing = await roleMappings.findAll().then(mappings => 
-        mappings.find(m => m.type === mapping.type && m.value === mapping.value)
-      );
+      const existing = await roleMappingsCollection.findOne({
+        type: mapping.type,
+        value: mapping.value.toLowerCase(),
+      });
+      
       if (!existing) {
-        await roleMappings.seedDefaults([mapping]);
+        const now = new Date().toISOString();
+        await roleMappingsCollection.insertOne({
+          _id: randomUUID(),
+          ...mapping,
+          value: mapping.type === 'email' ? mapping.value.toLowerCase() : mapping.value,
+          createdAt: now,
+        } as RoleMapping);
         seedCount++;
         console.log(`✨ Added role mapping: ${mapping.type}=${mapping.value} → ${mapping.role} (keywords: ${mapping.keywords?.join(', ')})`);
       } else {
@@ -182,13 +214,11 @@ async function initializeDatabase(): Promise<void> {
 }
 
 // Run if called directly
-if (import.meta.url === `file://${process.argv[1]}`) {
-  initializeDatabase()
-    .then(() => process.exit(0))
-    .catch((error) => {
-      console.error('Fatal error:', error);
-      process.exit(1);
-    });
-}
+initializeDatabase()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error('Fatal error:', error);
+    process.exit(1);
+  });
 
 export { initializeDatabase };

@@ -11,6 +11,8 @@ import {
 import { createAiRouter } from './routes/ai.js';
 import { createAiQuizGeneratorRouter } from './routes/ai-quiz-generator.js';
 import { createQuizResultsRouter } from './routes/quiz-results.js';
+import { createSessionFeedbackRouter } from './routes/session-feedback.js';
+import { createTrainerScoresRouter } from './routes/trainer-scores.js';
 import { createAnalyticsRouter } from './routes/analytics.js';
 import { createAuthRouter } from './routes/auth.js';
 import { createFeedbackCompletionRouter } from './routes/feedback-completion.js';
@@ -104,6 +106,12 @@ export const createApp = (deps: AppDeps): Express => {
   
   // Quiz Results and Reporting
   app.use('/api/v1/quiz-results', createQuizResultsRouter({ jwtSecret: deps.jwtSecret }));
+  
+  // Session Feedback System (privacy-enhanced)
+  app.use('/api/v1/session-feedback', createSessionFeedbackRouter({ jwtSecret: deps.jwtSecret }));
+
+  // Trainer Scores and Gamification
+  app.use('/api/v1/trainer-scores', createTrainerScoresRouter({ jwtSecret: deps.jwtSecret }));
 
   // Health check for quiz results system
   app.get('/api/v1/quiz-results-health', async (req, res) => {

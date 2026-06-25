@@ -30,6 +30,7 @@ import {
 } from './models/queue-names.js';
 import { seedDevPersonalUsers } from './services/seed-dev-users.js';
 import { seedTraineeRegistry } from './services/seed-trainee-registry.js';
+import { seedTrainerScoresDevData } from './services/seed-trainer-scores.js';
 import { startWorkers } from './worker/start-workers.js';
 
 const port = Number(env.Port);
@@ -44,8 +45,10 @@ const bootstrap = async (): Promise<void> => {
   if (env.NodeEnv !== 'production') {
     await seedDevPersonalUsers(users);
     await seedTraineeRegistry(traineeRegistry);
+    await seedTrainerScoresDevData();
     console.log('Seeded dev personal-email accounts for magic-link sign-in');
     console.log('Seeded trainee registry (roster sign-in enabled, queue blocked)');
+    console.log('Seeded trainer scores and session feedback (dev data only)');
   }
   const feedbackCompletion = createInMemoryFeedbackCompletionRepository();
   const sessions = createSessionStore();

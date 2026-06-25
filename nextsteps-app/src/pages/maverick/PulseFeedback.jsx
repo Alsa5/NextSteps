@@ -24,18 +24,55 @@ export default function PulseFeedback() {
   const [submitted, setSubmitted] = useState(false)
   const [showConfetti, setShowConfetti] = useState(false)
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!mood) { toast.error('Please select your mood'); return }
-    submitPulseFeedback({
-      sessionId: latestSession.id,
-      sessionTitle: latestSession.title,
-      mood,
-      clarity,
-      pace,
-      openText,
-      maverickName: authUser?.name || mockData.currentUser.name,
-      batchId: mockData.currentUser.batch,
-    })
+    
+    try {
+      // Submit to backend API instead of localStorage
+      const response = await fetch('/api/v1/session-feedback/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionStorage.getItem('nextsteps_token')}`
+        },
+        body: JSON.stringify({
+          sessionId: latestSession.id,
+          sessionTitle: latestSession.title,
+          batchId: mockData.currentUser.batch,
+          trainerEmail: latestSession.trainerEmail || 'rajesh.menon@hexaware.com', // fallback for mock data
+          mood,
+          clarity,
+          pace,
+          openText: openText.trim() || undefined,
+        })
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.error || 'Failed to submit feedback')
+      }
+
+      const result = await response.json()
+      console.log('✅ Feedback submitted:', result)
+      
+      // Still award XP locally for immediate feedback
+      submitPulseFeedback({
+        sessionId: latestSession.id,
+        sessionTitle: latestSession.title,
+        mood,
+        clarity,
+        pace,
+        openText,
+        maverickName: authUser?.name || mockData.currentUser.name,
+        batchId: mockData.currentUser.batch,
+      })
+      
+    } catch (error) {
+      console.error('Feedback submission error:', error)
+      toast.error(error.message || 'Failed to submit feedback')
+      return
+    }
+    
     setShowConfetti(true)
     setSubmitted(true)
     toast.success('+30 XP earned! 🎉', { duration: 3000 })

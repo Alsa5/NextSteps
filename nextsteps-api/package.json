@@ -7,8 +7,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js",
-    "init-db": "node --loader ts-node/esm scripts/init-db.ts"
+    "start": "node dist/src/index.js",
+    "init-db": "npx tsx src/scripts/init-db.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
@@ -37,6 +37,7 @@
     "@types/pdf-parse": "^1.1.4",
     "@types/supertest": "^6.0.2",
     "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   }
